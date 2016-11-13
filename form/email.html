@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中国第一大电子邮件服务商</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		outline: none;
+	}
+	.help{
+		text-decoration: none;
+		color: #333;
+		padding-left: 122px;
+		vertical-align: 10px;
+	}
+	.all{
+		width: 550px;
+		margin: 0 auto;
+		font-size: 14px;
+	}
+	form{
+		border: 2px solid #333;
+		margin-top: -3px;
+		padding: 10px 30px 0 30px;
+	}
+	.tit{
+		width: 550px;
+		height: 35px;
+	}
+	h6{
+		background-color: #EAEAEA;
+		height: 20px;;
+		line-height: 20px
+	}
+	.width{
+			width: 150px;
+			height: 10px;
+			display: inline-block;
+			float: right;
+			margin-right: 200px;
+		}
+	form p{
+		margin: 10px 0;
+	}
+	#please{
+		margin-left: 27px;
+	}
+	.sex{
+		margin-left: 85px;
+	}
+	#date{
+		margin-left: 55px;
+	}
+	.code{
+		margin-left: 132px;
+	}
+	.check,.submit{
+		margin-left: 130px;
+	}
+	.bottom{
+		text-align: center;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+	.all .fuwu{
+		font-size: 12px;
+	}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<img src="img/logo.gif" alt="">
+		<a class="help" href="#">帮助</a>
+		<img class="tit" src="img/title.jpg" alt="">
+		<form action="" method="post">
+			<h6>创建您的账号</h6>
+			<p>用户名：<input class="width" type="text" name="username" value=""></p>
+			<p>密码：<input class="width" type="password" name="password" value=""></p>
+			<p>再次输入密码：<input type="password" class="width" name="password" value=""></p>
+			<h6>安全信息设置<small>（以下信息非常重要,请谨慎填写）</small></h6>
+			<p>密码保护问题：
+			<select name="" id="please">
+				<option value="">请选择密码提示问题</option>
+			</select>
+			</p>
+			<p>密码保护问题答案：<input class="width" type="text" name="answer" value=""></p>
+			<p>性别：
+			<input class="sex" type="radio" name="sex" value="0">男
+			<input type="radio" name="sex" value="1">女
+			</p>
+			<p>出生日期：
+			<select name="" id="date">
+				<option value="">1990</option>
+				<option value="">1991</option>
+				<option value="">1992</option>
+			</select>
+			<span>年</span>
+			<select name="" id="">
+				<option value="">8</option>
+				<option value="">9</option>
+				<option value="">1月</option>
+			</select>
+			<span>月</span>
+			<select name="" id="">
+				<option value="">28</option>
+				<option value="">29</option>
+				<option value="">30</option>
+			</select>
+			<span>日</span>
+			</p>
+			<p>手机号：<input class="width" type="text" name="number" value=""></p>
+			<h6>注册验证</h6>
+			<p><img class="code" src="img/verycode.gif" alt="">
+			<a href="">看不清楚，换一张</a></p>	
+			<p>请输入上边的字符：<input class="width" type="text" name="letter" value=""></p>
+			<h6>服务条款</h6>
+			<p class="fuwu"><input class="check" type="checkbox" name="click" value="0">我阅读接受<a href="">“服务条款”</a>和<a href="">“隐私权保护和个人信息利用政策”</a></p>
+			<img class="submit" src="img/button.gif" alt="">
+		</form>
+		<p class="bottom">关于网易 邮箱官方博客 财富邮 精美贺卡 举报违法信息 客户服务<br>隐私政策 | 网易公司版权所有 1997-2011</p>
+	</div>
+</body>
+</html>
