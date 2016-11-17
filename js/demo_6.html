@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	for (var i = 1; i <= 20; i ++){
+		document.write('Hello word' +'&nbsp;');
+	}
+
+	for (var i = 1; i <50;i = i + 2){
+		document.write(i+ '&nbsp;');
+	} 
+
+	for (var i = 2;i <= 50;){
+		document.write(i+ '&nbsp;');
+		i = i + 2;
+	}
+
+	for(var i = 1;i<=50;i++){
+		if(i%2==0){
+			document.write('偶数' + i +'&nbsp;');
+		}else{
+			document.write('奇数' + i +'&nbsp;');
+		}
+	}
+
+	var num = prompt('请输入一个数字');
+	for(var i = 1;i<=100;i++){
+		console.log(i);
+		if(i==num){
+			break;
+		}
+	}
+	
+//死循环：
+	/*var number = prompt('请输入一个数字');
+	for(var i = 1;i<=100;i++){
+		if(i = number){
+			continue;
+		}
+		console.log(i);
+	}*/
+</script>
+</html>
