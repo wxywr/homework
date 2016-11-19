@@ -7,11 +7,13 @@
 <body>
 
 </body>
-	<script type="text/javascript">
-		var name = prompt('请输入一个名字');
-		var arr = new Array('中国','广东','上海','武汉');
-		for(var i = 0;i<arr.length;i++){
-			document.write(arr[i]+'<br/>');
+<script type="text/javascript">
+	var name = prompt('请输入一个名字');
+	var arr = new Array('中国','广东','上海','武汉','北京');
+	for(var i = 0;i<arr.length;i++){
+		if(name===arr[i]){
+			alert('存在');
 		}
-	</script>
+	}
+</script>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>作业5</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var arr = new Array('4','2','8','1','5','9','3','11','6','10','7');
+	document.write('数组：'+arr+'<br/>');
+	var newOrder = arr.sort();
+	document.write('默认排序后：'+arr+'<br/>');
+	var arr = new Array(11);
+	arr[0]='4';
+	arr[1]='2';
+	arr[2]='8';
+	arr[3]='1';
+	arr[4]='5';
+	arr[5]='9';
+	arr[6]='3';
+	arr[7]='7';
+	arr[8]='6';
+	arr[9]='10';
+	arr[10]='11';
+	document.write('加入排序函数后：'+arr.sort(function(a,b){
+		return a-b;
+	}))
+</script>
+</html>
