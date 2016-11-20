@@ -10,10 +10,17 @@
 <script type="text/javascript">
 	var name = prompt('请输入一个名字');
 	var arr = new Array('中国','广东','上海','武汉','北京');
+	var str = '';
 	for(var i = 0;i<arr.length;i++){
 		if(name===arr[i]){
-			alert('存在');
+			str+=arr[i];
+			break;
+		}else{
+
 		}
+	}
+	if(str){
+		alert(str);
 	}
 </script>
 </html>
