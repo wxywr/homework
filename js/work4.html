@@ -2,13 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>作业4</title>
+	<title>输入名字在数组查找是否存在</title>
 </head>
 <body>
 
 </body>
 <script type="text/javascript">
-	var name = prompt('请输入一个名字');
+	/*var name = prompt('请输入一个名字');
 	var arr = new Array('中国','广东','上海','武汉','北京');
 	var str = '';
 	for(var i = 0;i<arr.length;i++){
@@ -21,6 +21,21 @@
 	}
 	if(str){
 		alert(str);
+	}*/
+
+
+	var arr = ['张三','李四','王五'];
+	//console.log(arr);
+	var txt = prompt();
+	for(var i in arr){
+		if(txt==arr[i]){
+			alert('存在');
+			break;
+		}
+		if(i==arr.length-1){
+			alert('不存在');
+			break;
+		}
 	}
 </script>
 </html>
