@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<button onclick="say();">弹框</button>
+</body>
+<script type="text/javascript">
+	/*function test(name,height,age){
+		alert(name+','+age);
+	}
+	test('张三',null,18);
+
+	function func1(){
+		console.log('func1');
+	}
+	func1();
+
+	var func2=function(){
+		console.log('func2');
+	}
+	func2();
+
+	(function(){
+		console.log('func3');
+	})();*/
+
+	var num = '123aa';
+	console.log(parseInt(num));
+	var num = '123.22aa';
+	console.log(parseFloat(num));
+	var num = '1';
+	console.log(isNaN(num));
+
+	(function(name,age){
+		console.log(name+','+age);
+	})('张三',18);
+
+
+	function say(){
+		alert('welcome');
+	};
+
+	//通过return关键字返回函数的值
+	function name(){
+		return'用户名正确';
+	}
+	var res = name();
+	console.log(res);
+
+
+	function sayhello(name){
+		return(name+"说了句hello");
+	}
+	var str = sayhello('Tom');
+	console.log(str);
+</script>
+</html>

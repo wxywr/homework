@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>打开关闭窗口</title>
+</head>
+<body>
+	<button onclick="openNewWin()">打开</button>
+	<button onclick="closeWin()">关闭</button>
+</body>
+<script type="text/javascript">
+	function openNewWin(){
+		obj=window.open('demo_9.html','测试','height=400,width=600,toolbar=0,scrollbars=0,location=0,status=0,menubar=0,resizable=0')
+	}
+
+	var obj;
+	function closeWin(){
+		obj.close();
+	}
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="test"></div>
+	<button onclick="back()">后退</button>
+</body>
+<script type="text/javascript">
+	var test = '这是全部变量';
+
+	(function(){
+		console.log(test);
+		//局部变量作用域只在函数内部
+		var test2 = '这是局部变量';
+	})();
+
+	//(function(){
+	//	console.log(test2);
+	//})()
+
+	window.onload = function(){
+		console.log(document.getElementById('test'));
+	};
+
+
+	//return返回值
+	function sum(iNum1, iNum2){
+		return iNum1+iNum2;
+	}
+	var a = sum(2,3);
+	console.log(a);
+
+	function diff(iNum1, iNum2) {  
+		if (iNum1 > iNum2) {
+			return iNum1 - iNum2;
+	 	} else {
+			return iNum2 - iNum1;
+		}
+	}
+	diff(33,21);
+	diff(21,33);
+</script>
+</html>

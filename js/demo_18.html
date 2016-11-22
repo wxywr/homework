@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定时器开始和暂停</title>
+</head>
+<body>
+	<button onclick="start()">开始</button>
+	<button onclick="stop()">暂停</button>
+</body>
+<script type="text/javascript">
+	var interobj;//初始化对象
+	var num = 0;//初始化对象
+	function start(){
+		//这是开始函数
+		clearInterval(interobj);
+		//清除定时器，防止定时器重复
+		interobj=setInterval(add,1000);
+		//设置定时器
+	}
+	function stop(){
+		//这是暂停函数
+		clearInterval(interobj);
+		//清除定时器
+	}
+	function add(){
+		//这是数字自增函数
+		console.log(num++);
+		//控制台输出数字之后++
+	}
+</script>
+</html>
