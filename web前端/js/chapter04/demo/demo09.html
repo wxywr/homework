@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			list-style: none;
+		}
+		ul{
+			overflow: hidden;
+		}
+		li{
+			float: left;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			background-color: #ccc;
+			text-align: center;
+		}
+		.active{
+			background-color: red;
+			color: #fff;
+		}
+		div{
+			width: 400px;
+			height: 300px;
+			background-color: #999;
+			color: #fff;
+			text-align: center;
+			line-height: 300px;
+		}
+		.tag-2{
+			background-color: #333;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="active aaa">选项卡一</li>
+		<li>选项卡二</li>
+	</ul>
+	<div class="tag-1">
+		这是选项卡一的内容
+	</div>
+	<div class="tag-2">
+		这是选项卡二的内容
+	</div>
+</body>
+<script type="text/javascript">
+	var li = document.getElementsByTagName('li');
+	var div = document.getElementsByTagName('div');
+	for(var i = 0;i<li.length;i++){
+		li[i].index = i;
+		li[i].onclick = function(){
+			for(var j = 0;j<div.length;j++){
+				div[j].style.display = 'none';
+				li[j].className = '';
+			}
+			this.className = 'active';
+			div[this.index].style.display = 'block';
+		}
+	}
+
+	
+</script>
+</html>

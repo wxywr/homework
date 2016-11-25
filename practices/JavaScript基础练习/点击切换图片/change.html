@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		body{
+			margin:100px;
+		}
+		ul{
+			overflow: hidden;
+		}
+		li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			border: 1px solid;
+			margin-left: 10px;
+			text-align: center;
+		}
+		.active{
+			background-color: red;
+		}
+		li:hover{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<img src="img/1.jpg" height="280" width="370">
+	</div>
+	<ul>
+		<li class="active">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var img = document.getElementsByTagName('img')[0];//获取img元素
+	var li = document.getElementsByTagName('li');//获取li元素
+	for(i=0;i<li.length;i++){
+		li[i].index = i+1;//按钮下标序号对应图片序号
+		li[i].onclick=function(){//给按钮绑定点击事件
+			//显示当前active页面效果
+			for(var j=0;j<li.length;j++){
+				li[j].className='';
+			}
+			this.className='active';
+			//设置图片属性值
+			img.setAttribute('src','img/'+this.index+'.jpg');
+		}
+	}
+</script>
+</html>

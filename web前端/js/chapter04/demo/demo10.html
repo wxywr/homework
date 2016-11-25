@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin:10px 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="test1" onclick="test(this)">1</div>
+	<div id="test2">2</div>
+	<div id="test2">3</div>
+</body>
+<script type="text/javascript">
+	var div = document.getElementsByTagName('div');
+	console.log(div);
+
+	// div[0].onclick = function(){
+	// 	console.log(1);
+	// }
+	// div[1].onclick = function(){
+	// 	console.log(2);
+	// }
+	// div[2].onclick = function(){
+	// 	console.log(3);
+	// }
+
+	// for(var i = 0;i<div.length;i++){
+	// 	div[i].onclick = function(){
+	// 		console.log(this);
+	// 	}
+	// }
+
+	function test(obj){
+		console.log(obj);
+	}
+</script>
+</html>

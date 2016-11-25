@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input type="checkbox" name="like">测试一
+	<input type="checkbox" name="like">测试二
+	<input type="checkbox" name="like">测试三
+	<input type="checkbox" name="like">测试四
+	<input type="checkbox" name="all">全选
+	<input type="checkbox" name="fx">反选
+</body>
+<script type="text/javascript">
+	var checkbox = document.getElementsByName('like');
+	var all = document.getElementsByName('all')[0];
+	var fx = document.getElementsByName('fx')[0];
+	all.onclick = function(){
+		console.log(this.checked);
+		if(this.checked == true){
+			checkStatic(true);
+		}else{
+			checkStatic(false);
+		}
+	}
+	function checkStatic(sta){
+		for(var i = 0;i<checkbox.length;i++){
+			checkbox[i].checked = sta;
+		}
+	}
+	fx.onclick = function(){
+		for(var i = 0;i<checkbox.length;i++){
+			if(checkbox[i].checked == true){
+				checkbox[i].checked = false;
+				all.checked = false;
+			}else{
+				checkbox[i].checked = true;
+			}
+		}
+		for(var j = 0;j<checkbox.length;j++){
+			if(checkbox[j].checked == false){
+				break;
+			}
+			if(j==checkbox.length-1){
+				all.checked = true;
+			}
+
+		}
+	}
+
+	
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>树形菜单</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			}
+		body{
+			font-size: 14px;
+			line-height: 20px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.open{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<b><img src="images/fold.gif">树形菜单：</b> 
+	<ul><a href="javascript:onclick=show()"><img src="images/fclose.gif">文学艺术</a></ul>
+	<ul id="art" class="open">
+		<li><img src="images/doc.gif">先锋写作</li>
+		<li><img src="images/doc.gif">小说散文</li>
+		<li><img src="images/doc.gif">诗风词韵</li>
+	</ul>
+	<ul><a href="javascript:onclick=shows()"><img src="images/fclose.gif">贴图专区</a></ul>
+	<ul id="pic" class="open">
+		<li><img src="images/doc.gif">真我风采</li>
+		<li><img src="images/doc.gif">视频贴图</li>
+		<li><img src="images/doc.gif">行行摄摄</li>
+		<li><img src="images/doc.gif">Flash贴图</li>
+	</ul>
+	<ul><img src="images/fclose.gif">房产论坛</ul>
+	<ul><img src="images/fclose.gif">娱乐八卦</ul>
+</body>
+<script type="text/javascript">
+	function show(){
+		if(document.getElementById("art").style.display=='block'){
+			document.getElementById("art").style.display='none';
+		}
+		else{
+			document.getElementById("art").style.display='block';
+		}
+	}
+	function shows(){
+		if(document.getElementById("pic").style.display=='block'){
+			document.getElementById("pic").style.display='none';
+		}
+		else{
+			document.getElementById("pic").style.display='block';
+		}
+	}
+</script>
+</html>

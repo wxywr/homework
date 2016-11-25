@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		} 
+		.banner{
+			margin: 80px 200px;
+		}
+		img{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<img src="img/ad-01.jpg" alt="图片一">
+		<img src="img/ad-02.jpg" alt="图片二">
+		<img src="img/ad-03.jpg" alt="图片三">
+		<img src="img/ad-04.jpg" alt="图片四">
+	</div>
+</body>
+<script type="text/javascript">
+	var img = document.getElementsByTagName('img');
+	var i = 0;
+	img[i].style.display='block';
+	img[i].onclick = function(){
+		setInterval(bannerFn,1000);
+	} 
+	function bannerFn(){
+		for(var j = 0;j<img.length;j++){
+			img[j].style.display='none';
+		}
+		i++;
+		if(i==img.length){
+			i=0;
+		}
+		img[i].style.display='block';
+	}
+</script>
+</html>

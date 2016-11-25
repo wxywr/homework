@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		} 
+		ul{
+			overflow: hidden;
+		}
+		li{
+			float: left;
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background-color: #ccc;
+		}
+		.active{
+			background-color: red;
+			color: #fff;
+		}
+		div{
+			width: 400px;
+			height: 300px;
+			background-color: #f3f3f3;
+		}
+		.tag-2{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="active">笔记本</li>
+		<li>手机充值</li>
+	</ul>
+	<div class="tag-1">
+		<p>品牌</p>
+		<p>尺寸</p>
+		<p>价格</p>
+	</div>
+	<div class="tag-2">
+		<p>卡类型</p>
+		<p>面值</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var li = document.getElementsByTagName('li');
+	var div = document.getElementsByTagName('div');
+	for(var i = 0;i<li.length;i++){
+		li[i].index = i;
+		li[i].onclick = function(){
+			for (var j = 0; j < div.length; j++){
+				div[j].style.display = 'none';
+				li[j].className='';
+			}
+			this.className = 'active';
+			div[this.index].style.display = 'block';
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div>1</div>
+	<div id="test2"><p>2</p></div>
+	<div>3</div>
+</body>
+<script type="text/javascript">
+	var node = document.getElementById('test2');
+	console.log(node.nextSibling);
+	console.log(node.nextElementSibling);
+	console.log(node.previousSibling);
+	console.log(node.previousElementSibling);
+
+	console.log(node.parentNode);
+	console.log(node.childNodes);
+	console.log(node.children);
+	console.log(node.firstChild);
+	console.log(node.lastChild);
+
+	console.log(node.nodeName);
+	console.log(node.nodeValue);
+	console.log(node.nodeType);
+</script>
+</html>

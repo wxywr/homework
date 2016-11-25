@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<button onclick="jisuan()">计算</button>
+	<!-- 给按钮绑定事件 -->
+</body>
+<script type="text/javascript">
+	// 定义函数
+	function jisuan(){
+		// 让用户通过prompt输入一个数字，然后将prompt的返回值转数字
+		var num1 = parseFloat(prompt('请输入第一个数字'));
+		console.log(isNaN(num1));
+		//验证用户输入的是不是数字
+		if(isNaN(num1)){
+			alert('请输入正确的数字');
+			return;
+		}
+		// 让用户通过prompt输入一个运算符
+		var x = prompt('请输入运算符');
+		//判断用户输入的运算符是否正确
+		var arr = ['+','-','*','/'];
+		for(var i in arr){
+			if(x == arr[i]){
+				break;
+			}
+			if(i==arr.length-1){
+				alert('请输入正确的运算符');
+				return;
+			}
+		}
+		// 让用户通过prompt输入一个数字，然后将prompt的返回值转数字
+		var num2 = parseFloat(prompt('请输入第二个数字'));
+		//验证用户输入的是不是数字
+		if(isNaN(num2)){
+			alert('请输入正确的数字');
+			return;
+		}
+		//新建一个变量来存储最终结果,并给这个变量赋初始值为0
+		var z = 0;
+		//通过switch来判断用户输入的运算符是哪一个
+		switch(x){
+			case '+':
+				z = num1 + num2;
+				break;
+			case '-':
+				z = num1 - num2;
+				break;
+			case '*':
+				z = num1 * num2;
+				break;
+			case '/':
+				z = num1 / num2;
+				break;
+		}
+		//最后弹出运算结果
+		alert(z);
+	}
+</script>
+</html>

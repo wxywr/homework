@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var setIner = setInterval(function(){
+		console.log('123');
+	},1000);
+	setTimeout(function(){
+		clearInterval(setIner);
+		console.log('清除计时器成功');
+	},5000);
+</script>
+</html>

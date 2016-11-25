@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>第一行第一格</td>
+			<td>第一行第二格</td>
+		</tr>
+		<tr>
+			<td>第二行第一格</td>
+			<td>第二行第二格</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript">
+	var table = document.getElementsByTagName('table')[0];
+	var newTr = document.createElement('tr');
+	table.children[0].onclick = function(){
+		console.log(123);
+	}
+	console.log(table.children);
+</script>
+</html>

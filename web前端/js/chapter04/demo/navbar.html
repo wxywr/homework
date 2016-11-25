@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		ul,ol{
+			list-style: none;
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		.nav_list{
+			float: left;
+			width: 100px;
+			background-color: green;
+			color: #fff;
+			margin-right:2px;
+			text-align: center;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		ol li{
+			border-top:1px solid #fff;
+			border-bottom:1px solid #fff;
+		}
+		ol{
+			display: none;
+		}
+		p{
+			padding:0;
+			margin:0;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="nav_list">
+			<p>手机数码</p>
+			<ol>
+				<li>手机数码1</li>
+				<li>手机数码2</li>
+				<li>手机数码3</li>
+			</ol>
+		</li>
+		<li class="nav_list">
+			<p>淘宝集市</p>
+			<ol>
+				<li>淘宝集市1</li>
+				<li>淘宝集市2</li>
+				<li>淘宝集市3</li>
+			</ol>
+		</li>
+		<li class="nav_list">
+			<p>品牌商城</p>
+			<ol>
+				<li>品牌商城1</li>
+				<li>品牌商城2</li>
+				<li>品牌商城3</li>
+			</ol>
+		</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	(function(){
+		var navList = document.getElementsByClassName('nav_list');
+		var ol = document.getElementsByTagName('ol');
+		for(var i =0;i<navList.length;i++){
+			navList[i].onmouseover = function(){
+				this.getElementsByTagName('ol')[0].style.display = 'block';
+			}
+			navList[i].onmouseout = function(){
+				this.getElementsByTagName('ol')[0].style.display = 'none';
+			}
+			navList[i].getElementsByTagName('p')[0].onmouseover = function(){
+				this.style.backgroundColor = 'blue';
+			}
+			navList[i].getElementsByTagName('p')[0].onmouseout = function(){
+				this.style.backgroundColor = '';
+			}
+
+			var li = ol[i].getElementsByTagName('li');
+			for(var k = 0;k<li.length;k++){
+				li[k].onmouseover = function(){
+					this.style.backgroundColor = 'red';
+				}
+				li[k].onmouseout = function(){
+					this.style.backgroundColor = '';
+				}
+			}
+		}
+	})();
+</script>
+</html>
