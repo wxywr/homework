@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>this用法举例</title>
+	<style type="text/css">
+		#test,.one{
+			width: 200px;
+			height: 200px;
+			background-color: #ccc;
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div id="test"></div> -->
+	<div id="test1" class="one"></div>
+	<div id="test2" class="one"></div>
+	<div id="test3" class="one"></div>
+</body>
+<script type="text/javascript">
+	/*var div = document.getElementById('test');
+	console.log(div);
+	div.onclick= function(){
+		console.log(this);//绑定点击事件成功
+	}*/
+
+	var div = document.getElementsByTagName('div');
+	console.log(div);
+	div[0].onclick=function(){
+		console.log(1);
+	}
+	div[1].onclick=function(){
+		console.log(1);
+	}
+	div[2].onclick=function(){
+		console.log(2);
+	}
+	for (var i = 0;i<div.length;i++) {
+		div[i].onclick=function(){
+			console.log(this);
+		}
+	}
+</script>
+</html>

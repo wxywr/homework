@@ -4,57 +4,78 @@
 	<meta charset="utf-8">
 	<title>树形菜单</title>
 	<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
+		ul{
+			width: 150px;
+		}
+		li{
 			list-style: none;
-			}
-		body{
-			font-size: 14px;
-			line-height: 20px;
+			overflow: hidden;
+			margin: 10px 0;
 		}
-		a{
-			text-decoration: none;
-		}
-		.open{
+		ol{
+			padding: 0;
+			clear: both;
 			display: none;
+		}
+		p{
+			margin: 0;
+			background: url(images/fclose.gif) no-repeat;
+			padding-left: 15px;
+			cursor: pointer;
+			float: left;
 		}
 	</style>
 </head>
 <body>
-	<b><img src="images/fold.gif">树形菜单：</b> 
-	<ul><a href="javascript:onclick=show()"><img src="images/fclose.gif">文学艺术</a></ul>
-	<ul id="art" class="open">
-		<li><img src="images/doc.gif">先锋写作</li>
-		<li><img src="images/doc.gif">小说散文</li>
-		<li><img src="images/doc.gif">诗风词韵</li>
+	<h2><img src="images/fold.gif" alt="">树形菜单：</h2>
+	<ul>
+		<li>
+			<p onclick="show('art')">文学艺术</p>
+			<ol id="art">
+				<li><img src="images/doc.gif" alt="">先锋写作</li>
+				<li><img src="images/doc.gif" alt="">小说散文</li>
+				<li><img src="images/doc.gif" alt="">诗风词韵</li>
+			</ol>
+		</li>
+		<li>
+			<p onclick="show('photo')">贴图专区</p>
+			<ol id="photo">
+				<li><img src="images/doc.gif" alt="">真我风采</li>
+				<li><img src="images/doc.gif" alt="">视频贴图</li>
+				<li><img src="images/doc.gif" alt="">行行摄摄</li>
+				<li><img src="images/doc.gif" alt="">Flash贴图</li>
+			</ol>
+		</li>
+		<li>
+			<p onclick="show('house')">房产论坛</p>
+			<ol id="house">
+				<li><img src="images/doc.gif" alt="">我要买房</li>
+				<li><img src="images/doc.gif" alt="">楼市话题</li>
+				<li><img src="images/doc.gif" alt="">我要卖房</li>
+				<li><img src="images/doc.gif" alt="">租房心语</li>
+				<li><img src="images/doc.gif" alt="">二手市场</li>
+			</ol>
+		</li>
+		<li>
+			<p onclick="show('game')">娱乐八卦</p>
+			<ol id="game">
+				<li><img src="images/doc.gif" alt="">红楼一梦</li>
+				<li><img src="images/doc.gif" alt="">笑话论坛</li>
+				<li><img src="images/doc.gif" alt="">休闲生活</li>
+				<li><img src="images/doc.gif" alt="">大话春秋</li>
+			</ol>
+		</li>
 	</ul>
-	<ul><a href="javascript:onclick=shows()"><img src="images/fclose.gif">贴图专区</a></ul>
-	<ul id="pic" class="open">
-		<li><img src="images/doc.gif">真我风采</li>
-		<li><img src="images/doc.gif">视频贴图</li>
-		<li><img src="images/doc.gif">行行摄摄</li>
-		<li><img src="images/doc.gif">Flash贴图</li>
-	</ul>
-	<ul><img src="images/fclose.gif">房产论坛</ul>
-	<ul><img src="images/fclose.gif">娱乐八卦</ul>
 </body>
 <script type="text/javascript">
-	function show(){
-		if(document.getElementById("art").style.display=='block'){
-			document.getElementById("art").style.display='none';
-		}
-		else{
-			document.getElementById("art").style.display='block';
-		}
+function show(id){
+	//console.log(id);
+	var obj=document.getElementById(id);
+	if(obj.style.display=='block'){
+		obj.style.display='none';//触动的p如果处于显示状态即隐藏
+	}else{
+		obj.style.display='block';//触动的p如果处于隐藏状态即显示
 	}
-	function shows(){
-		if(document.getElementById("pic").style.display=='block'){
-			document.getElementById("pic").style.display='none';
-		}
-		else{
-			document.getElementById("pic").style.display='block';
-		}
-	}
+}
 </script>
 </html>

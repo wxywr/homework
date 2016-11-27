@@ -43,12 +43,12 @@
 	</ul>
 </body>
 <script type="text/javascript">
-	var img = document.getElementsByTagName('img')[0];//获取img元素
-	var li = document.getElementsByTagName('li');//获取li元素
+	var img = document.getElementsByTagName('img')[0]; //获取img元素
+	var li = document.getElementsByTagName('li'); //获取li元素
 	for(i=0;i<li.length;i++){
-		li[i].index = i+1;//按钮下标序号对应图片序号
-		li[i].onclick=function(){//给按钮绑定点击事件
-			//显示当前active页面效果
+		li[i].index = i+1; //按钮下标序号对应图片序号
+		li[i].onclick=function(){ //给按钮绑定鼠标单击事件
+			//显示当前active页面效果：
 			for(var j=0;j<li.length;j++){
 				li[j].className='';
 			}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自动轮播图</title>
+	<style type="text/css">
+		ul{
+			list-style: none;
+		}
+		li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			border: 1px solid;
+			margin-left: 10px;
+		}
+		.active{
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="img/ad-01.jpg" alt="">
+	</div>
+	<ul>
+		<li class="active">1</li>
+		<li>2</li>
+	    <li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+	<script type="text/javascript">
+		/*var img = document.getElementsByTagName('img');
+		var i = 0;
+		img[i].style.display="block";
+		img[i].onclick=function(){
+			setInterval(bannerFn,1000);
+		}
+		function bannerFn(){
+			for(var j=0;j<img.length;j++){
+				img[j].style.display="";
+			}
+			i++;
+			if(i==img.length){
+				i=0;
+			}
+			img[i].style.display="block";
+		}*/
+
+		var img = document.getElementsByTagName('img')[0]; //获取img元素
+	var li = document.getElementsByTagName('li'); //获取li元素
+	for(i=0;i<li.length;i++){
+		li[i].index = i+1; //按钮下标序号对应图片序号
+		li[i].onclick=function(){ //给按钮绑定鼠标单击事件
+			//显示当前active页面效果：
+			for(var j=0;j<li.length;j++){
+				li[j].className='';
+			}
+			this.className='active';
+			//设置图片属性值
+			img.setAttribute('src','img/ad-0'+this.index+'.jpg');
+		}
+	}
+	</script>
+</html>

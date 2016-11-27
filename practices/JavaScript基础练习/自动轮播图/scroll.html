@@ -25,21 +25,21 @@
 	</div>
 </body>
 <script type="text/javascript">
-	var img = document.getElementsByTagName('img');
-	var i = 0;
-	img[i].style.display='block';
-	img[i].onclick = function(){
-		setInterval(bannerFn,1000);
+	var img = document.getElementsByTagName('img');//获取所有img元素
+	var i = 0;//初始化
+	img[i].style.display='block';//显示第一张图片
+	img[i].onclick = function(){ //给第一张图片绑定点击事件
+		setInterval(bannerFn,1000); //设置计时器,每隔1s显示下张图
 	} 
 	function bannerFn(){
 		for(var j = 0;j<img.length;j++){
-			img[j].style.display='none';
+			img[j].style.display='none';//图片隐藏
 		}
-		i++;
+		i++;//自增
 		if(i==img.length){
 			i=0;
 		}
-		img[i].style.display='block';
+		img[i].style.display='block';//图片显示
 	}
 </script>
 </html>
