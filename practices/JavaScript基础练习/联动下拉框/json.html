@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+<!-- json数据格式
+key:value -->
+	<select id="test1">
+		<option>请选择省</option>
+	</select>
+	<select id="test2">
+		<option>请选择市</option>
+	</select>
+	<select id="test3">
+		<option>请选择区</option>
+	</select>
+</body>
+<script type="text/javascript">
+	var select = document.getElementsByTagName('select');
+	var j = {
+		'湖北省':{
+			'武汉市':{
+				a:'江夏区',
+				b:'汉阳区'
+			},
+			'黄冈市':{
+				a:'罗田县',
+				b:'英山县'
+			},
+		},
+		'广东省':{
+			'广州市':{
+				a:'g1区',
+				b:'g2区'
+			},
+			'深圳市':{
+				a:'s1区',
+				b:'s2区'
+			},
+		},
+	};
+	for(i in j){
+		select[0].add(new Option(i,i));
+	}
+	select[0].onchange = function(){
+		select[1].length=1;
+		var a = this.value;
+		for(q in j[a]){
+			select[1].add(new Option(q,q));
+		}
+		select[1].onchange = function(){
+		select[2].length=1;
+		var b = this.value;
+		for(r in j[a][q]){
+			select[2].add(new Option(j[a][q][r]));
+		}
+		}
+	}
+</script>                                                                   
+</html>

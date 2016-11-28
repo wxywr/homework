@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<select id="test1">
+		<option>请选择省</option>
+	</select>
+	<select id="test2">
+		<option>请选择市</option>
+	</select>
+	<select id="test3">
+		<option>请选择区</option>
+	</select>
+</body>
+<script type="text/javascript">
+	var arr1 = ['湖北省','广东省'];
+	var arr2 = [['武汉市','黄冈市'],['广州市','深圳市']];
+	var arr3 = [[['江夏区','汉阳区'],['罗田县','英山县']],[['天河区','花都区'],['福田区','南山区']]];
+	console.log(arr3[0][1]);
+	var select = document.getElementsByTagName('select');
+	for(var i=0;i<arr1.length;i++){
+			select[0].add(new Option(arr1[i]));
+	}
+	select[0].onchange = function(){
+		var Index = this.selectedIndex;
+		select[1].options.length = 1;
+		if(Index==0){
+			return;
+		}else{
+			Index--;
+		}
+		for(var i=0;i<arr2.length;i++){
+		select[1].add(new Option(arr2[Index][i]));
+
+		select[1].onchange = function(){
+		var Index1 = this.selectedIndex;
+		select[2].options.length = 1;
+		if(Index1==0){
+			return;
+		}else{
+			Index1--;
+		}
+		for(var j=0;j<arr3.length;j++){
+			select[2].add(new Option(arr3[Index][Index1][j]));
+		}	
+	}	
+		}
+	}
+</script>
+</html>
