@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		input{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		用户名:<input type="text" name="username"><br/>
+		密码:<input type="password" name="password"><br/>
+		E-mail:<input type="text" name="email"><br/>
+		<input type="submit"><input type="reset">
+	</form>
+</body>
+<script type="text/javascript">
+	var form = document.getElementsByTagName('form')[0];
+	console.log(form.username);
+	form.onsubmit = function(){
+		//验证用户名输入框
+		var username = form.username.value;
+		if(username==''){
+			console.log('名字不能为空');
+			return false;
+		}
+		if (username.length>16||username.length<4){
+			console.log('用户名最长只能占16位字符，最短4个字符');
+			return false;
+		}
+		//验证密码输入框
+		var password = form.password.value;
+		if(password==''){
+			console.log('密码不能为空');
+			return false;
+		}
+		if(password.length<6){
+			console.log('密码不能小于6位');
+			return false;
+		}
+		//电子邮件输入验证
+		var email = form.email.value;
+		if(email.indexOf('@')<0){
+			console.log('您输入的电子邮件格式不正确，必须有@');
+			return false;
+		}
+		if(email.indexOf('.')<0){
+			console.log('您输入的电子邮件格式不正确，必须含.');
+			return false;
+		}
+		return true;
+	}
+</script>
+</html>

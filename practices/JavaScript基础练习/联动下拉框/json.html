@@ -26,21 +26,27 @@ key:value -->
 		'湖北省':{
 			'武汉市':{
 				a:'江夏区',
-				b:'汉阳区'
+				b:'汉阳区',
 			},
 			'黄冈市':{
 				a:'罗田县',
-				b:'英山县'
+				b:'英山县',
+				C:'浠水县'
 			},
 		},
 		'广东省':{
 			'广州市':{
 				a:'g1区',
-				b:'g2区'
+				b:'g2区',
+				c:'g3区',
+				d:'g4区'
 			},
 			'深圳市':{
 				a:'s1区',
-				b:'s2区'
+				b:'s2区',
+				c:'s3区',
+				d:'s4区',
+				e:'s5区'
 			},
 		},
 	};
@@ -56,8 +62,8 @@ key:value -->
 		select[1].onchange = function(){
 		select[2].length=1;
 		var b = this.value;
-		for(r in j[a][q]){
-			select[2].add(new Option(j[a][q][r]));
+		for(r in j[a][b]){
+			select[2].add(new Option(j[a][b][r]));
 		}
 		}
 	}
