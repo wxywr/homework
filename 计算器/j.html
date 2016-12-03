@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			overflow: hidden;
+			width: 350px;
+			margin: 50px auto;
+			padding-bottom: 10px;
+			background: #F2F2F2;
+			box-shadow: 5px 5px 5px #ccc;
+		}
+		.title{
+			width: 290px;
+			margin: 15px auto;
+			text-align: center;
+		}
+		.show{
+			width: 290px;
+			height: 30px;
+			line-height: 30px;
+			margin: 20px auto;
+			padding-right: 10px;
+			text-align: right;
+			background: #fff;
+
+		}
+		.btns{
+			overflow: hidden;
+			width: 300px;
+			margin: 10px auto;
+			border: 3px solid #fff;
+		}
+		li{
+			list-style: none;
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			text-align: center;
+			line-height: 50px;
+			background: #EAEAEA;
+			cursor: pointer;
+		}
+		.btns .number{
+			float: left;
+			width: 180px;
+		}
+		.btns .fuhao{
+			float: left;
+			width: 120px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="title">简单计算器</div>
+		<div class="show">0</div>
+		<div class="btns">
+			<ul class="number">
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>0</li>
+				<li>00</li>
+				<li>.</li>
+			</ul>
+			<ul class="fuhao">
+				<li class="back">←</li>
+				<li class="clear">C</li>
+				<li>*</li>
+				<li>/</li>
+				<li>+</li>
+				<li>-</li>
+				<li>%</li>
+				<li class="deng">=</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	//点击显示数字
+	var num = document.getElementsByClassName('number')[0].getElementsByTagName('li');
+	var show = document.getElementsByClassName('show')[0];
+	var value = "";
+	var result = "";
+	for(var i=0;i<num.length;i++){
+		num[i].onclick = function(){
+			if(show.innerHTML[0] == '0' || show.innerHTML.search(/^\d+$/) == -1){
+				show.innerHTML = this.innerHTML;
+			}else{
+				show.innerHTML += this.innerHTML;
+			}
+			value += this.innerHTML;
+			console.log(value);
+		}
+	}
+
+	//删除
+	var del = document.getElementsByClassName('back')[0];
+	del.onclick = function(){
+		show.innerHTML = show.innerHTML.substring(0,show.innerHTML.length-1);
+	}
+
+	//重置
+	var clear = document.getElementsByClassName('clear')[0];
+	clear.onclick = function(){
+		show.innerHTML = '0';
+		value='';
+		result='';
+	}
+
+	//点击显示运算符
+	var fu = document.getElementsByClassName('fuhao')[0].getElementsByTagName('li');
+	for(var i=2;i<fu.length-1;i++){
+		fu[i].onclick = function(){
+			show.innerHTML = this.innerHTML;
+			if(result==''){
+				value = value+this.innerHTML;
+			}else{
+				value = result+this.innerHTML;
+			}
+			console.log(value);
+		}
+	}
+
+	//结果
+	var end = document.getElementsByClassName('deng')[0];
+	end.onclick = function(){
+		show.innerHTML = eval(value);
+		result = eval(value);
+		console.log(result);
+	}
+</script>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.all{
+			width: 245px;
+			height: 280px;
+			background-color: #f3f3f3;
+			margin: 80px auto;
+			padding-top: 40px;
+		}
+		.show{
+			width: 210px;
+			height: 30px;
+			background-color: #fff;
+			margin:0 auto;
+		}
+		.show input{
+			width: 210px;
+			height: 30px;
+			text-align: right;
+		}
+		.numb{
+			width: 210px;
+			height: 170px;
+			border: 2px solid #fff;
+			margin: 20px auto;
+		}
+		.numb span{
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			background-color: #e2e2e2;
+			display: inline-block;
+			margin: 6px;
+			text-align: center;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="show"><input type="text" value="0"></div>
+		<div class="numb">
+			<span class="sz">7</span><span class="sz">8</span><span class="sz">9</span><span class="ys">→</span><span class="ys">C</span><span class="sz">4</span><span class="sz">5</span><span class="sz">6</span><span class="ys">*</span><span class="ys">/</span><span class="sz">1</span><span class="sz">2</span><span class="sz">3</span><span class="ys">+</span><span class="ys">-</span><span class="sz">0</span><span class="sz">00</span><span class="sz">.</span><span class="ys">%</span><span class="ys">=</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var put = document.getElementsByTagName('input')[0];
+	var numb = document.getElementsByClassName('sz');
+	var suan = document.getElementsByClassName('ys');
+	var deng = document.getElementsByClassName('ys')[7];
+	var kong = document.getElementsByClassName('ys')[1];
+	var numb1;
+	var fuhao;
+	var qu1;
+	var qu2;
+	var fu;
+	for(i=0;i<numb.length;i++){
+		numb[i].index = i;
+		numb[i].onclick = function(){
+		numb1 = Number(numb[this.index].innerText);
+	    put.value+=numb1;
+		qu1 = put.value;
+		console.log(qu1);
+		}
+	}
+
+	for(i=2;i<suan.length-1;i++){
+		suan[i].index = i;
+		suan[i].onclick = function(){
+		qu2 = put.value;    
+		console.log(qu2);
+		fuhao = suan[this.index].innerText;
+		console.log(fuhao);
+		put.value=fuhao;
+		fu=put.value;
+		}
+	}
+
+	deng.onclick = function(){
+		if(fu=='+'){
+			put.value = parseFloat(qu2) + parseFloat(qu1);
+		}
+		if(fu=='-'){
+			put.value = parseFloat(qu2) - parseFloat(qu1);
+		}
+		if(fu=='*'){
+			put.value = parseFloat(qu2) * parseFloat(qu1);
+		}
+		if(fu=='/'){
+			put.value = parseFloat(qu2) / parseFloat(qu1);
+		}
+	}
+	kong.onclick = function(){
+		put.value="";
+	}
+</script>
+</html>

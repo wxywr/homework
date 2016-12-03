@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.all{
+	width: 1004px;
+	height: 530px;
+	margin: 80px auto;
+	border: 1px solid #ccc;
+
+}
+img{
+	width: 70px;
+	float: left;
+	margin: 15px 10px 0 0;
+}
+p{
+	margin-top: 40px;
+}
+.shop{
+	width: 400px;
+}
+.price{
+	width: 160px;
+}
+.numb{
+	width: 140px;
+}
+.alls{
+	width: 170px;
+}
+.dele{
+	width: 130px;
+}
+.shop-1,.price-1,.numb-1,.alls-1,.dele-1{
+	height: 100px;
+}
+.price,.numb,.alls,.dele{
+	text-align: center;
+}
+.one{
+	height: 30px;
+	line-height: 30px;
+	background-color: #e2f2ff;
+}
+.one .dele{
+	border-right: none;
+}
+.one li{
+	float: left;
+	border-right: 1px solid #93bfe4;
+	text-align: center;
+}
+.two,.three,.four,.five{
+	height: 100px;
+	border: 1px solid #93bfe4;
+}
+.two li,.three li,.four li,.five li{
+	height: 100px;
+	border-right: 1px solid #93bfe4;
+}
+.two,.three,.four{
+	border-bottom: none;
+}
+li{
+	float: left; 
+}
+.numb input{
+	text-align: center;
+	margin-top: 40px;
+}
+.numb span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #F0F0F0;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+.number{
+	width: 30px;
+}
+
+.footer{
+	width: 1002px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #eaeaea;
+	margin-top: 30px;
+}
+.he{
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.footer .add{
+	height: 40px;
+	width: 70px;
+	outline: none;
+	font-size: 16px;
+	float: left;
+	margin-top: 5px;
+}
+.sum{
+	display: inline-block;
+	width: 105px;
+	height: 50px;
+	border-left: 1px solid;
+	float: right;
+	text-align: center;
+	font-weight: bolder;
+}
