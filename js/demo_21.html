@@ -4,35 +4,25 @@
 	<meta charset="utf-8">
 	<title></title>
 	<style type="text/css">
-		
+		/*div{
+			display: none;
+		}*/
 	</style>
 </head>
 <body>
-<table border="1">
-	<tr>
-		<td>电子产品</td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>全选</td>
-		<td>商品图片</td>
-		<td>商品名称/出售者/联系方式</td>
-		<td>价格</td>
-	</tr>
-	<tr>
-		<td><hr style="border: 1px #ccc dashed"></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
+	<div id="test1" name="aa" class="bb">测试文字1</div>
+	<div id="test2" name="aa" class="bb">测试文字2</div>
 </body>
 <script type="text/javascript">
-	
+	var obj = document.getElementById('test1');
+	console.log(obj);
+	var obj2 = document.getElementsByTagName('div');
+	console.log(obj2);
+	var obj3 = document.getElementsByName('aa');
+	console.log(obj3);
+	var obj4 = document.getElementsByClassName('bb');
+	console.log(obj4);
+	//obj.style.display="block";
+	obj.style.visibility="hidden";
 </script>
 </html>
