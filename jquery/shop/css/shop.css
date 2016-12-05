@@ -1,0 +1,121 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.all{
+	width: 1101px;
+	margin: 20px auto;
+}
+
+/*顶部内容*/
+.top{
+	height: 30px;
+	line-height: 30px;
+	background-color: #E2F2FF;
+	border-width: 5px 0px 1px 1px;
+	border-style: solid;
+	border-color: #A7CBFF #CBDFFF #CBDFFF #CBDFFF;
+}
+.header ul,.content ul{
+	overflow: hidden;
+}
+.header ul li{
+	float: left;
+	font-weight: bold;
+	color: #686D74;
+	font-size: 18px;
+	text-align: center;
+	border-right: 1px solid #CBDFFF;
+}
+.sp{
+	width:410px; 
+	border-left: 1px solid #CBDFFF;
+}
+.dj{
+	width: 190px;
+}
+.sl{
+	width: 140px;
+}
+.xj{
+	width: 220px;
+}
+.cz{
+	width: 140px;
+}
+
+/*主体部分*/
+.content ul li{
+	float: left;
+	height: 120px;
+	line-height: 120px;
+	border-right: 1px solid #CBDFFF;
+	border-bottom: 1px solid #CBDFFF;
+}
+.sp-list .sp img{
+	padding:10px;
+	vertical-align: middle;
+	width: 120px;
+	height: 120px;
+}
+.dj,.xj,.cz{
+	text-align: center;
+}
+.redColor{
+	color: red;
+	font-weight: bold;
+}
+.sp-list .sl div span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #F0F0F0;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	cursor: pointer;
+}
+.sp-list .sl div input{
+	width: 50px;
+	height: 20px;
+	float: left;
+	text-align: center;
+}
+.sp-list .cz span{
+	cursor: pointer;
+}
+.sp-list .sl div{
+	width: 90px;
+	margin: 50PX auto;
+}
+/*底部内容*/
+.bottom{
+	border:1px solid #ccc;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.bottom .left{
+	float: left;
+	width: 90%;
+	height: 50px;
+	background-color: #ECECEC;
+	line-height: 50px;
+}
+.bottom .right{
+	float: right;
+	width: 10%;
+	height: 50px;
+	border-left: 1px solid #ccc;
+	background-color: #EEEEEE;
+	text-align: center;
+	line-height: 50px;
+}
+.addRow{
+	float: left;
+}
+.hj{
+	float: right;
+	margin-right: 20px;
+}
