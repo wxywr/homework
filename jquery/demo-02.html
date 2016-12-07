@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		img{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>你是人间的四月天</h1>
+	<p>笑响亮了四面风<br/>轻灵在春的光艳中交舞着变<br/>你是四月早上的云烟<br/>黄昏吹着风的软<br/>......<br/></p>
+	<a href="">点击查看全部</a>
+	<img src="images/book.gif">
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$('h1').click(function(){
+		$('h1')
+			.css('color','blue')
+			.css('font-size','40px')
+			.next().css('font-weight','bold')
+			.css('font-size','26px');
+	 	$('*').css('line-height','50px')
+	 		  .css('margin-left','30px');
+	})
+</script>
+</html>

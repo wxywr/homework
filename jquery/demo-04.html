@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<button>打开或关闭</button>
+	<div></div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	//点击button显示隐藏div
+	$('button').click(function(){
+		// if($('div').css('display')=='none'){
+		// 	$('div').show(1000,'linear',function(){
+		// 		console.log('div已经打开');
+		// 	});
+		// }else{
+		// 	$('div').hide(1000,'linear');
+		// }
+
+		//$('div').toggle(1000);
+
+
+		//淡入淡出切换
+		//$('div').fadeToggle(1000);
+
+
+		 // $('div').animate({height:'0px',width:'0px'});
+		 // $('div').animate({height:'0px'},5000);
+		  $('div').animate({opacity:'0.5'});
+	});
+</script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.all{
+			width: 150px;
+			margin: 50px auto;
+		}
+		p{
+			background-color: gray;
+			height: 35px;
+			line-height: 35px;
+			font-weight: bold;
+			padding-left: 25px;
+			border-left: 7px solid red;
+			cursor: pointer;
+		}
+		ul{
+			background-color: #ccc;
+			font-size: 12px;
+			display: none;
+		}
+		.money{
+			background: url(images/huan.gif) no-repeat;
+		}
+		.club{
+			background: url(images/you.gif) no-repeat;
+		}
+		.shop{
+			background: url(images/gouwu.gif) no-repeat;
+		}
+		.day{
+			background: url(images/meiri.gif) no-repeat;
+		}
+		.vip{
+			background: url(images/zhe.gif) no-repeat;
+		}
+		.money,.club,.shop,.day,.vip{
+			background-size: 20px;
+			background-position: 30px 5px;
+		}
+		ul li{
+			height: 35px;
+			line-height: 35px;
+			padding-left: 55px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="container">
+			<p>购物特权</p>
+			<ul>
+				<li class="money">全额兑换</li>
+				<li class="club">俱乐部包邮卡</li>
+				<li class="shop">购物领金币</li>
+				<li class="day">每日领金币</li>
+				<li class="vip">VIP阶梯价</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	//点击购物特权显示或隐藏ul
+	$('p').click(function(){
+		$('ul').toggle();
+		// if($('ul').css('display')=='none'){
+		// 	$('ul').show();
+		// }else{
+		// 	$('ul').hide();
+		// }
+	});
+
+	//鼠标经过和离开改变背景色
+	// $('li').mouseover(function(){
+	// 	$(this).css('background-color','red');
+	// });
+	// $('li').mouseout(function(){
+	// 	$(this).css('background-color','#ccc');
+	// });
+
+	$('li').hover(
+		function(){
+			$(this).css('background-color','red');
+		},
+		function(){
+			$(this).css('background-color','');
+		}
+	);
+</script>
+</html>
