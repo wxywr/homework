@@ -9,21 +9,21 @@
 			padding:0;
 			list-style: none;
 		}
-		.img{
-			width: 500px;
+		.all{
+			width: 400px;
 			height:  300px;
-			border:1px solid red;
 			position: relative;
-			margin : 100px auto;
+			margin : 80px auto;
 		}
-		.banner  {
+		.banner{
 			width:  100%;
-			height:  250px;
+			height:  260px;
 			position: absolute;
 			overflow: hidden;
 		}
 		.banner li{
-			height: 250px;
+			height: 260px;
+			line-height: 260px;
 			background-color:  red;
 			float: left;
 			width: 100%;
@@ -35,7 +35,8 @@
 		}
 		.banner li a {
 			color:#fff;
-			font-size: 90px;
+			font-size: 60px;
+			text-decoration: none;
 		}
 		.banner li.cur{
 			display: block;
@@ -65,7 +66,7 @@
 	</style>
 </head>
 <body>
-	<div class="img">
+	<div class="all">
 		<ul class="banner">
 			<li class="cur"><a href="">111</a></li>
 			<li><a href="">222</a></li>
@@ -79,7 +80,28 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript">
-		
+		var num = 0;
+		var timer;
+		var fn = function(){
+			$('.banner li').eq(num).fadeOut(2000);
+			num++;
+			if(num>2){
+				num=0;
+			}
+			$('.banner li').eq(num).fadeIn(2000);
+			$('.btn li').eq(num).addClass('current').siblings('li').removeClass('current');
+		}
+		timer = setInterval(fn,2000);
+		var fn1 = function(){
+			$('.banner li').eq(num).fadeOut(2000);
+			$(this).addClass('current').siblings('li').removeClass('current');
+			var i = $(this).index();
+			$('.banner li').eq(i).fadeIn(2000);
+			num = i;
+		}
+
+		$('.banner li').eq(1).css('background-color','blue');
+		$('.banner li').eq(2).css('background-color','yellow');
 	</script>
 </body>
 </html>

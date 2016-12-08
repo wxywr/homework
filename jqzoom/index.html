@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/jqzoom.css">
+</head>
+<body>
+	<div class="jqzoomWrap">
+        <a href="images/blue_one_big.jpg" class="jqzoom" rel='gal1' title="免烫高支棉条纹衬衣" >
+            <img src="images/blue_one_small.jpg" title="免烫高支棉条纹衬衣" alt="免烫高支棉条纹衬衣" id="bigImg" />
+        </a>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jqzoom.pack.1.0.1.js"></script>
+<script type="text/javascript">
+	$('.jqzoom').jqzoom({
+				zoomType: 'standard',
+				lens:true,
+				preloadImages: false,
+				alwaysOn:false,
+				zoomWidth: 340,
+				zoomHeight: 340,
+				xOffset:10,
+				yOffset:0,
+				position:'right'
+		    });
+
+</script>
+</html>
