@@ -2,12 +2,36 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>倒计时</title>
 </head>
 <body>
-	
+	<div id="box"></div>
+	<p id="time"></p>
 </body>
 <script type="text/javascript">
-	                   
+	    var time = 10;
+	    function  timeEnd(){
+	    	time=time-1; //time--;
+	    	if(time<0){
+	    		alert('计时结束');
+	    		window.clearInterval(boxtime);
+	    	}else{
+	    		document.getElementById('box').innerHTML=time+'秒';
+	    	}
+	    }
+	    var boxtime=window.setInterval('timeEnd()',1000);
+
+	    // (function(){
+	    // 	var time = 10;
+	    // 	var p = document.getElementById('time');
+	    // 	var set = setInterval(function(){
+	    // 		time--;
+	    // 		p.innerHTML = time+'秒';
+	    // 		if(time===0){
+	    // 			p.innerHTML='结束';
+	    // 			clearInterval(set);
+	    // 		}
+	    // 	},1000);
+	    // })()              
 </script>
 </html>
