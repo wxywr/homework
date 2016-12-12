@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>酷狗音乐网首页</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.all{
+			width: 700px;
+			margin: 50px auto;
+			font-family: '微软雅黑';
+		}
+		header{
+			width: 700px;
+		}
+		.logo{
+			height: 80px;
+			line-height: 80px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			overflow: hidden;
+		}
+		.logo h1{
+			font-size: 26px;
+			color: #31A8E0;
+			font-weight: normal;
+			float: left;
+			margin-left: 140px;
+		}
+		.logo-l{
+			width: 50%;
+			height: 100%;
+			background-image: url(images/logo.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+			float: left;
+		}
+		.logo-r{
+			float: right;
+			width: 50px;
+			height: 50px;
+			margin-top: 15px;
+			background-image: url(images/icon.png);
+			background-repeat: no-repeat;
+			background-position: -10px -410px;
+		}
+		.back{
+			height: 60px;
+			line-height: 60px;
+			background-color: #31A8E0;
+		}
+		.back p{
+			font-size: 24px;
+			color: #fff;
+			text-align: center;
+		}
+		.back-l{
+			width: 70px;
+			height: 60px;
+			margin-left: 15px;
+			background-image: url(images/icon.png);
+			background-repeat: no-repeat;
+			background-position: 5px -276px;
+			float: left;
+		}
+		ul{
+			width: 700px;
+		}
+		ul li{
+			height: 100px;
+			line-height: 100px;
+			display: block;
+			border: 1px solid #ccc;
+			border-width: 0px 0px 1px 1px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.new-l{
+			background-image: url(images/newtop100.png);
+		}
+		.hot-l{
+			background-image: url(images/resou500.png);
+		}
+		.gold-l{
+			background-image: url(images/globalpopularmusic.png);
+		}
+		.good-l{
+			background-image: url(images/kugoumusicrecommend.png);
+		}
+		.new-l,.hot-l,.gold-l,.good-l{
+			width: 60px;
+			height: 60px;
+			margin: 20px 20px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.new-r,.hot-r,.gold-r,.good-r{
+			width: 40px;
+			height: 40px;
+			margin: 30px 20px;
+			display: inline-block;
+			background-repeat: no-repeat;
+			float: right;
+		}
+		.new-r{
+			background-image: url(images/icon.png);
+			background-position: -5px -535px;
+		}
+		.hot-r{
+			background-image: url(images/icon.png);
+			background-position: -5px -535px;
+		}
+		.gold-r{
+			background-image: url(images/icon.png);
+			background-position: -5px -535px;
+		}
+		.good-r{
+			background-image: url(images/icon.png);
+			background-position: -5px -535px;
+		}
+		footer{
+			width: 700px;
+			height: 110px;
+			background-color: #31A8E0;
+			margin-top: 5px;
+			overflow: hidden;
+		}
+		.foot-l{
+			width: 54px;
+			height: 54px;
+			margin: 28px 10px 28px 70px;
+			float: left;
+			background-image: url(images/itunesmusiclist.png);
+			background-repeat: no-repeat;
+		}
+		.foot-r{
+			width: 520px;
+			border:1px solid red;
+			margin-right: 70px;
+			float: right;
+		}
+		.footer p{
+			width: 60px;
+			height: 60px;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<header>
+			<div class="logo">
+				<div class="logo-l"></div>
+				<h1>下载手机酷狗</h1>
+				<div class="logo-r"></div>
+			</div>
+			<div class="back">
+				<div class="back-l"></div>
+				<p>酷狗音乐</p>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><div class="new-l"></div>新歌TOP 100<div class="new-r"></div></li>
+				<li><div class="hot-l"></div>热搜TOP 500<div class="hot-r"></div></li>
+				<li><div class="gold-l"></div>全球流行音乐金榜<div class="gold-r"></div></li>
+				<li><div class="good-l"></div>酷狗音乐推荐榜<div class="good-r"></div></li>
+			</ul>
+		</nav>
+		<footer>
+			<div class="foot-l"></div>
+			<div class="foot-r">
+				<p class="last"></p><p class="start"></p><p class="next"></p>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

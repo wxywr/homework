@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>同程旅游网首页</title>
+	<style type="text/css">
+		.all{
+			width: 600px;
+			margin: 60px auto;
+		}
+		header{
+			width: 600px;
+			height: 50px;
+			line-height: 50px;
+			background-color: #3CAFDC;
+			text-align: center;
+			color: #fff;
+		}
+	    .head-l{
+	    	width: 25px;
+	    	height: 25px;
+			background-image: url(images/header-nav.png);
+			background-position: -32px 0px;
+			background-repeat: no-repeat;
+			float: left;
+			margin-top: 13px;
+		}
+		.head-r{
+			width: 35px;
+	    	height: 25px;
+	    	margin-right: 10px;
+			background-image:  url(images/header-nav.png);
+			background-repeat: no-repeat;
+			background-position: 0px 7px;
+			float: right;
+			margin-top: 12px;
+		}
+		nav{
+			width: 600px;
+			border: 10px solid #ccc;
+			border-width: 10px 0px 0px 0px;
+		}
+		.same{
+			width: 150px;
+			height: 110px;
+			border: 1px solid #ccc;
+			float: left;
+			box-sizing: border-box;
+			text-align: center;
+			font-size: 14px;
+		}
+		.hotel{
+			width: 60px;
+			height: 60px;
+			margin: 10px auto 5px;
+			border-radius: 5px;
+			background-color: #FF7661;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -20px -20px;
+		}
+		.plane{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #66CCFF;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -120px -20px;
+		}
+		.tourist{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #90CC00;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -220px -20px;
+		}
+		.week{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #FF9F63;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -320px -20px;
+		}
+		.exit{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #77B7FF;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -20px -120px;
+		}
+		.cruise{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #FFBD5F;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -120px -120px;
+		}
+		.train{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #56D8C4;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -220px -120px;
+		}
+		.login{
+			width: 60px;
+			height: 60px;
+			margin: 15px auto 5px;
+			border-radius: 5px;
+			background-color: #FFD33B;
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -320px -120px;
+		}	
+		.four{
+			width: 600PX;
+			height: 240PX;
+			overflow: hidden;
+			background-color: #ccc;
+		}
+	    .hot,.low,.team,.around{
+			width: 290px;
+			height: 100px;
+			background-color: #fff;
+			float: left;
+			margin: 8px 5px;
+			overflow: hidden;
+		}	
+		.hot h3,.low h3{
+			color: red;
+			font-weight: normal;
+			padding-left: 10px;
+		}
+		.team h3,.around h3{
+			color: #50e3eb;
+			padding-left: 10PX;
+		}
+		.four p{
+			font-size: 14px;
+			color: #ccc;
+			padding-left: 10px;
+		}
+		.hot-l,.low-l,.team-l,.around-l{
+			float: left;
+		}
+		.hot-r,.low-r,.team-r,.around-r{
+			float: right;
+		}
+		.hot-r{
+			width: 120px;
+			height: 110px;			
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -390px -5px;
+		}
+		.low-r{
+			width: 120px;
+			height: 110px;			
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -500px -17px;
+		}
+		.team-r{
+			width: 130px;
+			height: 110px;			
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -500px -145px;
+		}
+		.around-r{
+			width: 130px;
+			height: 110px;			
+			background-image: url(images/navIcon.png);
+			background-repeat: no-repeat;
+			background-position: -380px -108px;
+		}
+		footer{
+			height: 100px;
+			width: 600px;
+			background-color: #3CAFDC;
+			overflow: hidden;
+		}
+		footer p{
+			text-align: center;
+			font-size: 14px;
+			color: #fff;
+			line-height: 25px;	
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<header><div class="head-l"></div>首页<div class="head-r"></div></header>
+		<nav>
+			<div class="same"><div class="hotel"></div>酒店预订</div>
+			<div class="same"><div class="plane"></div>机票预订</div>
+			<div class="same"><div class="tourist"></div>景点门票</div>
+			<div class="same"><div class="week"></div>周末游</div>
+			<div class="same"><div class="exit"></div>出境游</div>
+			<div class="same"><div class="cruise"></div>游轮</div>
+			<div class="same"><div class="train"></div>火车票预订</div>
+			<div class="same"><div class="login"></div>登录/注册</div>
+		</nav>
+		<div class="four">
+			<div class="hot">
+				<div class="hot-l"><h3>热销榜</h3><p>哪里最好玩</p></div>
+				<div class="hot-r"></div>
+			</div>
+			<div class="low">
+				<div class="low-l"><h3>最低价</h3><p>只有这一次</p></div>
+				<div class="low-r"></div>
+			</div>
+			<div class="team">
+				<div class="team-l"><h3>团购</h3><p>优惠超乎想象</p></div>
+				<div class="team-r"></div>
+			</div>
+			<div class="around">
+				<div class="around-l"><h3>周边景点</h3><p>近在身边</p></div>
+				<div class="around-r"></div>
+			</div>
+		</div>
+		<footer>
+			<p>电脑版 | 触屏版 帮助中心 意见反馈<br/>24小时服务热线：4007-555-555<br/>2014同程旅游</p>
+		</footer>
+	</div>
+</body>
+</html>
