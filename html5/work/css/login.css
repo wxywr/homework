@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+p{
+	width: 90%;
+	margin-left: 5%; 
+	font-size: 25px;
+
+}
+fieldset{
+	border-radius: 5%;
+
+}
+legend{
+	text-align: center;
+	font-size: 30px;
+	color: #ccc;
+}
+input{
+	width: 90%;
+	margin-left: 5%; 
+	height: 30px;
+	color: #ccc;
+	font-size: 25px;
+	background-image: url(../images/asterisk_orange.png);
+	background-repeat: no-repeat;
+	background-position: 99% 50%;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 90%;
+	margin-left: 5%; 
+	height: 100px;
+}
+.ok{
+	text-align: center;
+	color: #000;
+	height: 40px;
+	background-image: none;
+}

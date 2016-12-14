@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<h1>datalist标签</h1>
+	<input type="text" list="food">
+	<datalist id="food">
+		<option value="西湖醋鱼"></option>
+		<option value="红烧鲫鱼"></option>
+		<option value="鱼香肉丝"></option>
+		<option value="巫山烤鱼"></option>
+	</datalist>
+	<h2>progress</h2>
+	<progress></progress><br/><br/>
+	<progress value="50" max="100"></progress><br/><br/>
+	<progress value="0" max="100" id="download"></progress><br/><br/><br/>
+
+	分数：<meter min="0" max="100" optimum="100" low="60" high="80" value="0" style="width: 300px" id="met"></meter><span>0</span>	
+</body>
+	<script type="text/javascript">
+		//progress
+		var value = download.value;
+		console.log(value);
+		var timer = setInterval(function(){
+			value +=5;
+			download.value = value;
+			if(value>=100){
+				clearInterval(timer);
+			};
+		},2000);
+
+
+		//meter
+		var m = met.value;
+		var s = document.getElementsByTagName('span');
+		var timer2 = setInterval(function(){
+			m+=5;
+			met.value=m;
+			s[0].innerHTML=m;
+			if(m>=100){
+				clearInterval(timer2);
+			};
+		},200);
+	</script>
+</html>

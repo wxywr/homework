@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.all{
+	width: 700px;
+	margin: 60px auto;
+}
+header{
+	width: 700px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+	background-color: #25A4BB;
+	text-align: center;
+	position: relative;
+}
+header a{
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/header_sprites_4.png);
+}
+.header-l{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-position: -15px -15px;
+}
+.header-r{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-position: -135px -2px;
+	background-size: 370px 56px;
+}
+main{
+	width: 700px;
+	background-color: #ccc;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	position: relative;
+}
+main p{
+	font-size: 20px;
+	color: #333;
+	margin-left: 20px;
+}
+main input{
+	width: 94%;
+	margin: 0 3%;
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 94%;
+	margin: 0 3%;
+	height: 70px;
+}
+.submit{
+	background-color:  #FF8722;
+	border:none;
+	color: #fff;
+	font-size: 18px;
+}
+.yan{
+	text-indent: 80px;
+	background-image: url(../images/image.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.in{
+	position: absolute;
+	left: 7px;
+	top: 220px;
+}
+span{
+	display: block;
+	width: 700px;
+	margin: 10px auto;
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+}

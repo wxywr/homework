@@ -1,0 +1,159 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.all{
+	width: 100%;
+}
+header{
+	width: 80%;
+	margin: 0 auto;
+}
+.header-l{
+	width: 314px;
+	height: 52px;
+	/*float: left;*/
+	background-image: url(../img/sprite.png);
+	background-position: 0px -1px;
+	position: absolute;
+	top: 60px;
+	left: 330px;
+}
+.header-r{
+	width: 412px;
+	height: 40px;
+	/*float: right;*/
+	background-image: url(../img/sprite.png);
+	background-position:-350px 6px;
+	position: absolute;
+	top: 70px;
+	right: 315px;
+}
+main{
+	width: 100%;
+	position: absolute;
+	left: 320px;
+	top: 200px;
+}
+.main-l{
+	width: 520px;
+	height: 400px;
+	background-image: url(../img/bg.png);
+	float: left;
+}
+form{
+	float: left;
+	margin-left: 200px;
+	width: 500px;
+	position: relative;
+}
+input[type='text'],input[type='password']{
+	width: 100%;
+	height: 35px;
+	margin: 10px 0 15px 0;
+	text-indent: 10px;
+	border: 1px solid #ccc;
+}
+form .if{
+	font-size: 18px;
+	font-weight: bold;
+}
+input{
+	border-radius: 3px;
+}
+label{
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/sprite1.png);
+	background-position: -46px 0px;
+	position: absolute;
+	left: 0px;
+	top: 195px;
+}
+#check:checked+label{
+	background-image: url(../img/sprite1.png);
+	background-position: -22px 0px;
+}
+input[type='submit']{
+	background-color: #f10180;
+	color: #fff;
+	font-size: 14px;
+	height: 35px;
+	width: 50%;
+	display: block;
+	border: none;
+	margin-bottom: 15px;
+}
+input[type='checkbox']{
+	display: inline-block;
+	visibility: hidden;
+}
+.forget{
+	padding-left: 150px;
+	color: gray;
+}
+.login{
+	color: #f10180;
+	padding-left: 10px;
+}
+form a{
+	text-decoration: none;
+}
+form .for{
+	display: inline-block;
+}
+form .he{
+	display: block;
+	margin-top: 50px;
+	color: gray;
+}
+ul{
+	float: left;
+}
+ul li{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image: url(../img/sprite.png);
+}
+.one{
+	background-position: -26px -55px;
+}
+.two{
+	background-position: -84px -55px;
+}
+.three{
+	background-position: -142px -55px;
+}
+.four{
+	background-position: -200px -55px;
+}
+.more{
+	margin-top: 10px;
+	float: left;
+	height: 30px;
+	width: 50px;
+	line-height: 34px;
+	color: gray;
+	cursor: pointer;
+	position: relative;
+}
+.corner{
+	position: absolute;
+	top: 12px;
+	right: 0;
+	width: 0px;
+	height: 0px;
+	border: 8px solid transparent;
+	border-top: 8px solid #333; 
+}
+.net{
+	clear: both;
+	padding-top: 20px;
+	color: gray;
+	font-size: 14px;
+	display: none;
+}

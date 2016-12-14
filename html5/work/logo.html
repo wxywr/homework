@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>用户注册</legend>
+			<p>姓名：</p>
+			<input class="put" type="" value="姓名">
+			<p>Emali：</p>
+			<input class="put" type="email" value="email@example.com">
+			<p>网址：</p>
+			<input class="put" type="" value="http://www.example.com">
+			<p>年龄：</p>
+			<input class="put" type="" value="年龄">
+			<p>工资：</p>
+			<input type="range" name="">
+			<p>其他：</p>
+			<textarea></textarea>
+			<input class="ok" type="sumbit" value="提交">
+		</fieldset>	
+	</form>		
+</body>
+	<script type="text/javascript">
+		var on=document.getElementsByClassName('put');
+		for(var i = 0; i < on.length; i++) {
+			on[i].onclick=function () {
+		 	this.style.backgroundImage=" url(images/cancel.png)";
+		 	this.style.height="40px";
+		}
+    }
+	</script>
+</html>
