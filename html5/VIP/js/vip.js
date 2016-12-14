@@ -27,3 +27,12 @@ d.onmouseout = function(){
 }
 
 //验证邮箱，手机号，QQ号
+var form = document.getElementsByTagName('form')[0];
+var mail = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+var phone = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+var qq = /^[1-9][0-9]{4,}$/;
+form.onsubmit=function(){
+	var mail2 = form.num.value;
+	var mail3 = mail.test(mail2);
+	console.log(mail3);
+}
