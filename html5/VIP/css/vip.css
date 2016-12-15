@@ -28,7 +28,7 @@ header{
 	background-position:-350px 6px;
 	position: absolute;
 	top: 70px;
-	right: 315px;
+	right: 330px;
 }
 main{
 	width: 100%;
@@ -40,13 +40,18 @@ main{
 	width: 520px;
 	height: 400px;
 	background-image: url(../img/bg.png);
-	float: left;
+	/*float: left;*/
+	position: absolute;
+	left: 20px;
+	top: 10px;
 }
 form{
 	float: left;
 	margin-left: 200px;
 	width: 500px;
 	position: relative;
+	left: 600px;
+	top: 60px;
 }
 input[type='text'],input[type='password']{
 	width: 100%;
@@ -155,5 +160,29 @@ ul li{
 	padding-top: 20px;
 	color: gray;
 	font-size: 14px;
+	display: none;
+}
+#alert{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid red; 
+	color: red;
+	position: absolute;
+	top:30px;
+	right: 0px;
+	display: none;
+}
+#wrong{
+	width: 130px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid red; 
+	color: red;
+	position: absolute;
+	top:92px;
+	right: 0px;
 	display: none;
 }

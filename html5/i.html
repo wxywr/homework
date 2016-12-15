@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>随机取色</title>
+	<style type="text/css">
+		#big{
+			width: 500px;
+			height: 500px;
+			border: 1px solid red;
+			margin: 50px auto;
+			position: relative;
+		}
+		#small{
+			width: 50px;
+			height: 50px;
+			background-color: #00ff00;
+			position: absolute;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="big">
+		<div id="small"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	small.style.top = '0px';
+	small.style.left = '0px';
+	small.style.backgroundColor='red';
+	var a = 1;
+	var b = 1;
+	var timer = setInterval(function(){
+		small.style.backgroundColor=rgb();
+		var x = small.style.top;
+		var y = small.style.left;
+		x = parseFloat(x);
+		y = parseFloat(y);
+		console.log(x,y);
+		x+=5*a;
+		y+=5*b;
+		if(x>=450){
+			a=-1;
+		}else if(x<=0){
+			a=1;
+		}
+		if(y>=450){
+			b=-1;
+		}else if(y<=0){
+			b=1;
+		}
+		small.style.top = y+'px';
+		small.style.left = x+'px';
+	},100)
+	function rgb(){
+		var r = Math.floor(Math.random()*256);
+		var g = Math.floor(Math.random()*256);
+		var b = Math.floor(Math.random()*256);
+		return 'rgb('+r+','+g+','+b+')';
+	}
+</script>
+</html>

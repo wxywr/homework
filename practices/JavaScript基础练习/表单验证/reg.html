@@ -10,7 +10,7 @@
 	</style>
 </head>
 <body>
-	<form action="" method="post">
+	<form action="" method="get">
 		用户名:<input type="text" name="username"><br/>
 		密码:<input type="password" name="password"><br/>
 		确认密码:<input type="password" name="surepw"><br/>
@@ -32,28 +32,44 @@
 		var name2 = form.username.value;
 		var name3 = name1.test(name2);
 		console.log(name3);
+		if(name3==false){
+			return false;
+		}
+
 		//验证密码
 		var passw2 = form.password.value;
 		var passw3 = passw1.test(passw2);
 		console.log(passw3);
+		if(passw3==false){
+			return false;
+		}
 		//确认密码
 		var sure = form.surepw.value;
+		console.log(sure);
 		if(sure!=passw2){
-			console.log(sure);
 			return false;
 		}
 		//电子邮箱
 		var mail2 = form.email.value;
 		var mail3 = mail1.test(mail2);
 		console.log(mail3);
+		if(mail3==false){
+			return false;
+		}
 		//手机号码
 		var phone2 = form.phonenumber.value;
 		var phone3 = phone1.test(phone2);
 		console.log(phone3);
+		if(phone3==false){
+			return false;
+		}
 		//生日
 		var bir2 = form.birthday.value;
 		var bir3 = bir1.test(bir2);
 		console.log(bir3);
+		if(bir3==false){
+			return false;
+		}
 	}
 </script>
 </html>
