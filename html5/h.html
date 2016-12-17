@@ -9,11 +9,13 @@
 			opacity: 0.5;
 		}
 
-		div{
+		span{
+			display: inline-block;
 			width: 20px;
 			height: 20px;
 			background-image: url(VIP/img/sprite1.png);
 			background-position: 40px 0px;
+			vertical-align: middle;
 		}
 
 	</style>
@@ -25,29 +27,28 @@
 		<input type="file" multiple=""><br/><br/>
 		<input type="submit" value="提交">
 	</form><br/><br/>
-	<div></div>记住用户名
+	<p><span></span>记住用户名</p>
 </body>
 <script type="text/javascript">
 	var n = 0;
-	var yes = document.getElementsByTagName('div')[0];
-	console.log(yes);
-	yes.onmouseover=function(){
+	var s = document.getElementsByTagName('span')[0];
+	s.onmouseover=function(){
 		if(n==0){
 			this.style.backgroundPosition='88px -21px';
 		}
 	}
-	yes.onmouseout=function(){
+	s.onmouseout=function(){
 		if(n==0){
 			this.style.backgroundPosition='40px 0px';
 		}
 	}
-	yes.onclick=function(){
+	s.onclick=function(){
 		console.log(this.style.backgroundPosition);
-		if(this.style.backgroundPosition='88px -21px'){
+		if(this.style.backgroundPosition='40px 0px'){
 			this.style.backgroundPosition='64px 0px';
 			n=1;
 		}else{
-			this.style.backgroundPosition='88px -21px';
+			this.style.backgroundPosition='40px 0px';
 			n=0;
 		}
 	}

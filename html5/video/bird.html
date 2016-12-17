@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -47,7 +47,7 @@
 	</div>
 </body>
 <script type="text/javascript">
-
+	//获取图片，将图片的宽高转换成浮点数
 	var img = document.querySelector('#ad img')
 	img.style.width="300px";
 	img.style.height="200px";
@@ -108,15 +108,18 @@
 			imgh*=0.9;
 			imgw*=0.9;
 		}
+
 		var containerw = document.defaultView.getComputedStyle(container,null).width;
 		// console.log(containerw);
 		var containerh = document.defaultView.getComputedStyle(container,null).height;
 		// console.log(containerh);
 		containerw=parseFloat(containerw);
 		containerh=parseFloat(containerh);
+		//广告保持在屏幕中间
 		// ad.style.top=containerh*0.5-100+'px';
 		// ad.style.left=containerw*0.5-150+'px';
 
+		//广告的尺寸随屏幕大小而改变并在屏幕中间
 		ad.style.top=containerh*0.5-imgh/2+'px';
 		ad.style.left=containerw*0.5-imgw/2+'px';
 		img.style.width=imgw+'px';
