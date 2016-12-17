@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body{
+		text-align: center;
+	}
+		#container{
+			display: inline-block;
+			position: relative;
+		}
+		#ad{
+			position: absolute;
+			left: 295px;
+			top: 145px;
+			display: none;
+		}
+		#ad img{
+			width: 300px;
+			height: 200px;
+			opacity: 0.8;
+		}
+		button{
+			margin-right: 10px;
+			background-color: red;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <video src="img/birds.mp4" autoplay="" loop=""></video> -->
+	<div id="container">
+		<video  id="video" controls="" poster="img/1.jpg" width="856" height="560">
+			<source src="img/birds.mp4" type="">
+		</video>
+		<div id="ad">
+			<img src="img/0.jpg">
+		</div><br/>
+		<button id="go">快进</button>
+		<button id="back">快退</button>
+		<button id="or">播放/暂停</button>
+		<button id="big" onclick="change(this)" value="1">放大屏幕</button>
+		<button id="small" onclick="change(this)" value="2">缩小屏幕</button>
+		<button id="first" onclick="change(this)" value="0">初始大小</button>
+	</div>
+</body>
+<script type="text/javascript">
+
+	var img = document.querySelector('#ad img')
+	img.style.width="300px";
+	img.style.height="200px";
+	imgw=parseFloat(img.style.width);
+	imgh=parseFloat(img.style.height);
+
+	//点击video播放或暂停
+	video.onclick=function(){
+		bofang();
+	}
+	function bofang(){
+		if(video.paused){
+			video.play();
+		}else{
+			video.pause();
+		}
+	}
+
+	//播放/暂停时,广告框隐藏/出现
+	video.onpause=function(){
+		ad.style.display="block";
+	}
+	video.onplay=function(){
+		ad.style.display="none";
+	}
+
+	//快进
+	go.onclick=function(){
+		video.currentTime+=5;
+	}
+
+	//快退
+	back.onclick=function(){
+		video.currentTime-=5;
+	}
+
+	//点击播放/暂停按钮调用bofang函数
+	or.onclick=function(){
+		bofang();
+	}
+
+	//放大缩小还原屏幕
+	function change(btn){
+		if(btn.value=='1'){
+			video.width*=1.1;
+			video.height*=1.1;
+			imgh*=1.1;
+			imgw*=1.1;
+
+		}else if(btn.value=='0'){
+			video.width=856;
+			video.height=560;
+			imgh=200;
+			imgw=300;
+		}else if(video.width>=426){
+			video.width*=0.9;
+			video.height*=0.9;
+			imgh*=0.9;
+			imgw*=0.9;
+		}
+		var containerw = document.defaultView.getComputedStyle(container,null).width;
+		// console.log(containerw);
+		var containerh = document.defaultView.getComputedStyle(container,null).height;
+		// console.log(containerh);
+		containerw=parseFloat(containerw);
+		containerh=parseFloat(containerh);
+		// ad.style.top=containerh*0.5-100+'px';
+		// ad.style.left=containerw*0.5-150+'px';
+
+		ad.style.top=containerh*0.5-imgh/2+'px';
+		ad.style.left=containerw*0.5-imgw/2+'px';
+		img.style.width=imgw+'px';
+		img.style.height=imgh+'px';
+	}
+</script>
+</html>
