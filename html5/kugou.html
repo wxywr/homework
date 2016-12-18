@@ -75,7 +75,7 @@
 			line-height: 100px;
 			display: block;
 			border: 1px solid #ccc;
-			border-width: 0px 0px 1px 1px;
+			border-width: 0px 1px 1px 1px;
 			font-size: 24px;
 			font-weight: bold;
 		}
@@ -125,7 +125,7 @@
 		}
 		footer{
 			width: 700px;
-			height: 110px;
+			height: 100px;
 			background-color: #31A8E0;
 			margin-top: 5px;
 			overflow: hidden;
@@ -133,21 +133,40 @@
 		.foot-l{
 			width: 54px;
 			height: 54px;
-			margin: 28px 10px 28px 70px;
+			margin: 25px 0 0 130px;
 			float: left;
 			background-image: url(images/itunesmusiclist.png);
 			background-repeat: no-repeat;
 		}
 		.foot-r{
-			width: 520px;
-			border:1px solid red;
-			margin-right: 70px;
-			float: right;
+			width:305px;
+			margin-left:50px;
+			float:left;
 		}
-		.footer p{
+		.foot-r p{
 			width: 60px;
 			height: 60px;
-			
+			display: inline-block;
+			margin-right: 30px;
+			margin-top: 10px;
+		}
+		.last{
+			margin-left: 20px;
+			background-image: url(images/icon.png);
+			background-position: 1px 1px;
+		}
+		.start{
+			background-image: url(images/icon.png);
+			background-position: 1px -137px;
+		}
+		.next{
+			background-image: url(images/icon.png);
+			background-position: 1px -206px;
+		}
+		progress{
+			width: 300px;
+			height: 6px;
+			display: block;
 		}
 	</style>
 </head>
@@ -176,8 +195,7 @@
 			<div class="foot-l"></div>
 			<div class="foot-r">
 				<p class="last"></p><p class="start"></p><p class="next"></p>
-				<div class="left"></div>
-				<div class="right"></div>
+				<progress value="40" max="100"></progress>
 			</div>
 		</footer>
 	</div>

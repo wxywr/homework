@@ -4,47 +4,104 @@
 	<meta charset="utf-8">
 	<title></title>
 	<style type="text/css">
-		header,nav{
-			width:500px;
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			box-sizing: border-box;
+		}
+		.container{
+			width: 600px;
+			margin: 30px auto;
+			border: 1px solid #ccc;
+		}
+		header{
+			width: 100%
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			font-size: 20px;
+		}
+		nav{
+			width:100%;
 			height: 50px;
 			line-height: 50px;
-			border: 1px solid red;
+			border: 1px solid #333;
+			border-width: 1px 0;
 			text-align: center; 
 		}
+		nav a{
+			padding: 0px 40px;
+		}
 		aside{
-			width: 100px;
-			height: 500px;
-			border: 1px solid red;
+			width: 20%;
+			height: 400px;
+			border: 1px solid #333;
+			border-width: 0px 1px 0px 0px;
 			float: left;
 		}
+		li{
+			text-align: center;
+			line-height: 80px;
+			font-weight: bold;
+		}
 		article{
-			width: 400px;
-			height: 500px;
+			width: 80%;
+			height: 400px;
 			float: left;
-			border: 1px solid red;
+			text-align: center;
+			border: 1px solid #333;
+			border-width: 0px 0px 0px 1px;
+		}
+		article h1{
+			margin: 30px 0;
+		}
+		article p{
+			font-weight: bold;
+			margin-bottom: 30px;
+			text-shadow: 2px 3px 3px #ccc;
+		}
+		article span{
+			letter-spacing: 5px;
 		}
 		footer{
 			clear: both;
-			width: 500px;
+			width: 100%;
 			height: 40px;
-			border: 1px solid red;
+			line-height: 40px;
+			text-align: center;
+			border: 1px solid #333;
+			border-width: 1px 0px 0px 0px;
 		}
-
 	</style>
 </head>
 <body>
-	<header>页面头部</header>
-	<nav>
-		<a href="">一</a>
-		<a href="">二</a>
-		<a href="">三</a>
-		<a href="">四</a>
-		<a href="">五</a>
-	</nav>
-	<section>
-		<aside>1 2 3 4 5</aside>
-		<article>aaaaaa</article>
-	</section>
-	<footer>地址</footer>
+	<div class="container">
+		<header>页面头部</header>
+		<nav>
+			<a href="">一</a>
+			<a href="">二</a>
+			<a href="">三</a>
+			<a href="">四</a>
+			<a href="">五</a>
+		</nav>
+		<section>
+			<aside>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</aside>
+			<article>
+				<h1>H5教程</h1>
+				<p>发布时间：2000-10-1 18：00</p>
+				<span> follow your heart, but be quiet for a while first.  learn to trust your heart.  all things are difficult before they are easy. don't corrupted themselves, life is not only an opportunity, try to. If when you talk to me,I will have strong heartbeat in my body. Am I falling love with you? 努力变成自己喜欢的那个自己，一切就都还来得及. 简单的事，想深了，就复杂了。复杂的事，看淡了，就简单了。有些事，笑笑就能过去。有些事，过一阵就能让你笑笑。</span>
+			</article>
+		</section>
+		<footer>地址</footer>
+	</div>
 </body>
 </html>
