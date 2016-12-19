@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		ul{
+			background-color: #ccc;
+			list-style: none;
+		}
+		ul{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<audio id="audio" src="img/因为爱情.mp3" controls="" autoplay=""></audio>
+		<span>播放列表</span>
+		<div class="list">
+			<ul></ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var musicList=[
+		{
+			name:"感恩的心",
+			author:"欧阳菲菲",
+			url:"img/感恩的心.mp3"
+		},
+		{
+			name:"情歌",
+			author:"梁静茹",
+			url:"img/情歌.Mp3"
+		},
+		{
+			name:"白狐",
+			author:"陈瑞",
+			url:"img/陈瑞-白狐.mp3"
+		},
+		{
+			name:"北京北京",
+			author:"汪峰",
+			url:"img/北京北京.mp3"
+		}
+	];
+	var ul = document.getElementsByTagName('ul')[0];
+	console.log(ul);
+	var list=[];//创建一个空数组保存创建的li
+	for(var i = 0;i<musicList.length;i++){
+		//把创建的li保存在list里下标为i的位置
+		list[i]=document.createElement('li');
+		//设置list里下标为i的li的内容
+		list[i].innerHTML=musicList[i].name+'-'+musicList[i].author;
+		//把设置好的li添加进ul
+		ul.appendChild(list[i]);
+
+		//双击播放所选歌曲
+		list[i].index=i;
+		list[i].ondblclick=function(){
+	 		// audio.setAttribute('src',musicList[this.index].url);
+	 		audio.src = musicList[this.index].url;
+	 		// console.log(this);
+	 	}
+	 }
+	//点击播放列表显示或隐藏歌曲
+	var a = document.getElementsByTagName('span')[0];
+	a.onclick=function(){
+		if(ul.style.display=="block"){
+			ul.style.display="none";
+		}else{
+			ul.style.display="block";
+		}
+	}
+
+	//双击播放歌曲
+	// var list = document.querySelectorAll('li');
+	// var audio = document.querySelector('audio');
+	// for(i=0;i<list.length;i++){
+	// 	list[i].index=i;
+	// 	list[i].ondblclick=function(){
+	// 		audio.src=musicList[this.index].url;
+	// 		audio.play();
+	// 	}
+	// }
+</script>
+</html>

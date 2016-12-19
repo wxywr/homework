@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		ul{
+			background-color: #ccc;
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<audio src="img/因为爱情.mp3" controls="" autoplay=""></audio>
+		<span>播放列表</span>
+		<div class="list">
+			<ul></ul>
+		</div>
+	</div>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	var musicList=[
+		{
+			name:"感恩的心",
+			author:"欧阳菲菲",
+			url:"img/感恩的心.mp3"
+		},
+		{
+			name:"情歌",
+			author:"梁静茹",
+			url:"img/情歌.Mp3"
+		},
+		{
+			name:"白狐",
+			author:"陈瑞",
+			url:"img/陈瑞-白狐.mp3"
+		},
+		{
+			name:"北京北京",
+			author:"汪峰",
+			url:"img/北京北京.mp3"
+		}
+	];
+	for(i=0;i<musicList.length;i++){
+		$("div.list ul").append(
+			"<li>"+musicList[i].name+"-"+musicList[i].author+"</li>"
+		);
+		console.log("<li>"+musicList[i].name+"-"+musicList[i].author+"</li>");
+	}
+
+	$("div.list ul").hide();
+
+	$("span").click(function(){
+		$("div.list ul").toggle();
+	})
+
+	$("ul li").dblclick(function(){
+			index=$("ul li").index(this);
+			console.log(index);
+			$('audio').attr('src',musicList[index].url).attr('autoplay',true);
+	})
+</script>
+</body>
