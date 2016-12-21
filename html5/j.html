@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500" style="border: 1px solid #000"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	// ctx.fillRect(50,50,100,100);
+	// ctx.strokeRect(200,50,100,100);
+	// ctx.fillRect(460,440,40,60);
+
+	//三角形
+	// ctx.beginPath();
+	// ctx.moveTo(100,100);
+	// ctx.lineTo(400,400);
+	// ctx.lineTo(100,400);
+	// ctx.closePath();
+	// ctx.lineTo(200,300);
+	// ctx.stroke();
+
+	 // ctx.beginPath();
+	 // ctx.arc(250,250,200,0,2*Math.PI) //圆
+
+	 // ctx.arc(250,250,200,0,1.5*Math.PI) //3/4的圆
+	 // ctx.arc(250,250,200,0,270*Math.PI/180)
+
+	 // ctx.arc(250,150,100,-90*Math.PI/180,90*Math.PI/180);//右实心圆
+	 // ctx.fill();
+	 
+	 // ctx.arc(250,350,100,90*Math.PI/180,-90*Math.PI/180);//左空心圆
+	 // ctx.stroke();
+
+
+	 //张嘴函数
+	function openMouth(){
+	  ctx.beginPath();
+	  ctx.arc(250,250,200,45*Math.PI/180,-45*Math.PI/180);
+	  ctx.lineTo(250,250);
+	  ctx.closePath();
+	  ctx.stroke();
+	  ctx.beginPath();
+	  ctx.arc(250,140,50,0,2*Math.PI)
+	  ctx.fillStyle="#8899FF";
+	  ctx.fill();
+	  // ctx.closePath();
+	}
+	 //闭嘴函数
+	 function closeMouth(){
+	 	ctx.beginPath();
+	  	ctx.arc(250,250,200,0,2*Math.PI);
+	  	ctx.lineTo(250,250);
+	  	ctx.closePath();
+	  	ctx.stroke();
+	  	ctx.beginPath();
+	  	ctx.arc(250,140,50,0,2*Math.PI);
+	  	ctx.fillStyle="#8899FF";
+	  	ctx.fill();
+	  	// ctx.closePath();
+	 }
+
+	 //张嘴闭嘴
+	 var n=0;
+	 setInterval(function(){
+	 	ctx.clearRect(0,0,500,500);//清空画布
+	 	if(n==0){
+	 		closeMouth();
+	 		n=1;
+	 	}else{
+	 		openMouth();
+	 		n=0;
+	 	}
+	 },500)
+</script>
+</html>

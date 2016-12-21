@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>太极八卦图</title>
+	<style type="text/css">
+		#canvas{
+    		background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width = "400" height="400" style="border:1px solid red"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas=document.getElementById('canvas');
+	var ctx=canvas.getContext('2d');
+
+	//左大黑半圆
+	ctx.beginPath();
+	ctx.arc(200,200,200,Math.PI/2,-Math.PI/2);
+	ctx.fill();
+	ctx.closePath();
+	//右大白半圆
+	ctx.beginPath();
+	ctx.arc(200,200,200,-Math.PI/2,Math.PI/2);
+	ctx.fillStyle="#fff";
+	ctx.fill();
+	ctx.closePath();
+	//上小白半圆
+	ctx.beginPath();
+	ctx.arc(200,100,100,-Math.PI/2,Math.PI/2);
+	ctx.fillStyle="#000";
+	ctx.fill();
+	ctx.closePath();
+	//下小白半圆
+	ctx.beginPath();
+	ctx.arc(200,300,100,Math.PI/2,-Math.PI/2);
+	ctx.fillStyle="#fff";
+	ctx.fill();
+	ctx.closePath();
+	//上小小白圆
+	ctx.beginPath();
+	ctx.arc(200,100,30,0,Math.PI*2);
+	ctx.fillStyle="#fff";
+	ctx.fill();
+	ctx.closePath();
+	//下小小白圆
+	ctx.beginPath();
+	ctx.arc(200,300,30,0,Math.PI*2);
+	ctx.fillStyle="#000";
+	ctx.fill();
+	ctx.closePath();
+</script>
+</html>

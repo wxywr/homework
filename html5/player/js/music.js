@@ -5,9 +5,9 @@ var musicList=[
 			url:"music/感恩的心.mp3"
 		},
 		{
-			name:"偷偷的爱",
-			author:"丁当",
-			url:"music/偷偷的爱.Mp3"
+			name:"爱要坦荡荡",
+			author:"萧潇",
+			url:"music/爱要坦荡荡.Mp3"
 		},
 		{
 			name:"最后一页",
@@ -15,9 +15,9 @@ var musicList=[
 			url:"music/最后一页.mp3"
 		},
 		{
-			name:"爱要坦荡荡",
-			author:"萧潇",
-			url:"music/爱要坦荡荡.mp3"
+			name:"离不开你",
+			author:"朱克",
+			url:"music/离不开你.mp3"
 		}
 	];
 
@@ -54,8 +54,8 @@ function playMusic(index){
 //双击播放所选歌曲
 for(i=0;i<mList.length;i++){
 	mList[i].index=i;
-	if(playmode==1){
 		mList[i].ondblclick=function(){
+			if(playmode==1){
 			playMusic(this.index);
 		}
 	}
@@ -91,11 +91,9 @@ function nextmusic(){
 
 playMusic(INDEX);//页面加载自动播放
 
-
 //获取时间
 var progress = document.querySelector('#progress div');
 var time = document.getElementById('time');
-//设置时间样式
 function timeStyle(time){
 	var t = Math.round(time);
 	var m = Math.floor(t/60);

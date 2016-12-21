@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>国际象棋棋盘</title>
+</head>
+<body>
+	<canvas id="canvas" width="800" height="800" style="border: 1px solid #000"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	for(var i=0;i<=800;i=i+200){
+		for(j=0;j<=800;j=j+200){
+			ctx.fillRect(i,j,100,100);
+		}
+		for(n=100;n<=800;n=n+200){
+			ctx.fillRect(n,i+100,100,100);
+		}	
+	}
+</script>
+</html>
