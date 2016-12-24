@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>canvas 绘制图像</title>
+</head>
+<body>
+	<!-- <img src="video/img/0.jpg" id="pic"> -->
+	<canvas id="canvas" width="500" height="500" style="border: 1px solid #000"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+
+	//image元素
+	// var img = document.getElementById("pic");
+	// img.onload=function(){
+	// 	ctx.drawImage(img,0,0,500,500);
+	// }
+
+	//js中的Image对象
+	var img = new Image();
+	img.src = "images/itunesmusiclist.png";
+	img.onload=function(){
+		var pat = ctx.createPattern(img,"repeat");//平铺图像
+		ctx.fillStyle=pat;
+		ctx.fillRect(0,0,500,500);
+	}
+	//切割图像
+	ctx.beginPath();
+	ctx.arc(250,250,180,0,2*Math.PI); //圆形
+	// ctx.rect(100,100,200,200); //矩形
+	ctx.closePath();
+	ctx.clip();
+</script>
+</html>
