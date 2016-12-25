@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="600" height="400" style="border:2px solid red"></canvas>
+</body>
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
+		ctx.beginPath();
+		ctx.moveTo(250,100);
+		ctx.lineTo(150,200);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(150,200);
+		ctx.lineTo(200,200);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(200,200);
+		ctx.lineTo(130,260);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(130,260);
+		ctx.lineTo(370,260);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(370,260);
+		ctx.lineTo(300,200);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(300,200);
+		ctx.lineTo(350,200);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(350,200);
+		ctx.lineTo(250,100);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(248,260);
+		ctx.lineTo(248,350);
+		ctx.strokeStyle="#A52A2B";
+		ctx.lineWidth="30";
+		ctx.stroke();
+	</script>
+</html>
