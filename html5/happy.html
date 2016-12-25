@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣诞快乐，锐！</title>
+	<style type="text/css">
+		#canvas{
+			background-color: #F1C9BC;
+			display: block;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="600" height="400" style="border:2px solid red"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	var grb = ctx.createLinearGradient(0,0,600,400);
+	grb.addColorStop(0,"#FFA500");
+	grb.addColorStop(0.15,"#FFC0CB");
+	grb.addColorStop(0.25,"#00bfff");
+	grb.addColorStop(0.4,"#ff00ff");
+	grb.addColorStop(0.7,"yellow");
+	grb.addColorStop(0.75,"#00ff00");
+	grb.addColorStop(0.85,"pink");
+	grb.addColorStop(1,"pink");
+	ctx.fillStyle=grb;
+	ctx.fillRect(0,0,600,400);
+	ctx.beginPath();
+	ctx.arc(300,200,150,0,2*Math.PI);
+	ctx.fillStyle="#F1C9BC";
+	ctx.fill();
+	ctx.beginPath();
+	ctx.arc(230,140,30,0,2*Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(370,140,30,0,2*Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(240,140,15,0,2*Math.PI);
+	ctx.fillStyle="#333";
+	ctx.fill();
+	ctx.beginPath();
+	ctx.arc(360,140,15,0,2*Math.PI);
+	ctx.fillStyle="#333";
+	ctx.fill();
+	ctx.beginPath();
+	ctx.moveTo(300,200);
+	ctx.lineTo(280,240);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(280,240);
+	ctx.lineTo(300,240);
+	ctx.stroke();
+	function openMouse(){
+		ctx.beginPath();
+		ctx.arc(300,300,25,0,Math.PI);
+		ctx.fillStyle="red";
+		ctx.fill();
+	}
+	function closeMouse(){
+		ctx.beginPath();
+		ctx.moveTo(280,300);
+		ctx.lineTo(310,300);
+		ctx.strokeStyle="#333";
+		ctx.stroke();
+	}
+	var n=0;
+	 setInterval(function(){
+	 	ctx.clearRect(270,290,65,50);//清空画布
+	 	if(n==0){
+	 		closeMouse();
+	 		n=1;
+	 	}else{
+	 		openMouse();
+	 		n=0;
+	 	}
+	 },500)
+
+	ctx.lineWidth="3";
+	ctx.beginPath();
+	ctx.moveTo(210,80);
+	ctx.lineTo(200,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(230,70);
+	ctx.lineTo(230,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(250,60);
+	ctx.lineTo(250,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(270,55);
+	ctx.lineTo(280,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(290,50);
+	ctx.lineTo(290,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(310,50);
+	ctx.lineTo(310,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(330,55);
+	ctx.lineTo(335,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(350,60);
+	ctx.lineTo(360,120);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(370,65);
+	ctx.lineTo(380,116);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(390,80);
+	ctx.lineTo(396,120);
+	ctx.stroke();
+	setInterval(function(){
+		ctx.font="70px STXinwei";
+		ctx.strokeText("Merry  Christmas ！",20,60);
+		ctx.strokeStyle=rgb();
+	},100);
+	function rgb(){
+		var r = Math.floor(Math.random()*256);
+		var g = Math.floor(Math.random()*256);
+		var b = Math.floor(Math.random()*256);
+		return 'rgb('+r+','+g+','+b+')';
+	}
+	ctx.shadowColor="rgba(255,0,0,0.3)";
+	ctx.shadowOffsetX=6;
+	ctx.shadowOffsetY=5;
+	ctx.font="30px STXingkai";
+	ctx.fillText("My dearest 王锐 *^ο^*",330,390);
+
+	var x = 0,y = 0;
+	var a = 1,b = 1;
+	setInterval(function(){
+		ctx.fillRect(x,y,5,5);
+		ctx.fillStyle=rgb();
+		x+=30*a;
+		y+=30*b;
+		if(x>=595){
+			a=-1;
+		}else if(x<=0){
+			a=1;
+		}
+		if(y>=395){
+			b=-1;
+		}else if(y<=0){
+			b=1;
+		}
+	},10);
+	function rgb(){
+		var r = Math.floor(Math.random()*256);
+		var g = Math.floor(Math.random()*256);
+		var b = Math.floor(Math.random()*256);
+		return 'rgb('+r+','+g+','+b+')';
+	}
+</script>
+</html>
