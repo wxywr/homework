@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>太阳系</title>
+	<style type="text/css">
+		#canvas{
+			background-color: #333;
+		}
+	</style>
+</head>
+<body>
+<canvas id="canvas" width="900" height="900"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	//八大行星，八个轨道，一个太阳（太阳系）
+
+	//运行轨道
+	function drawRound(){
+		for(var i=0;i<8;i++){
+			ctx.beginPath();
+			ctx.arc(450,450,(i+1)*50,0,2*Math.PI);
+			ctx.strokeStyle="#fff";
+			ctx.stroke();
+			ctx.closePath();
+		}
+	}
+	drawRound();
+
+	//太阳
+	function drawSun(){
+		ctx.beginPath();
+		ctx.arc(450,450,30,0,2*Math.PI);
+		//创建渐变对象
+		//x,y,r,x,y,r
+		var gradient = ctx.createRadialGradient(450,450,0,450,450,40);
+		gradient.addColorStop(0,'#f00');
+		gradient.addColorStop(1,'#f90');
+		ctx.fillStyle = gradient;
+		ctx.fill();
+		ctx.closePath();
+	}
+	drawSun();
+	
+	var time = 0;
+	const PI = 2*Math.PI;//声明常量
+
+	//画水星，time表示天数
+	function drawStart(cycle,y,startColor,endColor,r){
+		ctx.beginPath();
+		ctx.save();//保存
+		ctx.translate(450,450);
+		ctx.rotate(PI/cycle*time);
+		ctx.arc(0,y,r,0,PI);
+		var gradient = ctx.createRadialGradient(0,y,0,0,y,r);
+		gradient.addColorStop(0,startColor);
+		gradient.addColorStop(1,endColor);
+		ctx.fillStyle=gradient;
+		ctx.fill();
+		ctx.restore();//恢复
+		ctx.closePath();
+	}
+	//
+	setInterval (function(){
+		ctx.clearRect(0,0,canvas.width,canvas.height);//清除画布
+		time++;
+		drawSun();
+		drawRound();
+		drawStart(88,-50,'#eee','#123abc',10);
+		drawStart(225,-100,'#aa5544','#aaa',15);
+		drawStart(365,-150,'#0ff','#ccc',16);
+		drawStart(687,-200,'#acdfeb','#FFD700',14);
+		drawStart(4333,-250,'#fff','#DB7093',24);
+		drawStart(10760,-300,'#acdef1','#90EE90',26);
+		drawStart(30799,-350,'#9370DB','#ccc',21);
+		drawStart(60192,-400,'#666','#999',20);
+	},50);
+</script>
+</html>

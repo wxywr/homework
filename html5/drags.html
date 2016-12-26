@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>目标元素事件</title>
+	<style type="text/css">
+		div{
+			width:300px;
+			height: 320px;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<div id="div"></div>
+	<img src="video/img/0.jpg" id="img1" alt="">
+</body>
+<script type="text/javascript">
+	div.ondragenter = function(){
+		div.style.background="red";
+	}
+	div.ondragover = function(){
+		div.innerHTML='welcome';
+		event.preventDefault();//必须，不禁用drop事件不会触发
+	}
+	div.ondragleave = function(){
+		div.innerHTML='goodbye';
+		div.style.background="#ccc";
+	}
+	div.ondrop = function(){
+		div.innerHTML='Im comming';
+		div.appendChild(img1);
+	}
+</script>
+</html>

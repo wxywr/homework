@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拖放图片</title>
+	<style type="text/css">
+		div{
+			width: 800px;
+			height: 260px;
+			border: 3px dashed #333;
+			margin-top: 50px;
+			padding-left: 30px;
+			font-size: 20px;
+			font-weight: bold;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<p>图片源</p>
+		<img src="../自动轮播图/img/1.jpg" id="img1">
+		<img src="../自动轮播图/img/2.jpg" id="img2">
+		<img src="../自动轮播图/img/3.jpg" id="img3">
+		<img src="../自动轮播图/img/4.jpg" id="img4">
+	</div>
+	<div id="div2">
+		<p>拖动目的地</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var img = document.getElementsByTagName('img');
+	for(var i = 0;i<img.length;i++){
+		img[i].ondragstart = function(){
+    		event.dataTransfer.setData('text',event.target.id);
+    	}
+	}
+	div2.ondragover = function(){
+    	event.preventDefault();
+    }
+    div2.ondrop = function(){
+    	var id = event.dataTransfer.getData('text');
+        console.log(id);
+    	var img = document.getElementById(id);
+    	div2.appendChild(img);
+    }
+</script>
+</html>

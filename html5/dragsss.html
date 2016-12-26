@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>来回拖动</title>
+	<style type="text/css">
+		 div{
+            width: 350px;
+            height: 350px;
+            border: 2px solid red;
+            float: left;
+            margin-right: 100px;
+         }
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<img src="video/img/0.jpg" id="img" alt="">
+	</div>
+	<div id="div2"></div>
+</body>
+<script type="text/javascript">
+    div1.ondragover = function(){
+    	event.preventDefault();
+    }
+    div1.ondrop = function(){
+    	div1.appendChild(img);
+    }
+    div2.ondragover = function(){
+    	event.preventDefault();
+    }
+    div2.ondrop = function(){
+    	div2.appendChild(img);
+    }
+</script>
+</html>

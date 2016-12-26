@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拖放图片（源元素事件）</title>
+	<style type="text/css">
+		img{
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<img src="video/img/0.jpg" id="img" alt="">
+</body>
+<script type="text/javascript">
+	img.ondragstart = function(e){
+		img.style.border = "10px solid red";
+
+		//全局变量（系统自动声明）
+		startX = e.offsetX;
+		startY = e.offsetY;
+	}
+	img.ondrag = function(e){
+		console.log("图片正在被拖放...");
+		if(e.pageX==0&&e.pageY==0){
+			return;
+		}//阻止图片拖动后回归原点
+		img.style.left = e.pageX-startX+'px';
+		img.style.top = e.pageY-startY+'px';
+	}
+	img.ondragend = function(e){
+		img.style.border = "10px solid blue";
+	}
+</script>
+</html>
