@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>多列</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			border: 3px solid red;
+			column-count: 3;
+			column-gap: 50px;
+			/*column-rule: 3px dashed #00ff00;*/  /*虚线*/
+			column-rule: 6px double #00ff00;  /*双线*/
+			/*column-rule: 3px dotted #00ff00;*/  /*点线*/
+			/*column-rule: 3px solid #00ff00;*/
+		}
+
+
+		/*伪元素选择器*/
+		p::selection{
+			/*background-color: red;*/
+			color: red;
+		}
+		p:first-letter{
+			font-size: 30px;
+			color: red;
+		}
+		p:first-line{
+			font-size: 16px;
+			color:blue;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

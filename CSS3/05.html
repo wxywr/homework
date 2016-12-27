@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/*p[class~="color bg"]{
+			color: red;
+		}
+		p[class~="color"]{
+			background-color: yellow;
+		}
+		p[class~="bg"]{
+			color: green;
+		}
+		[title]{
+			color: blue;
+		}
+		h1~div{
+			color: red;
+		}
+		h1+div{
+			background-color: pink;
+		}*/
+
+		/*:target{
+			background-color: red;
+		}
+		div:target{
+			font-size: 30px;
+			color: blue;
+		}*/
+
+		input:disabled{
+			background-color: red;
+		}
+		input:enabled{
+			background-color:blue;
+		}
+		input:checked{
+			margin:0 30px;
+			width: 20px;
+			height: 20px;
+		}
+
+		p:first-child{
+			color: red;
+			font-size: 30px;
+		}
+		p:last-child{
+			background-color: yellow;
+		}
+		p:empty{
+			height: 20px;
+			border: 1px solid green;
+		}
+		p:only-child{
+			border:3px solid blue;
+		} /*p的父元素中只有一个p的时候才有效果*/
+	</style>
+</head>
+<body>
+	<!-- 属性选择器 -->
+	<!-- <h1 title="h1">aaaaaaa</h1>
+	<div>bbbbbbbbbbbbbbbbbbbbb</div>
+	<p class="color">1111111111</p>
+	<p class="bg">222222222</p>
+	<p class="color bg">3333333333</p>
+	<p id="a">444444444</p>
+	<p class="block">555555555</p> -->
+
+	<!-- 目标为类 -->
+	<!-- <p><a href="#a1">跳转至内容1</a></p>
+	<p><a href="#a2">跳转至内容2</a></p>
+	<a name="a1">内容1</a>
+	<div id="a2">内容2</div><br/><br/> -->
+
+	<!-- 元素状态伪类 -->
+	<input type="text" name="" disabled="disabled"><br/>
+	<input type="text" name="" enabled="enabled"><br/>
+	<input type="radio" name="">启用
+	<input type="radio" name="" checked="checked">停用<br/>
+
+	 <!-- 结构伪类 -->
+	 <div>
+	 	<p>段落111</p>
+	 	<p></p>
+	 	<div><p>only</p></div>
+	 	<p>段落222</p>
+	 	<p>段落333</p>
+	 </div>
+
+	 
+</body>
+</html>
