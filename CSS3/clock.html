@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>钟</title>
+	<style type="text/css">
+	#big{
+		width: 500px;
+		height: 500px;
+		border: 5px solid #0f0;
+		border-radius: 50%;
+		position: relative;
+	}
+	.s{
+		width: 3px;
+		height: 170px;
+		background-color: yellow;
+		position: absolute;
+		left:250px;
+		top: 70px; 
+		transition: transform 60s linear 1s;
+		transform-origin: 50% 100%;
+	}
+	.m{
+		width: 6px;
+		height: 140px;
+		background-color: blue;
+		position: absolute;
+		left:248px;
+		top: 100px; 
+		transition: transform 360s linear 1s;
+		transform-origin: 50% 100%;
+	}
+	.h{
+		width: 10px;
+		height: 100px;
+		background-color: red;
+		position: absolute;
+		left:246px;
+		top: 140px; 
+		transition: transform 720s linear 1s;
+		transform-origin: 50% 100%;
+	}
+	</style>
+</head>
+<body>
+	<div id="big">
+		<div class="h"></div>
+		<div class="m"></div>
+		<div class="s"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	var clock = document.getElementById('big');
+	var minute = document.getElementsByClassName('m')[0];
+	var second = document.getElementsByClassName('s')[0];
+	var hour = document.getElementsByClassName('h')[0];
+	var n=0;
+	clock.onclick = function(){
+		n+=360;
+		// second.style.transform='rotate(360deg)';
+		second.style.transform='rotate('+n+'deg)';
+		minute.style.transform='rotate('+n/60+'deg)';
+		hour.style.transform='rotate('+n/360+'deg)';
+	}
+</script>
+</html>

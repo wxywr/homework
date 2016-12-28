@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#all{
+			width: 800px;
+			height: 500px;
+			margin: 50px auto;
+			border: 10px double #0f0;
+			position: relative;
+			transform-style: preserve-3d; /*子元素将保留其3d位置*/
+			perspective: 1000px; /*3D元素距视图的距离,其子元素会获得透视效果*/
+			transform: rotateX(-20deg);
+		}
+		div[class]{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			left:350px;
+			top: 200px;
+		}
+		.a{
+			transform: rotateY(0deg) translateZ(200px);
+		}
+		.b{
+			transform: rotateY(60deg) translateZ(200px);
+		}
+		.c{
+			transform: rotateY(120deg) translateZ(200px);
+		}
+		.d{
+			transform: rotateY(180deg) translateZ(200px);
+		}
+		.e{
+			transform: rotateY(240deg) translateZ(200px);
+		}
+		.f{
+			transform: rotateY(300deg) translateZ(200px);
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div class="a">1</div>
+		<div class="b">2</div>
+		<div class="c">3</div>
+		<div class="d">4</div>
+		<div class="e">5</div>
+		<div class="f">6</div>
+	</div>
+</body>
+</html>

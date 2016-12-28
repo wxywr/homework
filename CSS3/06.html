@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>transition过渡</title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height: 300px;
+			border: 2px solid #333;
+			background-color: #ff0;
+			/*transition: background 3s linear 2s;*/     /*匀速*/
+			/*transition: background 3s ease 2s;*/       /*慢快慢*/
+			/*transition: background 3s ease-out 2s;*/   /*先快后慢*/
+			transition: background 3s ease-in 2s,        /*先慢后快*/
+						width 3s linear 1s,
+						margin-left 3s ease 1s;
+		}
+		div:hover{
+			background-color: red;
+			width: 500px;
+			margin-left: 100px;
+		}
+		input{
+			display: block;
+			border-radius: 20px;
+			width: 300px;
+			height: 35px;
+			outline: none;
+			text-indent: 20px;
+			font-size: 18px;
+			transition: width 1s ease 1s,
+						margin 1s ease-out 1s;
+			border: 3px solid red;
+		}
+		input:focus{
+			width: 400px;
+			margin: 100px 200px;
+		}
+	</style>
+</head>
+<body>
+	<div></div><br/><br/>
+	<input type="text" name="" value="search...">
+</body>
+</html>
