@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	ctx.beginPath();
+	ctx.arc(250,250,240,0,2*Math.PI);
+	ctx.lineWidth="5";
+	ctx.strokeStyle="blue";
+	ctx.stroke();
+
+	// ctx.beginPath();
+	// ctx.arc(250,250,10,0,2*Math.PI);
+	// ctx.fillStyle="red";
+	// ctx.fill();
+
+	ctx.translate(250,250);
+
+	for(var i =0;i<12;i++){
+		ctx.beginPath();
+		ctx.moveTo(0,190);
+		ctx.lineTo(0,230);
+		ctx.rotate(30*Math.PI/180);
+		ctx.strokeStyle="#333";
+		ctx.stroke();
+	}
+	for(var i = 0;i<60;i++){
+		ctx.beginPath();
+		ctx.moveTo(0,230);
+		ctx.lineTo(0,210);
+		ctx.rotate(6*Math.PI/180);
+		ctx.strokeStyle="#333";
+		ctx.lineWidth="2";
+		ctx.stroke();
+	}
+
+	var time = 0;
+	const PI = 2*Math.PI;
+
+	function zhen(jiao,length,color,width){
+		ctx.beginPath();
+		ctx.arc(0,0,10,0,2*Math.PI);
+		ctx.fillStyle="red";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.save();
+		ctx.rotate(PI/jiao*time);
+		ctx.moveTo(0,0);
+		ctx.lineTo(0,-length);
+		ctx.strokeStyle=color;
+		ctx.lineWidth=width;
+		ctx.stroke();
+		ctx.restore();
+		ctx.closePath();
+	}
+
+	setInterval (function(){
+		ctx.clearRect(-130,-130,260,260);//清除画布
+		time++;
+		zhen(360,130,"aqua",2);
+		zhen(21600,100,"yellow",5);
+		zhen(2196000,70,"red",8);
+	},1000);
+</script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.all{
+			width: 800px;
+			height: 800px;
+			margin: 0 auto;
+			position: relative;
+			transform-style: preserve-3d;
+			animation: div 6s linear infinite alternate;
+		}
+		div[class^="d"]{
+			width: 200px;
+			height: 200px;
+			opacity: 0.8;
+			position: absolute;
+			left: 300px;
+			top: 300px;
+			transition: all 1s;
+			text-align: center;
+			line-height: 200px;
+		}
+		@keyframes div{
+			form{
+				transform: rotate3d(1,1,1,0deg);
+			}
+			to{
+				transform: rotate3d(1,1,1,360deg);
+			}
+		}
+		.div1{
+			background-color: #0f0;
+			transform: rotateY(0deg) translateZ(100px);
+		}
+		.div2{
+			background-color: #ff0;
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.div3{
+			background-color: #f0f;
+			transform: rotateY(180deg) translateZ(100px);
+		}
+		.div4{
+			background-color: #0ff;
+			transform: rotateY(270deg) translateZ(100px);
+		}
+		.div5{
+			background-color: #00f;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.div6{
+			background-color: #f00;
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+		.all:hover .div1{
+			transform: rotateY(0deg) translateZ(200px) rotateZ(90deg);
+		}
+		.all:hover .div2{
+			transform: rotateY(90deg) translateZ(200px) rotateZ(90deg);
+		}
+		.all:hover .div3{
+			transform: rotateY(180deg) translateZ(200px) rotateZ(90deg);
+		}
+		.all:hover .div4{
+			transform: rotateY(270deg) translateZ(200px) rotateZ(90deg);
+		}
+		.all:hover .div5{
+			transform: rotateX(90deg) translateZ(200px) rotateZ(90deg);
+		}
+		.all:hover .div6{
+			transform: rotateX(-90deg) translateZ(200px) rotateZ(90deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="div1">前面</div>
+		<div class="div2">右面</div>
+		<div class="div3">后面</div>
+		<div class="div4">左面</div>
+		<div class="div5">上面</div>
+		<div class="div6">下面</div>
+	</div>
+</body>
+</html>
