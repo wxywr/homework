@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>时钟</title>
+	<style type="text/css">
+		#canvas{
+			display: block;
+			margin: 50px auto;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	//大圆
+	ctx.beginPath();
+	ctx.arc(250,250,240,0,2*Math.PI);
+	ctx.lineWidth="5";
+	ctx.strokeStyle="blue";
+	ctx.stroke();
+	ctx.translate(250,250);
+	//画大刻度
+	for(var i =0;i<12;i++){
+		ctx.beginPath();
+		ctx.moveTo(0,190);
+		ctx.lineTo(0,230);
+		ctx.rotate(30*Math.PI/180);
+		ctx.strokeStyle="#333";
+		ctx.stroke();
+	}
+	//画小刻度
+	for(var i = 0;i<60;i++){
+		ctx.beginPath();
+		ctx.moveTo(0,230);
+		ctx.lineTo(0,210);
+		ctx.rotate(6*Math.PI/180);
+		ctx.strokeStyle="#333";
+		ctx.lineWidth="2";
+		ctx.stroke();
+	}
+
+	var time = 0;
+	const PI = 2*Math.PI;//声明常量PI
+	//画中心小圆，指针
+	function Style(jiao,length,color,width){
+		ctx.beginPath();
+		ctx.arc(0,0,10,0,2*Math.PI);
+		ctx.fillStyle="red";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.save();
+		ctx.rotate(PI/jiao*time);
+		ctx.moveTo(0,0);
+		ctx.lineTo(0,-length);
+		ctx.strokeStyle=color;
+		ctx.lineWidth=width;
+		ctx.lineCap="round";
+		ctx.stroke();
+		ctx.restore();
+		ctx.closePath();
+	}
+	zhen();
+	//传参(设置秒针，分针，时针的样式)
+	function zhen(){
+		Style(360,120,"aqua",2);
+		Style(21600,90,"yellow",5);
+		Style(2196000,50,"red",7);
+	}
+
+	//画钟面数字
+	function drawNum(num,x,y){
+		ctx.font="50px song";
+		ctx.fillStyle="#333";
+		ctx.textBaseline="bottom";
+		ctx.fillText(num,x,y);
+	}
+	//设置数字及数字位置
+	function Number(){
+		drawNum(12,-25,-145);
+		drawNum(3,160,30);
+		drawNum(6,-10,190);
+		drawNum(9,-180,30);
+	}
+	Number();
+
+	//设置计时器
+	setInterval (function(){
+		ctx.clearRect(-130,-130,260,260);//清除画布
+		time++;
+		zhen();
+		Number();
+	},1000);
+</script>
+</html>

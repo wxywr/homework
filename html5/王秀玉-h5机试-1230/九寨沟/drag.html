@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>九寨沟</title>
+	<link rel="stylesheet" type="text/css" href="css/jiu.css">
+</head>
+<body>
+	<div class="all">
+		<header>
+			<a href="" class="head-l"></a>九寨沟<a href="" class="head-r"></a>
+		</header>
+		<main>
+			<p>景点图片源</p>
+			<div class="div1">
+				<img src="images/01.jpg" alt="图片" id="img1"><img src="images/02.jpg" alt="图片" id="img2"><img src="images/03.jpg" alt="图片" id="img3"><img src="images/04.jpg" alt="图片" id="img4"><img src="images/05.jpg" alt="图片" id="img5"><img src="images/06.jpg" alt="图片" id="img6"><img src="images/07.jpg" alt="图片" id="img7"><img src="images/08.jpg" alt="图片" id="img8">
+			</div>
+			<p>图片目的地</p>
+			<div class="div2">
+			</div>
+		</main>
+		<footer>
+			<div class="foot-a">
+				<a href="">登录</a><a href="">最近浏览</a><a href="">关于我们</a>
+			</div>
+			<p class="a"><span class="black">触屏版</span><span class="blue">电脑版</span></p>
+			<p class="b">Qunar 京ICP备05021087 意见反馈</p>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript">
+	var a = document.getElementsByClassName('div1')[0];
+	var b = document.getElementsByClassName('div2')[0];
+	var img = document.getElementsByTagName('img');
+	for(var i = 0;i<img.length;i++){
+		img[i].ondragstart = function(){
+    		event.dataTransfer.setData('text',event.target.id);
+    	}
+	}
+	b.ondragover = function(){
+    	event.preventDefault();//必须，不禁用drop事件不会触发
+    }
+    b.ondrop = function(){
+    	var id = event.dataTransfer.getData('text');
+        console.log(id);
+    	var img = document.getElementById(id);
+    	b.appendChild(img);
+    }
+   	a.ondragover = function(){
+    	event.preventDefault();//必须，不禁用drop事件不会触发
+    }
+    a.ondrop = function(){
+    	var id = event.dataTransfer.getData('text');
+        console.log(id);
+    	var img = document.getElementById(id);
+    	a.appendChild(img);
+    }
+</script>
+</html>

@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.all{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*头部内容*/
+header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 26px;
+	color: #fff;
+	background-color: #25A4BB;
+}
+header .head-l{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-image:url(../images/header-left-arrow_l.png);
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+	cursor: pointer;
+}
+header .head-r{
+	float: right;
+	width: 80px;
+	height: 50px;
+	background-image:url(../images/logo_l.png);
+	background-repeat: no-repeat;
+	background-position: 10% 50%;
+	cursor: pointer;
+}
+
+/*中间主体内容*/
+main{
+	width: 100%;
+	background-color: #fff;
+}
+main p{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	color: #333;
+	text-indent: 20px;
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+}
+main .div1,.div2{
+	width: 100%;
+	height: 80px;
+	padding: 20px 0 10px 20px;
+}
+main .div2{
+	padding-left: 130px;
+}
+main img{
+	width: 100px;
+	padding-right: 10px;
+}
+
+/*底部内容*/
+footer{
+	background-color: #F3F3F3;
+	width: 100%;
+	height: 300px;
+}
+footer .foot-a{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #B9B8AF;
+	border-width: 0 0 1px 0;
+}
+footer a{
+	color: #25A4BB;
+	text-decoration: none;
+	font-size: 16px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+footer .a{
+	text-align: center;
+	padding-top: 10px;
+}
+footer .black{
+	color: #333;
+	padding-right: 30px;
+}
+footer .blue{
+	color: #25A4BB;
+	cursor: pointer;
+}
+footer .b{
+	text-align: center;
+	margin-top: 20px;
+	color: #B9B8AF;
+	font-size: 14px;
+}

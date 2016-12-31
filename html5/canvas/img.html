@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>canvas中插入图片</title>
+	<style type="text/css">
+		
+	</style>	
+</head>
+<body>
+<canvas id="cv" width="470" height="480" style="border: 1px solid #000"></canvas>
+</body>
+<script type="text/javascript">
+	//为保证在呈现之前图片已完全加载，运用回调，即仅当图像加载完成时才执行后续代码
+	function drawBeauty(beauty){
+		var mycv = document.getElementById("cv");  
+		var myctx = mycv.getContext("2d");
+		myctx.drawImage(beauty, 0, 0);
+	}
+	function load(){
+		var beauty = new Image();  
+		beauty.src = "http://images.cnblogs.com/cnblogs_com/html5test/359114/r_test.jpg"; 
+		if(beauty.complete){
+		   drawBeauty(beauty);
+		}else{
+		   beauty.onload = function(){
+		     drawBeauty(beauty);
+		   };
+		   beauty.onerror = function(){
+		     window.alert('美女加载失败，请重试');
+		   };
+		};   
+	}//load
+	if (document.all) {
+	  window.attachEvent('onload', load);  
+	  }else {  
+	  window.addEventListener('load', load, false);
+	}
+</script>
+</html>
