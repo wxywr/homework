@@ -1,0 +1,42 @@
+
+.banner{
+	width: 800px;
+	height: 307px;
+	margin:260px auto 0;
+	border:2px solid red;
+	overflow: hidden;
+}
+.banner_img{
+	width: 3000px;
+	height: 307px;
+	background: #000;
+	position: relative;
+	top:0;left: 0;
+}
+.banner_img li{
+	width: 400px;
+	height: 307px;
+	float: left;
+}
+.banner_img img{
+	width: 400px;
+	height: 307px;
+	display: block;
+}
+
+.prev,.next{
+	width: 30px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	margin-top:-50px;
+	left:50%;
+}
+.prev{
+	background: url(../images/index.png) no-repeat -4px 0;
+	margin-left: -432px;
+}
+.next{
+	background: url(../images/index.png) no-repeat -55px 0;
+	margin-left: 402px;
+}

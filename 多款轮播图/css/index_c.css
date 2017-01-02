@@ -1,0 +1,66 @@
+.banner{
+	height: 520px;
+	position: relative;
+	overflow: hidden;
+	margin:200px auto 0;
+}
+.banner_img{
+	width: 1920px;
+	position: absolute;
+	left:50%;
+	margin-left: -960px;
+}
+.banner_img li{
+	position: absolute;
+	left: 0;
+	top:0;
+	/*display: none;*/
+}
+
+
+
+.banner_btn {
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	left:50%;
+	bottom:15px;
+	margin-left:-60px;
+	z-index: 99;
+}
+.banner_btn li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	background: url(../images/index_btn_06.png) no-repeat 0 0;
+	margin-right: 10px;	
+}
+.banner_btn li.cur{
+	background: url(../images/public_03.png) no-repeat 0 0;
+}
+
+
+
+.prev,.next{
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	top: 50%;
+	margin-top: -28px;
+	cursor: pointer;
+	display: none;
+}
+.prev{
+	left:50%;
+	margin-left: -600px;
+	background:url(../images/prevArrow.png) no-repeat 0 0;
+}
+.next{
+	left:50%;
+	margin-left: 500px;
+	background: url(../images/nextArrow.png) no-repeat 0 0;
+}
+.banner:hover .next,.banner:hover .prev{
+	display: block;
+}

@@ -1,0 +1,64 @@
+.banner{
+	width: 650px;
+	height: 250px;
+	border:2px dotted red;
+	position: relative;
+	margin:300px auto 0;
+}
+.banner_wrap{
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+.banner_img{
+	width: 9999px;
+	position: absolute;
+	left:0;top:0;
+}
+.banner_img li{
+	float: left;
+	width: 650px;
+	height: 250px;
+}
+/*底部按钮样式*/
+.banner_btn{
+	width: 110px;
+	height: 20px;
+	position: absolute;
+	left:50%;
+	bottom:-25px;
+	margin-left: -55px;
+}
+.banner_btn li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	background: url(../images/index_btn_06.png) no-repeat 0 0;
+	margin-right: 10px;
+}
+.banner_btn li.cur{
+	background: url(../images/public_03.png) no-repeat 0 0;
+}
+
+
+/*左右按钮样式*/
+.prev,.next{
+	width: 30px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	margin-top:-50px;
+	display: none;
+}
+.prev{
+	background: url(../images/index.png) no-repeat -4px 0;
+	left:0;
+}
+.next{
+	background: url(../images/index.png) no-repeat -55px 0;
+	right:0;
+}
+.banner:hover .prev,.banner:hover .next{
+	display: block;
+}
