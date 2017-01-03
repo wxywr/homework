@@ -1,0 +1,170 @@
+.leftSide{
+	width: 181px;
+	margin-right: 7px;
+	margin-top: 10px;
+}
+.center{
+	width: 543px;
+	margin-right: 7px;
+}
+.rightSide{
+	width: 220px;
+	background-color: red;
+}
+.leftSide,.center,.rightSide{
+	float: left;
+}
+.leftSide h5{
+	height: 25px;
+	line-height: 25px;
+	background-color: #FFF0D9;
+	padding-left: 10px;
+	color: #B53939;
+}
+.leftSide .sort p{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.leftSide .sort,.book{
+	border: 1px solid #000;
+}
+.leftSide .sort{
+	margin-bottom: 10px;
+}
+.leftSide .book img{
+	vertical-align: -3px;
+}
+.leftSide .name{
+	padding: 10px 0 5px 0;
+	border: 1px solid #000;
+	border-width: 0 0 1px 0;
+	width: 161px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.leftSide .book p{
+	font-weight: normal;
+	padding: 5px 0 5px 0;
+}
+.leftSide .names{
+	padding-left: 10px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.center .lunbo{
+	width: 538px;
+	margin-top: -10px;
+	background-color: #F2F2F3;
+	border: 1px solid #ccc;
+	border-bottom-left-radius: 5px; 
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+}
+.center .img{
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+.center .number{
+	float: right;
+}
+.center .number li{
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	border: 1px solid #000;
+	text-align: center;
+	margin-top: 6px;
+}
+.center .number ul{
+	margin: 20px 5px 0 0;
+}
+.center .up,.new{
+	margin-bottom: 11px;
+}
+.center .new{
+	width: 538px;
+	border: 1px solid #000;
+}
+.center .new h3,.title{
+	float: left;
+}
+.center .new li{
+	float: left;
+}
+.center .new .title .on{
+	color: #B53939;
+	background: url(../images/dd_book_bg2.jpg) no-repeat; 
+}
+.center .new-top{
+	height: 30px;
+	line-height: 30px;
+	background-color: #EBEBEB;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 0;
+}
+.center .new h3{
+	margin: 0 50px 0 10px;
+	color: #B53939;
+}
+.center .new p{
+	float: right;
+	margin-right: 10px;
+}
+.center .new .title li{
+	width: 45px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 8px;
+	background: url(../images/dd_book_bg1.jpg) no-repeat;
+}	
+.center .list .list-1,.list-2,.list-3,.list-4{
+	float: left;
+}
+.center .list ul,.books{
+	float: left;
+	margin-right: 10px;
+}
+.center .list ul li{
+	clear: both;
+}
+.center .list .list-1,.list-2,.list-3,.list-4{
+	margin: 10px 10px 0px 20px;
+}
+.center .list ul .blue{
+	font-size: 18px;
+}
+.center .list ul .from,.red{
+	font-size: 14px;
+}
+.center .list ul .red{
+	color: red;
+}
+.center .list{
+	overflow: hidden;
+}
+.look{
+	width: 538px;
+	border: 1px solid #000;
+}
+.look h3{
+	height: 30px;
+	line-height: 30px;
+	background-color: #EBEBEB;
+	text-indent: 10px;
+	margin-top: 0px;
+	color: #B53939;
+}
+.look div[class^="b"]{
+	float: left;
+	width: 97px;
+	margin-left: 30px;
+}
+.look .look-books{
+	overflow: hidden;
+}
+.look .look-books li{
+	line-height: 17px;
+}

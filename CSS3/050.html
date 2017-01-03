@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style>
+		p[id="color"]{
+			background-color: red;
+		}
+		p[class="bg"]{
+			background-color: blue;
+		}
+		p[class~="color"]{
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p class="color bg">我有color和background</p>
+	<p class="bg">我只有background</p>
+	<p class="color">我只有color</p>
+	<p id="color">id为color</p>
+</body>
+</html>
