@@ -9,8 +9,9 @@
 }
 .rightSide{
 	width: 220px;
-	background-color: red;
 }
+
+/*左边部分*/
 .leftSide,.center,.rightSide{
 	float: left;
 }
@@ -52,6 +53,8 @@
 	font-weight: bold;
 	margin: 10px 0;
 }
+
+/*中间部分*/
 .center .lunbo{
 	width: 538px;
 	margin-top: -10px;
@@ -75,6 +78,7 @@
 	border: 1px solid #000;
 	text-align: center;
 	margin-top: 6px;
+	cursor: pointer;
 }
 .center .number ul{
 	margin: 20px 5px 0 0;
@@ -93,8 +97,8 @@
 	float: left;
 }
 .center .new .title .on{
-	color: #B53939;
-	background: url(../images/dd_book_bg2.jpg) no-repeat; 
+	/*color: #B53939;
+	background: url(../images/dd_book_bg2.jpg) no-repeat; */
 }
 .center .new-top{
 	height: 30px;
@@ -119,6 +123,7 @@
 	text-align: center;
 	margin-top: 8px;
 	background: url(../images/dd_book_bg1.jpg) no-repeat;
+	cursor: pointer;
 }	
 .center .list .list-1,.list-2,.list-3,.list-4{
 	float: left;
@@ -167,4 +172,85 @@
 }
 .look .look-books li{
 	line-height: 17px;
+}
+
+/*右边部分*/
+.rightSide .right-1,.right-2{
+	width: 218px;
+	border: 1px solid #000;
+	margin-top: 10px;
+}
+.rightSide .right-1 h5{
+	height: 30px;
+	line-height: 30px;
+	background-color: #FFF0D9;
+	color: #B53939;
+}
+.rightSide .right-1 img{
+	margin: -7px 5px;
+}
+.rightSide .right-1 .bk_list{
+	height:226px;
+	overflow: hidden;
+}
+.rightSide .right-1 ul{
+	width: 90%;
+	margin: 0 auto;
+}
+.rightSide .right-1 ul li{ 
+	border-bottom: 1px dashed #000;
+}
+.rightSide .right-1 .ad img{
+	margin: 4px; 
+}
+.rightSide .right-2 .seven{
+	height: 29px;
+	line-height: 29px;
+	background-color: #518700;
+	text-indent: 10px;
+}
+.rightSide .right-2 p img{
+	vertical-align: -7px;
+}
+.rightSide .right-2 .right-title{
+	overflow: hidden;
+	width: 208px;
+	margin: 4px auto 0;
+	background-color: #F2F4DF;
+}
+.rightSide .right-2 .right-title .one{
+	margin-left: 18px;
+}
+.rightSide .right-2 .right-title li{
+	float: left;
+	width: 35px;
+	height: 20px;
+	line-height: 20px;
+	background: url(../images/dd_seven_bg1.jpg) no-repeat;
+	margin-right: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+.rightSide .right-2 .right-list li{
+	clear: both;
+	margin: 3px 0 5px 5px;
+}
+.rightSide .right-2 .right-list{
+ 	width: 205px;
+ 	margin: 0 auto 4px;
+ 	border: 1px solid #000;
+ 	overflow: hidden;
+ 	background-color: #F2F4DF;
+ }
+.rightSide .right-2 .right-list .a,.b,.c{
+	float: left;
+	margin-right: 6px;
+}
+.rightSide .right-2 .right-list li img{
+	vertical-align: -2px;
+}
+
+/*点击切换*/
+.list_a,.list_b,.list_c{
+	display: none;
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div class="all">
+		<header>
+			<div></div>
+			<ul>
+				<li><a href="#" class="blue">首页 </a>|</li>
+				<li><a href="#" class="blue">商品展示页 </a>|</li>
+				<li><a href="#" class="blue">购物车 </a>|</li>
+				<li><a href="#" class="blue">登录</a></li>
+			</ul>
+		</header>
+		<main>
+			<div class="top">
+				<ul>
+					<li class="one">填写注册信息</li>
+					<li class="two">2.邮箱验证</li>
+					<li class="three">3.完成注册</li>
+				</ul>
+			</div>
+			<div class="info">
+				<div class="info-top">
+					<img src="images/register_pic_01.gif">
+					<div class="img-r">
+						<p class="hi">HI,欢迎注册当当网！尽享众多优惠服务。</p>
+						<p class="red">您所提供的资料不会做其他用途,敬请安心填写。</p>
+					</div>
+				</div>
+				<form method="get" id="form">
+					<ul class="form-l">
+						<li>Email地址:</li>
+						<li>设置昵称:</li>
+						<li>设定密码:</li>
+						<li>再输一次密码:</li>
+						<li>性别:</li>
+						<li>所在地区:</li>
+					</ul>
+					<ul class="form-r">
+						<li class="father"><input type="text" name="email" class="a em"><p class="alert"></p></li>
+						<li><input type="text" name="name" class="a"></li>
+						<li><input type="password" name="password" class="a"></li>
+						<li><input type="password" name="passwords" class="a"></li>
+						<li><input type="radio" name="sex" value="boy"><span>男</span>
+						<input type="radio" name="sex" value="girl"><span>女</span></li>
+						<li>
+							<!-- 三级联动 -->
+							<select name="sheng" id="province"></select>
+							<select name="shi" id="city"></select>
+							<select name="xian" id="town"></select>
+						</li>
+						<li><input type="submit" name="" value=""></li>
+					</ul>
+				</form>
+			</div>
+		</main>
+	</div>
+</body>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/onchange.js"></script>
+</html>
