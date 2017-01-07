@@ -1,17 +1,23 @@
 var li = document.querySelectorAll(".new .title li");
 var div = document.querySelectorAll(".new .list");
-console.log(li);
-console.log(div);
-li[0].style.backgroundImage="url(images/dd_book_bg2.jpg)";
-li[0].style.color="#A52D00";
+// console.log(li);
+// console.log(div);
 for(var i = 0;i<li.length;i++){
 	li[i].index = i;
-	li[i].onclick = function(){
+	// console.log(li[i].index);
+	li[i].onmouseover = function(){
 		for (var j = 0; j < div.length; j++){
-			div[j].style.display = 'none';
-			li[j].className='';
+			li[j].style.color = '#333';
+			li[j].style.backgroundImage="url(images/dd_book_bg1.jpg)";
+
 		}
-		this.className = 'active';
+		this.style.color="#B53939";
+		this.style.backgroundImage="url(images/dd_book_bg2.jpg)";
+		
+		for (var k = 0; k < div.length; k++){
+			div[k].style.display = 'none';
+			// console.log(div[k]);
+		}
 		div[this.index].style.display = 'block';
-	}
+	}	
 }

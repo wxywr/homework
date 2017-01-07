@@ -97,8 +97,12 @@
 	float: left;
 }
 .center .new .title .on{
-	/*color: #B53939;
-	background: url(../images/dd_book_bg2.jpg) no-repeat; */
+	color: #B53939;
+	background: url(../images/dd_book_bg2.jpg) no-repeat; 
+}
+/*tab切换*/
+.list_a,.list_b,.list_c{
+	display: none;
 }
 .center .new-top{
 	height: 30px;
@@ -248,9 +252,4 @@
 }
 .rightSide .right-2 .right-list li img{
 	vertical-align: -2px;
-}
-
-/*点击切换*/
-.list_a,.list_b,.list_c{
-	display: none;
 }

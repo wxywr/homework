@@ -128,12 +128,21 @@ main .info .info-top .red{
 	vertical-align: 7px;
 	font-size: 14px;
 }
-#form .form-r .alert{
+
+#form .form-r p{
 	display: inline-block;
-	position: absolute;
-	left: 230px;
-	top: 5px;
+	margin-left: 10px;
 }
-#form .form-r .father{
-	position: relative;
+.onfocus{
+	color: #999;
+}
+.error{
+	color: red;
+	border:1px solid #333;
+	background-color: #FDF4D5;
+}
+.right{
+	width: 15px;
+	height: 11px;
+	background:url(../images/register_write_ok.gif) no-repeat; 
 }

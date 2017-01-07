@@ -418,9 +418,12 @@ var province = document.getElementById('province');
 var city = document.getElementById('city'); 
 var town = document.getElementById('town'); 
 
+//给省市县添加默认样式
 province.innerHTML = "<option value='-请选择-'>-请选择-</option>";
 city.innerHTML = "<option value='-请选择-'>-请选择-</option>";
 town.innerHTML = "<option value='-请选择-'>-请选择-</option>";
+
+var arr1;//全局变量
 
 for(var i=0;i<provinceList.length;i++){
 	province.innerHTML+="<option value="+ provinceList[i].name+">"+provinceList[i].name+"</option>";
@@ -432,7 +435,8 @@ province.onchange = function(){
 	for(var i=0;i<provinceList.length;i++){//遍历省列表
 		if(zhi==provinceList[i].name){//找到选择的省
 		    arr1 = provinceList[i].cityList;//把选择的城市列表保存在全局变量arr1里
-			city.innerHTML="<option value=-请选择->-请选择-</option>";//重置city下拉框的内容
+			city.innerHTML="<option value=-请选择->-请选择-</option>";//重置city下拉框的内容（清空）
+			town.innerHTML="<option value=-请选择->-请选择-</option>";//清空
 			for(var j=0;j<arr1.length;j++){
 				//console.log(arr1[j].name);
                 //把arr1里每一个城市的名字拼接为option标签添加到城市下拉框里
@@ -446,7 +450,7 @@ city.onchange = function(){//当城市下拉框的内容改变时
 	for(var j=0;j<arr1.length;j++){//遍历选择的省的市列表
 		if(zhi==arr1[j].name){//找到选择的市
 			var arr2 = arr1[j].areaList;//获取所选市的县区列表，保存在变量arr2里
-			town.innerHTML="<option value=-请选择->-请选择-</option>";//重置town下拉框的内容
+			town.innerHTML="<option value=-请选择->-请选择-</option>";//重置town下拉框的内容（清空）
 			for(var x=0;x<arr2.length;x++){//遍历所选市的县区列表（arr2）
 				town.innerHTML+="<option value="+ arr2[x]+">"+arr2[x]+"</option>";
 				//把arr2里每一个县区的名字拼接为option标签，添加到县区下拉框里
