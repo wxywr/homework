@@ -1,11 +1,6 @@
 $(function(){
-
-	// 公有变量
 	var b = 0;
-	// 定时器
 	var timer
-
-
 	// 底部按钮
 	$('.banner_btn li').click(function(){
 		$(this).addClass('cur').siblings('li').removeClass('cur');
@@ -13,7 +8,6 @@ $(function(){
 		$('.banner_img li').eq(a).fadeIn(2000).siblings('li').fadeOut(1500);
 		b = a
 	});
-
 
 	// 右边按钮
 	$('.next').click(function(){
@@ -23,7 +17,6 @@ $(function(){
 		$('.banner_btn li').eq(b).addClass('cur').siblings('li').removeClass('cur')
 	});
 
-
 	// 左边按钮
 	$('.prev').click(function(){
 		b--;
@@ -31,19 +24,15 @@ $(function(){
 		$('.banner_img li').eq(b).fadeIn(2000).siblings('li').fadeOut(1500);
 		$('.banner_btn li').eq(b).addClass('cur').siblings('li').removeClass('cur');
 	});
-
 	
-	// 使用定时器实现自动轮播【3】
+	// 使用定时器实现自动轮播
 	var time = function(){
 		b++;
 		if( b > 4){ b = 0};
 		$('.banner_img li').eq(b).fadeIn(2000).siblings('li').fadeOut(1500);
 		$('.banner_btn li').eq(b).addClass('cur').siblings('li').removeClass('cur')
 	}
-
-	timer=setInterval(time,2000)//调用time函数
-
-
+	timer=setInterval(time,2000)
 	$('.banner').hover(function(){
 		clearInterval(timer)
 	},
