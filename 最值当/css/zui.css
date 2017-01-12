@@ -252,6 +252,7 @@
 	background-image: url(../images/jiantou.png);
 	position: absolute;
 	top: 60px;
+	opacity: 0.5;
 }
 #zui .zui-c .new-m .lunbo .jiao{
 	display: none;
@@ -429,11 +430,8 @@
 	background-color: #F5F5F5;
 	text-align: center;
 }
-.dress .dress-top ul li:hover{
-	cursor: pointer;
-}
 .dress .dress-main{
-	height: 650px;
+	height: 521px;
 	margin-top:10px;
 }
 .dress .dress-main .dress-l{
@@ -491,13 +489,92 @@
 .dress .dress-m .m-lunbo{
 	width: 383px;
 	height: 340px;
+	position: relative;                                                                                                                     
+	overflow: hidden;
+}
+.dress .dress-m .m-lunbo .lunboimg{
+	width: 1532px;
+	height: 340px;
+	position: absolute;
+}
+.dress .dress-m .lunboimg img{/*图片宽383px 高340px*/
+	float: left;
+	width: 383px;
+}
+.dress .dress-m .lunbo_btn{
+	position: absolute;
+	left: 120px;
+	bottom: 10px;
+}
+.dress .dress-m .lunbo_btn li{
+	width: 15px;
+	height: 5px;
+	background-color: #fff;
+	float: left;
+	margin-left: 20px;
+}
+.dress .dress-m .zy{
+	display: none;
+}
+.dress .dress-m .zy>div{
+	width: 34px;
+	height: 50px;
+	background-color: #666;
+	position: absolute;
+	top:150px;
+	background-image: url(../images/jiantou.png);
+	opacity: 0.5;
+}
+.dress .dress-m .zy .zuo{
+	left: 0px;
+	background-position: 0px -75px;
+}
+.dress .dress-m .zy .you{
+	right: 0px;
+	background-position: -30px -75px;
+}
+/*底部无缝轮播*/
+.dress .dress-bottom{
+	width: 1200px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	margin-bottom: 30px;
+	text-indent: 10px;
+	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
 }
-.dress .dress-m .m-lunbo ul{
-	width: 1532px;
-	position: absolute;
+.dress .dress-bottom .zu-btm{
+	width: 3594px;
+	height: 50px;
+	position: relative;
 }
-.dress .dress-m .m-lunbo ul li{
+.dress .dress-bottom .zulunbo{
+	width: 1198px;
 	float: left;
+}
+.dress .dress-bottom img{ /*图片宽110px 高50px*/
+	margin: 10px 4.9px;
+	float: left;
+}
+.dress .dress-bottom .arrow{
+	display: none;
+}
+.dress .dress-bottom .arrow>div{
+	display: block;
+	width: 34px;
+	height: 50px;
+	background-color: #666;
+	position: absolute;
+	top:8px;
+	background-image: url(../images/jiantou.png);
+	opacity: 0.5;
+}
+.dress .dress-bottom .arrow .arrowLeft{
+	left: 0px;
+	background-position: 0px -75px;
+}
+.dress .dress-bottom .arrow .arrowRight{
+	right: 0px;
+	background-position: -30px -75px;
 }
