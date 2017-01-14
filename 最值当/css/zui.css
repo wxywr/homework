@@ -492,12 +492,12 @@
 	position: relative;                                                                                                                     
 	overflow: hidden;
 }
-.dress .dress-m .m-lunbo .lunboimg{
+.dress .dress-m .m-lunbo .lunboimg,.lunbo_img,.lunbo_im,.lunbo_i{
 	width: 1532px;
 	height: 340px;
 	position: absolute;
 }
-.dress .dress-m .lunboimg img{/*图片宽383px 高340px*/
+.dress .dress-m .m-lunbo img{/*图片宽383px 高340px*/
 	float: left;
 	width: 383px;
 }

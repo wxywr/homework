@@ -1,0 +1,211 @@
+body{
+	background: #F6F9FB;
+}
+.all{
+	width: 900px;
+	margin:50px auto;
+}
+/*.......头部........*/
+header{
+	height: 60px;
+	overflow: hidden;
+}
+header a{
+	float: left;
+}
+header .head{
+	float: right;
+}
+header div ul{
+	float: left;
+	margin-left: 20px;
+}
+header div ul li a{
+	color:#787878;
+}
+header div ul .li1{
+	width: 48px;
+	height: 42px;
+	background-image: url('../img/login (10).png');
+}
+header div ul .money{
+	background-position: 0px 0px;
+}
+header div ul .zheng{
+	background-position: -69px 0px;
+}
+header div ul .lag{
+	background-position: -132px 0px;
+}
+/*.............谨防上骗.......*/
+.warn{
+	float: right;
+	margin-top: 10px;
+}
+.warn p{
+	line-height: 24px;
+	color:#787878;
+	padding-left: 24px;
+	background:url('../img/login (7).png') no-repeat 5px center #FEF7F5;
+	border:1px solid #FEDBD1;
+	font-size: 12px;
+
+}
+.warn p a{
+	color:#1A66B3;
+}
+/*...中间部分..*/
+main{
+	margin-top: 50px;
+	background: white;
+	padding:15px;
+	overflow: hidden;
+}
+main aside{
+	float:left;
+}
+main section{
+	float: right;
+}
+
+section .ipu{
+	width: 308px;
+	margin-left: 5px;
+	height: 36px;
+	box-sizing: border-box;
+	
+}
+section form p{
+	height: 26px;
+	line-height: 26px;
+	color:#A9A9A9;
+	padding-left: 15px;
+}
+section input{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	
+
+
+}
+section input[type="text"],section input[type="password"]{
+	padding:5px 0px 5px 30px;
+	border:none;
+	outline: none;
+	border:1px solid #E6E6E6;
+}
+section input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+section .chc{
+	margin: 20px 0px 6px 0px;
+}
+section .chc a{
+	float: right;
+	margin-right: 10px;
+	color: #1A66B3;
+}
+section input[type="submit"]{
+	border-radius: 6px;
+	border:none;
+	background: #FF2832;
+	color:white;
+	font-size: 20px;
+	letter-spacing: 10px;
+	height: 42px;
+	line-height: 42px;
+}
+section .btm{
+	margin-top: 15px;
+	font-size: 12px;
+	color: #6E6E6E;
+	position: relative;
+	float: left;
+}
+section .btmRight{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+section .btmRight a{
+	color: #6E6E6E;
+}
+
+section .btm>div>a{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background:url('../img/login (8).png');
+	margin-right: 6px;
+}
+section .btm>div>a.a1{
+	background-position: 0px -260px;
+}
+section .btm>div>a.a2{
+	background-position: 0px -280px;
+}
+section .btm>div>a.a3{
+	background-position: 0px -300px;
+}
+section .btm>div>a.a4{
+	background-position: 0px -320px;
+}
+section .btm span{
+	width: 40px;
+	float: left;
+	cursor: pointer;
+	margin-left: 10px;
+	background: url('../img/login (8).png') no-repeat 30px -340px;
+}
+section .btm span b{
+	display: inline-block;
+	border:6px solid transparent;
+	border-top: 6px solid #666;
+	position: relative;
+	top:5px;
+}
+section .btm .aLink{
+	width: 190px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	background:#FAFAFA;
+	border:1px solid #EAEAEA;
+	padding:0px 0px 0px 10px;
+	position: absolute;
+	top:41px;
+	left: 132px;
+	display: none;
+	
+}
+section .btm .aLink a{
+	color:#6E6E6E;
+	margin-right: 10px;
+}
+section .btm .aLink img{
+	position: absolute;
+	top:-7px;
+	left:5px;
+}
+/*..........尾部.........*/
+footer{
+	text-align: center;
+	margin-top: 30px;
+}
+footer span,footer a{
+	color:#666666;
+	font-size: 14px;
+}
+footer a:hover{
+	color: orange;
+}
+footer span:first-child:after{
+	content:"|";
+	padding: 0px 16px;
+}
+footer p{
+	margin-bottom: 20px;
+}

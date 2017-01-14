@@ -137,15 +137,36 @@ function dress(){
 		$('.lunboimg').css('left','0px');
 	})
 }
-// function dre(){
-// 	var aa = $('.lunboimg img').eq(4);
-// 	$('.lunboimg').animate({'left':'-383px'},1500,function(){
-// 		$('.lunboimg img').eq(4).remove();
-// 		$('.lunboimg').append(aa);
-// 		$('.lunboimg').css('left','0px');
-// 	})
-// }
+function dr(){
+	var t = $('.lunbo_img img').eq(0);
+	$('.lunbo_img').animate({'left':'-383px'},1500,function(){
+		$('.lunbo_img img').eq(0).remove();
+		$('.lunbo_img').append(t);
+		$('.lunbo_img').css('left','0px');
+	})
+}
+function drr(){
+	var e = $('.lunbo_im img').eq(0);
+	$('.lunbo_im').animate({'left':'-383px'},1500,function(){
+		$('.lunbo_im img').eq(0).remove();
+		$('.lunbo_im').append(e);
+		$('.lunbo_im').css('left','0px');
+	})
+}
+function drrr(){
+	var h = $('.lunbo_i img').eq(0);
+	$('.lunbo_i').animate({'left':'-383px'},1500,function(){
+		$('.lunbo_i img').eq(0).remove();
+		$('.lunbo_i').append(h);
+		$('.lunbo_i').css('left','0px');
+	})
+}
+
 var y = 0;
+var yy = 4;
+var yyy = 8;
+var yyyy = 12;
+
 var tm=setInterval(function(){
 	dress();
 	y++;
@@ -153,7 +174,24 @@ var tm=setInterval(function(){
 	if(y>=3){
 		y=-1;
 	};
-	// dre();
+	dr();
+	yy++;
+	lef();
+	if(yy>=7){
+		yy=3;
+	};
+	drr();
+	yyy++;
+	le();
+	if(yyy>=11){
+		yyy=7;
+	};
+	drrr();
+	yyyy++;
+	lee();
+	if(yyyy>=15){
+		yyyy=11;
+	};
 },3000);
 
 //鼠标经过显示箭头并清除定时器
@@ -172,25 +210,54 @@ $('.m-lunbo').mouseout(function(){
 	left();
 	if(y>=3){
 		y=-1;
-	}
+	};
+	dr();
+	yy++;
+	lef();
+	if(yy>=7){
+		yy=3;
+	};
+	drr();
+	yyy++;
+	le();
+	if(yyy>=11){
+		yyy=7;
+	};
+	drrr();
+	yyyy++;
+	lee();
+	if(yyyy>=15){
+		yyyy=11;
+	};
 },3000);
 })
-
-$('.lunbo_btn li').eq(0).css({'backgroundColor':'#333'});
-$('.lunbo_btn li').eq(4).css({'backgroundColor':'#333'});
-$('.lunbo_btn li').eq(8).css({'backgroundColor':'#333'});
-$('.lunbo_btn li').eq(12).css({'backgroundColor':'#333'});
 
 $('.lunbo_btn li').click(function(){
 	var z = $(this).index();
 	y=z;
 	left();
 })
+
+$('.lunbo_btn li').eq(0).css({'backgroundColor':'#333'});
 function left(){
 	$('.lunbo_btn li').eq(y).css({'backgroundColor':'#333'});
 	$('.lunbo_btn li').eq(y).siblings().css({'backgroundColor':'#fff'});
 }
-
+$('.lunbo_btn li').eq(4).css({'backgroundColor':'#333'});
+function lef(){
+	$('.lunbo_btn li').eq(yy).css({'backgroundColor':'#333'});
+	$('.lunbo_btn li').eq(yy).siblings().css({'backgroundColor':'#fff'});
+}
+$('.lunbo_btn li').eq(8).css({'backgroundColor':'#333'});
+function le(){
+	$('.lunbo_btn li').eq(yyy).css({'backgroundColor':'#333'});
+	$('.lunbo_btn li').eq(yyy).siblings().css({'backgroundColor':'#fff'});
+}
+$('.lunbo_btn li').eq(12).css({'backgroundColor':'#333'});
+function lee(){
+	$('.lunbo_btn li').eq(yyyy).css({'backgroundColor':'#333'});
+	$('.lunbo_btn li').eq(yyyy).siblings().css({'backgroundColor':'#fff'});
+}
 //点击左箭头图片向左切换
 $('.zy .zuo').click(function(){
 	dress();
