@@ -1,0 +1,404 @@
+section{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.all{
+	height: 486px;
+	background: url(img/bg7.jpg) no-repeat;
+	background-position: 50% 0;
+	background-color: #FAFAFA;
+}
+.all .left{
+	float: left;
+}
+.all .left .dh{
+	width: 200px;
+	position: relative;
+	z-index: 100;
+}
+.all .left .dh li{
+	position: relative;
+	padding-left: 18px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	z-index: 200;
+}
+.all .left .dh li:hover{
+	border:5px solid red;
+	border-right: none;
+	background: #fff;
+}
+.hover{
+	border:5px solid red;
+	border-right: none;
+	background: #fff;
+}
+.all .left .dh li:hover+div{
+	display: block;
+}
+.all .left .dh .nl li:hover{
+	border: none;
+	color: red
+}
+.all .left .dh .nl:hover{
+	display: block;
+}
+.all .left .dh .nl:hover{
+
+}
+.all .left .dh li a:hover{
+	color: red;
+}
+.all .left .dh .nl{
+	position: absolute;
+	display: none;
+	left: 195px;
+	top: 0px;
+	border: 5px solid red;
+	background-color: #fff;
+}
+.all .left .nl div{
+	height: 40px;
+	width: 1000px;
+	overflow: hidden;
+}
+.all .left .nl p{
+	padding-left: 20px;
+	color: red;
+	font-weight: bold;
+	float: left;
+	width: 100px;
+}
+.all .left .nl ul{
+	float: left;
+	overflow: hidden;
+
+}
+.all .left .nl ul li{
+	float: left;
+}
+.all .center{
+	float: left;
+}
+.all .center .top{
+	position: relative;
+	width: 796px;
+	height: 326px;
+}
+
+.all .center .top .jiantou{
+	position: absolute;
+	width: 796px;
+	top: 126px;
+	left: 0px;
+	z-index: 50;
+	display: none;
+}
+.all .center .top .jiantou span{
+	display:inline-block;
+	width: 33px;
+	height: 66px;
+	background-image:url(img/jiantou.png);
+}
+.all .you{
+	float: right;
+	background-position: -34px 0px;
+}
+.all .center .top .right{
+	width: 32px;
+	height: 66px;
+}
+.all .center .top ul{
+	position: absolute;
+	top:298px;
+	left:240px;
+	z-index: 20;
+}
+.all .center .top ul li{
+	float: left;
+	text-align: center;
+	line-height: 25px;
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	color: #fff;
+	background-color: #605C61;
+	border-radius: 50%;
+}
+.all .center .top img{
+	display: block;
+}
+.all .center .top .lb img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.all .center .bottom {
+	position: relative;
+}
+/*.all .center .bottom .qian{
+	position: relative;
+}*/
+.all .center .bottom .shang{
+	width: 198px;
+	height: 160px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #ccc;
+	opacity: 0.3;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	z-index: 30;
+}
+.all .center .bottom .shang:hover{
+	opacity: 0;
+}
+.all .center .bottom .shang2{
+	position: absolute;
+	top: 0px;
+	left: 199px;
+}
+.all .center .bottom .shang3{
+	position: absolute;
+	top: 0px;
+	left: 398px;
+}
+.all .center .bottom .shang4{
+	position: absolute;
+	top: 0px;
+	left: 597px;
+}
+.all .center .bottom .qian .di{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.all .center .bottom .qian .di img{
+	float: left;
+}
+.all .center .bottom .qian .shang1{
+	position:absolute;
+	top: 0px;
+	left: 0px; 
+}
+.all .center .bottom .qian .shang2{
+	position:absolute;
+	top: 0px;
+	left: 199px; 
+}
+.all .center .bottom .qian .shang3{
+	position:absolute;
+	top: 0px;
+	left: 398px; 
+}
+.all .center .bottom .qian .shang4{
+	position:absolute;
+	top: 0px;
+	left: 597px; 
+}
+.all .right{
+	float: right;
+	width: 200px;
+}
+.all .right p{
+	float: left;
+	font-size: 18px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #F0F0F0;
+}
+.all .right p a:hover{
+	text-decoration: none;
+}
+.all .right .wz ul{
+	overflow: hidden;
+	clear: both;
+	background-color: #fff;
+}
+.all .right .wz li{
+	height:32px;
+	line-height: 32px;
+	margin-left: 5px;
+}
+.all .right .wz .b{
+	display: none;
+}
+.all .right .qh p{
+	text-align: center;
+	font-size: 15px;
+	width: 66px;
+}
+.all .right .qh .A{
+	display: block;
+}
+.all .right .qh div{
+	display: none;
+	background-color: #fff;
+}
+.all .right .qh div img{
+	width: 200px;
+	height: 95px;
+}
+.all .right .qh div p{
+	clear: both;
+	font-size: 12px;
+	width: 100px;
+	float: left;
+}
+nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav .miaoqiang .left div{
+	float: left;
+	margin-right: 15px;
+}
+nav .miaoqiang .right{
+	overflow: hidden;
+}
+nav .miaoqiang .right li{
+	float: left;
+	font-size: 30px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 80px;
+	color: #666;
+	font-weight: bold;
+}
+nav .miaoqiang .right li a:hover{
+	text-decoration:none; 
+	border-bottom:3px solid red;
+	display: inline-block; 
+	padding-bottom:10px;
+}
+nav .miaoqiang ul .red a{
+	color: red;
+}
+nav .changci .sp ul{
+	float: left;
+	width: 197px;
+	height: 230px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-top: 3px solid #000;
+}
+#xia{
+	border-top: none;
+}
+nav .changci{
+	margin-top: 10px;
+}
+nav .changci .sp{
+	float: left;
+	width: 992px;
+	text-align: center;
+}
+nav .changci .csz{
+	float: left;
+	border-bottom:1px solid #ccc;
+}
+nav .changci .csz .sm{
+	border-top: 3px solid red;
+}
+nav .changci .csz li{
+	border:1px solid #ccc;
+	height: 114px;
+	width: 202px;
+	border-width: 1px 1px 0 1px;
+}
+nav .changci .csz li img{
+	display: block;
+}
+nav .changci .sp ul .red{
+	font-size: 18px;
+	color: red;
+	margin-top: 10px;
+}
+nav {
+	overflow: hidden;
+}
+.nh{
+	width: 1200px;
+	margin:0 auto;
+	margin-top: 50px;
+	overflow: hidden;
+}
+.nh h1{
+	clear: both;
+	margin-bottom: 20px;
+}
+.nh h1 a:hover{
+	color:red;
+	text-decoration:none;
+}
+.nh img{
+	display: block;
+	float: left;
+	border:1px solid #ccc;
+	border-width: 1px 0 0 1px;
+}
+.nh .left img{
+	width: 198px;
+}
+.nh .right img{
+	width: 198px;
+}
+.nh .right{
+	border-right: 1px solid #ccc;
+}
+.nh .qiang div{
+	width: 399px;
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+.wp{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.wp .zb{
+	float: left;
+	overflow: hidden;
+}
+.wp .zb li{
+	width: 200px;
+	height: 280px;
+}
+.wp .zb .xt{
+	background-color: #F0F0F0;
+}
+
+.wp .zb .xt a{
+	display: inline-block;
+	width: 95px;
+	height: 140px;
+	text-align: center;
+	line-height: 140px;
+}
+.wp .yb{
+	width: 1000px;
+	float: left;
+}
+.wp .yb ul li{
+	width: 200px;
+	height: 280px;
+	float: left;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.wp .yb ul li img{
+	display: inline-block;
+	width: 194px;
+	height: 274px;
+}
+	
+

@@ -1,0 +1,102 @@
+/*上*/
+#xian{
+	border: 1px solid red;
+	margin: 0 auto;
+}
+#footer{
+	width: 100%;
+	margin: 45px auto 0;
+	font-size: 12px;
+}
+#footer .foo{
+	width: 1200px;
+	margin: 0 auto;
+}
+#footer .shang{
+	width: 100%;
+	height: 80px;
+	background-color: #FAFAFA;
+	border-top: 2px solid red;
+	border-bottom: 1px solid #f3f3f3;
+	overflow: hidden;
+}
+#footer .sha{
+	width: 1200px;
+	margin: 0 auto;
+}
+#footer .shang .one{
+	margin-left: 160px;
+}
+#footer .shang a{
+	float: left;
+	margin: 15px 50px;
+}
+
+/*中*/
+#footer .zhong{
+	margin-left:280px;
+}
+#footer ul{
+	float: left;
+	margin-right:40px;
+	text-align: center;
+}
+#footer ul li{
+	list-style:none;
+	margin: 5px 0 0 0px;
+}
+#footer a{
+	color: #999;
+	text-decoration: none;
+}
+#footer ul li a:hover{
+	color:#FF2832;
+	text-decoration:block;
+}
+/*下*/
+#footer .xia{
+	overflow:hidden;
+	padding:20px 0 20px 156px;
+	width: 1200px;
+	color: #999;
+}
+#footer .xia a{
+	padding:0 10px;
+}
+#footer a:hover{
+	color:#FF2832;
+	text-decoration:block;
+}
+#footer .dibu{
+	width: 1200px;
+	height:120px;
+	color: #999;
+	text-align: center;
+}
+#footer .weibu{
+	width: 1200px;
+	height:80px;
+	text-align: center;
+}
+#footer .weibu a{
+	display: inline-block;
+	width: 128px;
+	height:47px;
+	margin: 0 20px;
+}
+#footer .tp{
+	margin-top: 5px;
+}
+.weibu-1{
+	background-image: url(../images/foot1.gif);
+}
+.weibu-2{
+	background-image: url(../images/foot2.png);
+}
+.weibu-3{
+	background-image: url(../images/footer.jpg);
+}
+.weibu-4{
+	background-image: url(../images//foot1.png);
+}
+

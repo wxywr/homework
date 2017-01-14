@@ -14,11 +14,38 @@ function lunbo(){
 	$('.img img').eq(n).siblings().fadeOut(1000);
 }
 
+$(".btn ul li").eq(4).css('backgroundColor','#333');
+var q=4;
+function lunb(){
+	$(".btn ul li").eq(q).css('backgroundColor','#333');
+	$(".btn ul li").eq(q).siblings().css('backgroundColor','#fff');
+	$('.img img').eq(q).fadeIn(1000);
+	$('.img img').eq(q).siblings().fadeOut(1000);
+}
+
+$(".btn ul li").eq(8).css('backgroundColor','#333');
+var p=8;
+function lb(){
+	$(".btn ul li").eq(p).css('backgroundColor','#333');
+	$(".btn ul li").eq(p).siblings().css('backgroundColor','#fff');
+	$('.img img').eq(p).fadeIn(1000);
+	$('.img img').eq(p).siblings().fadeOut(1000);
+}
 var timer = setInterval(function(){
 	n++;
 	lunbo();
 	if(n>=3){
 		n=-1;
+	}
+	q++;
+	lunb();
+	if(q>=7){
+		q=3;
+	}
+	p++;
+	lb();
+	if(p>=11){
+		p=7;
 	}
 },2000);
 
@@ -33,6 +60,16 @@ $(".lunbo").mouseout(function(){
 	lunbo();
 	if(n>=3){
 		n=-1;
+	};
+	q++;
+	lunb();
+	if(q>=7){
+		q=3;
+	};
+	p++;
+	lb();
+	if(p>=11){
+		p=7;
 	}
 },2000);
 })
@@ -100,6 +137,14 @@ function dress(){
 		$('.lunboimg').css('left','0px');
 	})
 }
+// function dre(){
+// 	var aa = $('.lunboimg img').eq(4);
+// 	$('.lunboimg').animate({'left':'-383px'},1500,function(){
+// 		$('.lunboimg img').eq(4).remove();
+// 		$('.lunboimg').append(aa);
+// 		$('.lunboimg').css('left','0px');
+// 	})
+// }
 var y = 0;
 var tm=setInterval(function(){
 	dress();
@@ -107,7 +152,8 @@ var tm=setInterval(function(){
 	left();
 	if(y>=3){
 		y=-1;
-	}
+	};
+	// dre();
 },3000);
 
 //鼠标经过显示箭头并清除定时器
@@ -131,7 +177,10 @@ $('.m-lunbo').mouseout(function(){
 })
 
 $('.lunbo_btn li').eq(0).css({'backgroundColor':'#333'});
-// var y = 0;
+$('.lunbo_btn li').eq(4).css({'backgroundColor':'#333'});
+$('.lunbo_btn li').eq(8).css({'backgroundColor':'#333'});
+$('.lunbo_btn li').eq(12).css({'backgroundColor':'#333'});
+
 $('.lunbo_btn li').click(function(){
 	var z = $(this).index();
 	y=z;
@@ -141,13 +190,30 @@ function left(){
 	$('.lunbo_btn li').eq(y).css({'backgroundColor':'#333'});
 	$('.lunbo_btn li').eq(y).siblings().css({'backgroundColor':'#fff'});
 }
-// var r = setInterval(function(){
-// 	y++;
-// 	left();
-// 	if(y>=3){
-// 		y=-1;
-// 	}
-// },3000)
+
+//点击左箭头图片向左切换
+$('.zy .zuo').click(function(){
+	dress();
+	y--;
+	left();
+	if(y<=0){
+		y=4;
+	}
+})
+//点击右箭头图片向右切换
+$('.zy .you').click(function(){
+	var a = $('.lunboimg img').eq(3);
+	$('.lunboimg img').eq(3).remove();
+	$('.lunboimg').prepend(a);
+	$('.lunboimg').css('left','-383px');
+	$('.lunboimg').stop().animate({'left':'0px'},1500);
+	y++;
+	left();
+	if(y>=3){
+		y=-1;
+	}
+})
+
 
 
 // 底部无缝轮播

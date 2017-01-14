@@ -1,0 +1,504 @@
+﻿#gong .ydqx{
+	height: 45px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+#gong .ydqx .ydqx_left{
+	float: left;
+    font: bold 20px/44px "Microsoft YaHei";
+}
+#gong .ydqx .ydqx_left a:hover{
+	color:red;
+}
+#gong .ydqx .ydqx_right{
+	float: right;
+}
+#gong .ydqx .ydqx_right .bq li{
+	float: left;
+	width: 114px;
+	padding-top: 1px;
+	border:1px solid #ccc;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+#gong .ydqx .ydqx_right .bq li a{
+    font: 14px/42px "Microsoft YaHei";
+    color: #646464;
+}
+#gong .ydqx .ydqx_left a:hover{
+	text-decoration: none;
+}
+#gong .ydqx .ydqx_right .bq li a:hover{
+	text-decoration: none;
+}
+#gong .ydqx .ydqx_right .bq li:hover{
+	padding-bottom: 2px;
+	background-color: white;
+	border:2px solid black;
+	border-bottom: none;
+}
+#gong .ydqx .ydqx_right .bq .bg1{
+	padding-bottom: 2px;
+	background-color: white;
+	border:2px solid black;
+	border-bottom: none;
+}
+#gong .ydqx_cen .ydqx_cen_left{
+	position: relative;
+}
+#gong .ydqx_cen .ydqx_cen_left img{
+	width: 238px;
+	height: 517px;
+}
+#gong .ydqx_cen .ydqx_cen_left ul{
+	width: 235px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	border-width: 0 1px;
+	border-color: #ccc;
+	border-style: solid;
+	position: absolute;
+	bottom: 0px;
+	left: 1px;
+	background-color: rgba(255,255,255,0.9);
+}
+#gong .ydqx_cen {
+	overflow: hidden;
+}
+#gong .ydqx_cen .ydqx_cen_left li{
+	width: 62px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 16px;
+	float: left;
+}
+#gong .ydqx_cen .ydqx_cen_left .ydqx_cen_bq li a:hover{
+	color: red;
+}
+#gong .ydqx_cen .ydqx_cen_left,.ydqx_cen_cen{
+	float: left;
+}
+#gong .cen1_left{
+	width: 383px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+}
+#gong .cen1_left a{
+	display: block;
+}
+#gong .cen_img ul{
+	position: absolute;
+	bottom:6px;
+	left: 50%;
+	margin-left: -11px;
+}
+#gong .ydqx_cen .cen1 li{
+	float: left;
+	width: 10px;
+	height: 3px;
+	background-color: #fff;
+	margin-right: 4px;
+}
+#gong .cen1{
+	border:1px solid #ccc;
+	overflow: hidden;
+	border-bottom: none;
+	position: absolute;
+	display: none;
+	width: 960px;
+}
+#gong .b{
+	display: block;
+}
+#gong .cen1 .cen_img{
+	float: left;
+}
+#gong .cen1_left_bot div{
+	float: left;
+}
+#gong .cen1_left_bot .bor{
+	box-sizing: border-box;
+	border-left: 1px solid #ccc;
+}
+#gong .cen1_left_bot .bor a{
+	display: block;
+}
+#gong .cen1_right{
+	float: left;
+	width:574px; 
+}
+#gong .cen1_right a{
+	float: left;
+	display: block;
+	border-left: 1px solid #ccc;
+	width: 190px;
+}
+#gong .cen1_right2{
+	float: left;
+	border-top: 1px solid #ccc;
+}
+#gong .cen1_right2 a{
+	float: left;
+	display: block;
+	box-sizing: border-box;
+	border-left: 1px solid #ccc;
+}
+#gong .cen1_right2 img,.cen1_right img{
+	display: block;
+	width: 191px;
+}
+#gong .ydqx_cen_left,.ydqx_cen_cen{
+	float: left;
+}
+#gong .ydqx_cen_cen{
+	width: 962px;
+}
+#gong .ydqx_cen_bot{
+	width: 1198px;
+	height: 50px;
+	border:1px solid #ccc;
+	margin-top: -2px;
+	overflow: hidden;
+	position: relative;
+}
+#gong .ydqx_cen_bot ul{
+	width: 3594px;
+	position: absolute;
+}
+#gong .ydqx_cen_bot li{
+	float: left;
+	width: 1198px;
+}
+#gong .ydqx_cen_bot li img{
+	width: 110px;
+	margin:3px 1px 2px 3px ;
+}
+
+#gong .imgchang{
+	position: absolute;
+	width: 786px;
+	height: 340px;
+}
+#gong .cen1_left img{
+	float: left;
+	width: 393px;
+}
+#gong .cen1_left{
+	position: relative;
+	height: 340px;
+	width: 383px;
+	overflow: hidden;
+	border-right:1px solid #ccc;
+}
+#gong .f{
+	width: 1572px;
+}
+#gong #jiantou{
+	position: relative;
+	width: 1200px;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+	cursor: pointer;
+	display: none;
+}
+#gong #jiantou span{
+	display: inline-block;
+	width: 27px;
+	height: 46px;
+	position: absolute;
+	background-image: url(../img/ajimg/jiantou.png);
+	background-repeat: no-repeat;
+	margin: 2px 0;
+}
+#gong #jiantou .zuo{
+	background-position: -6px -9px;
+}
+#gong #jiantou .you{
+	margin-left: 1171px;
+	background-position: -35px -9px;
+}
+/*育婴童*/
+#gong #tz4 .yyt{
+	width: 100%;
+	overflow: hidden;
+}
+#gong #tz4 .yyt .yyt_you .li1:after{
+	content: "/";
+	padding:0px 12px;
+	color: #ccc;
+	font: bold 18px/24px "Microsoft YaHei";;
+}
+#gong #tz4 .yyt .yyt_you li{
+	float: left;
+}
+#gong #tz4 .yyt .yyt_you a{
+	font: bold 18px/24px "Microsoft YaHei";
+}
+#gong #tz4 .yyt .yyt_zuo a{
+	display: inline-block;
+	margin-top: 9px;
+	margin-bottom: 7px;
+	padding-right: 20px;
+	font: bold 20px/24px "Microsoft YaHei";
+}
+#gong #tz4 .yyt .yyt_you{
+	padding-left: 20px;
+	margin-top: 9px;
+	margin-bottom: 7px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+
+}
+#gong #tz4 .yyt .yyt_zuo,#gong .yyt .yyt_you{
+	float: left;
+}
+#gong #tz4 .yyt a:hover{
+	text-decoration: none;
+	color: red;
+}
+#gong #tz4{
+	margin-top: 22px;
+}
+#gong #tz4 .yyt_bot>div{
+	float: left;
+}
+#gong #tz4 .yyt_bot{
+	overflow: hidden;
+	position: relative;
+	border-style: solid;
+	border-width: 0px 0px 0 1px;
+	border-color: #ccc;
+}
+#gong #tz4 .yyt_bot .yyt_bot_zuo{
+	width: 220px;
+	overflow: hidden;
+}
+#gong #tz4 .yyt_bot .yyt_bot_zuo img{
+	border-top: 1px solid #ccc;
+	display: block;
+	margin: 0;
+	width: 220px;
+}
+#gong #tz4 .yyt_bot .cen1_left{
+	width: 314px;
+	height: 389px;
+	border-width: 1px 1px 0 1px;
+	border-color: #ccc;
+	border-style: solid;
+}
+#gong #tz4 .yyt_bot .cen1_left img{
+	width: 314px;
+	height: 389px;
+	float: left;
+}
+#gong #tz4 .yyt_bot .cen1_left ul{
+	position: absolute;
+	overflow: hidden;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -42px;
+}
+#gong #tz4 .yyt_bot .cen1_left li{
+	float: left;
+	width: 15px;
+	height:15px;
+	background-color: #666;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+#gong #tz4 .yyt_bot .cen1_left .an{
+	position: absolute;
+	top: 50%;
+	margin-top: -23px;
+	display: none;
+}
+#gong #tz4 .yyt_bot .cen1_left .an div{
+	width: 27px;
+	height: 46px;
+	position: absolute;
+	background-image: url(../img/ajimg/jiantou.png);
+	background-repeat: no-repeat;
+	margin: 2px 0;
+}
+#gong #tz4 .yyt_bot .cen1_left .an .zuo{
+	background-position: -6px -9px;
+}
+#gong #tz4 .yyt_bot .cen1_left .an .you{
+	margin-left:285px;
+	background-position: -35px -9px;
+}
+#gong #tz4 .yyt_bot .yyt_right{
+	overflow: hidden;
+	width: 663px;
+}
+#gong #tz4 .yyt_bot .yyt_right div{
+	float: left;
+	width: 220px;
+	height: 194px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+#gong #tz4 .yyt_bot_bq{
+	background-color: #F7F7F7;
+	border:1px solid #ccc;
+	width: 100%;
+	overflow: hidden;
+}
+#gong #tz4 .yyt_bot_bq a{
+	margin-right: 1px;
+	margin: 5px 4px;
+	display:block;
+	width: 111px;
+	height: 50px;
+	float: left;
+}
+#gong #tz4 .yyt_bot_bq a img{
+	box-sizing: border-box;
+	display: block;
+	width: 110px;
+}
+/*tz5*/
+#gong #tz5{
+	margin-top: 22px;
+}
+#gong #tz5 .ry{
+	width: 100%;
+	overflow: hidden;
+}
+#gong #tz5 .ry .ry_you .li2:after{
+	content: "/";
+	padding:0px 12px;
+	color: #ccc;
+	font: bold 18px/24px "Microsoft YaHei";
+}
+#gong #tz5 .ry .ry_you li{
+	float: left;
+}
+#gong #tz5 .ry .ry_you li span{
+	font: bold 14px/24px "Microsoft YaHei";
+}
+#gong #tz5 .ry .ry_you a{
+	font: bold 18px/24px "Microsoft YaHei";
+}
+#gong #tz5 .ry .ry_zuo a{
+	display: inline-block;
+	margin-top: 9px;
+	margin-bottom: 7px;
+	padding-right: 20px;
+	font: bold 20px/24px "Microsoft YaHei";
+}
+#gong #tz5 .ry .ry_you{
+	padding-left: 20px;
+	margin-top: 9px;
+	margin-bottom: 7px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+
+}
+#gong #tz5 .ry .ry_zuo,#gong .ry .ry_you{
+	float: left;
+}
+#gong #tz5 .ry a:hover{
+	text-decoration: none;
+	color: red;
+}
+#gong #tz5 .ry_bot{
+	border-left: 1px solid #ccc;
+	overflow: hidden;
+}
+#gong #tz5 .ry_bot>div{
+	float: left;
+}
+#gong #tz5 .ry_bot .ry_bot_left,#gong #tz5 .ry_bot .ry_bot_right{
+	width: 400px;
+	overflow: hidden;
+}
+#gong #tz5 .ry_bot .ry_bot_left a,#gong #tz5 .ry_bot .ry_bot_right a{
+	display: block;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+#gong #tz5 img{
+	display: block;
+}
+#gong #tz5 .ry_bot .ry_bot_cen{
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+#gong #tz5 .ry_bot_bq{
+	background-color: #F7F7F7;
+	border:1px solid #ccc;
+	width: 1197px;
+	overflow: hidden;
+}
+#gong #tz5 .ry_bot_bq a{
+	margin-right: 1px;
+	margin: 5px 4px;
+	display:block;
+	width: 111px;
+	height: 50px;
+	float: left;
+}
+#gong #tz5 .ry_bot_bq a img{
+	box-sizing: border-box;
+	width: 110px;
+}
+#gong #tz6 h3{
+	height: 34px;
+	padding-left:5px;
+	border-bottom: 2px solid red; 
+}
+#gong #tz6 h3 span{
+	font: bold 20px "Microsoft YaHei";
+	color: red;
+}
+#gong #tz6 a,#gong #tz6 img{
+	display: block;
+}
+#gong #tz6 img{
+	width: 180px;
+}
+#gong #tz6 ul{
+	width: 1188px;
+	padding-left: 5px;
+	overflow: hidden;
+}
+#gong #tz6 .xh_bot{
+	width: 1198px;
+	margin: 10px 0 0 0;
+	padding: 10px 0 15px;
+	border:1px solid #e6e6e6;
+}
+#gong #tz6 li{
+	width: 181px;
+	height: 260px;
+	margin:4px;
+	float: left;
+	padding: 4px 3px 7px;
+	border:1px solid #fff;
+}
+#gong #tz6 li:hover{
+	border:1px solid #efefef;
+	box-shadow: 0px 0px 4px #999;
+}
+#gong #tz6 li .red{
+	height: 32px;
+	line-height: 16px;
+	padding: 8px 0px 0px;
+	margin-bottom: 5px;
+}
+#gong #tz6 li .red:hover a{
+	color: red;
+}
+#gong #tz6 li .red+p span{
+	color: red;
+	font: 18px Arial;
+}
+#gong #tz6 li .red+p:before{
+	content: "￥";
+	color:red;
+	font:18px Arial;
+}
