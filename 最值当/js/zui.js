@@ -324,8 +324,8 @@ $('.return-top .er').mouseout(function(){
 	$('.return-top .ewm').css('display','none');
 })
 $('.return-top .re').mouseover(function(){
-	$('.return-top .return').show(1000);
+	$('.return-top .return').animate({'left':'-80px'},500);
 })
 $('.return-top .re').mouseout(function(){
-	$('.return-top .return').hide(1000);
+	$('.return-top .return').animate({'left':'80px'},100);
 })

@@ -269,3 +269,8 @@ footer .foo .img{
 footer .foo .img img{
 	margin-left: 10px;
 }
+
+#canvas{
+	vertical-align: middle;
+	margin: 0 5px;
+}
