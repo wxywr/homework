@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>楼层定位切换</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		body{ 
+			font-size:20px; 
+			font-family:'微软雅黑';
+		}
+		#all{
+			position: fixed;
+			left: 0;
+			top: 0;
+		}
+		#all .main{
+			position: relative;
+		}
+		#all .list{
+			width: 100%;
+			float: left;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		#all .number{
+			float: left;
+			overflow: hidden;
+			color: red;
+		}
+		#float-right{
+			width: 50px;
+			height: auto;
+			position: absolute;
+			right: 0;
+			top: 200px;
+			z-index: 200;
+			background-color: #fff;
+		}
+		#float-right a{
+			width: 100%;
+			height: 35px;
+			line-height: 35px;
+			display: block;
+			color: #333;
+			text-align: center;
+			text-decoration: none;
+		}
+		#float-right a:hover,#float-right .on{
+			color:#fff; 
+			background:#c40000;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div class="main">
+			<div class="list">
+				<div class="number" style="background:#009999">11111111111</div>
+				<div class="number" style="background:#333399">22222222222</div>
+				<div class="number" style="background:#990066">33333333333</div>
+				<div class="number" style="background:#660000">44444444444</div>
+				<div class="number" style="background:#333333">55555555555</div>
+				<div class="number" style="background:#666699">66666666666</div>
+			</div>
+		</div>
+	</div>
+	<div id="float-right">
+		<a href="javascript:;" class="on">一楼</a>
+		<a href="javascript:;">二楼</a>
+		<a href="javascript:;">三楼</a>
+		<a href="javascript:;">四楼</a>
+		<a href="javascript:;">五楼</a>
+		<a href="javascript:;">六楼</a>
+	</div>
+</body>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+	$(function(){
+		var windWidth = $(window).width();
+		var windHeight = $(window).height();
+		$('#all .list').height($('.number').length*windHeight);
+		$('#all,#all .main,#all .number').height(windHeight).width(windWidth);
+		$(window).resize(function(){
+			var windWidth = $(window).width();
+			var windHeight = $(window).height();
+			$('#all .list').height($('.number').length*windHeight);
+			$('#all,#all .main,#all .number').height(windHeight).width(windWidth);
+		})
+		$('#float-right a').on('click',function(){
+			var index = $(this).index();
+			$(this).addClass('on').siblings().removeClass('on');
+			$('#all .list').stop().animate({top:-windHeight*index});
+		})
+		var defaultTop = (windHeight-$('#float-right a').height()*($('#float-right a').length+1))/2;
+		$(window).scroll(function(){
+			var offsetTop = defaultTop + $(window).scrollTop()+'px';
+			$('#float-right').animate({top:offsetTop},
+			{	duration: 600,	//滑动速度
+     		queue: false    //此动画将不进入动画队列
+    	});
+		})
+	})
+</script>
+</html>

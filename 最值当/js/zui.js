@@ -315,3 +315,17 @@ $('.arrowRight').click(function(){
 	$('.zu-btm').css('left','-1198px');
 	$('.zu-btm').stop().animate({'left':'0px'},1500);
 })
+
+//右下角回到顶部
+$('.return-top .er').mouseover(function(){
+	$('.return-top .ewm').css('display','block');
+})
+$('.return-top .er').mouseout(function(){
+	$('.return-top .ewm').css('display','none');
+})
+$('.return-top .re').mouseover(function(){
+	$('.return-top .return').show(1000);
+})
+$('.return-top .re').mouseout(function(){
+	$('.return-top .return').hide(1000);
+})
