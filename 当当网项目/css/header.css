@@ -162,7 +162,7 @@
 	background-repeat: no-repeat;
 	background-color: #fff;
 	width: 62px;
-	height:18px;
+	height:20px;
 }
 #header .bg:hover{
 	background-image:url(../images/head_sprite.png);     
@@ -215,26 +215,36 @@
 	margin-left:50px
 }
 #header .nianhuo .inp input{
-	width: 500px;
+	width: 590px;
 	height:36px;
-	border: 1px solid red;
+	border: 2px solid red;
 	border-right-color: #fff;
 	color:#999;
+	text-indent: 10px;
+	position: relative;
+	outline: none;
 }
 #header .nianhuo .inp .sp{
-	width: 90px;
-	height: 38px;
-	line-height: 40px;
-	border: 1px solid red;
-	border-left:2px solid #fff;
-	border-right-color: #fff;
-	display: inline-block;
-	box-sizing: border-box;
-	background-color: #F6F6F6;
-	background-image: url(../images/jiao.jpg);
-	background-repeat: no-repeat;
-	background-position: 70px 16px;
-	color:#999;
+	position: absolute;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #ccc;
+	opacity: 0.5;
+	right: 48px;
+	top: 2px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+#header .nianhuo .kong{
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top: 5px solid #333;
+	position: absolute;
+	right: 52px;
+	top: 43px;
 }
 #header .nianhuo .inp a{
 	width:49px;
@@ -257,8 +267,8 @@
 #header .nianhuo .qqq{
 	position: absolute;
 	top: 62px;
-	left:-138px;
-	width:87px;
+	left:-148px;
+	width:97px;
 	height:350px;
 	border: 1px solid #999;
 	background-color: #fff;
@@ -298,17 +308,23 @@
 #header .nianhuo .inp .ssuo .sou{
 	width:27px;
 }
-#header .nianhuo .inp .ssuo .qiang{width:40px;
+#header .nianhuo .inp .ssuo .qiang{
+	width:40px;
 }
-#header .nianhuo .inp .ssuo .jian{width:55px;
+#header .nianhuo .inp .ssuo .jian{
+	width:55px;
 }
-#header .nianhuo .inp .ssuo .cun{width:55px;
+#header .nianhuo .inp .ssuo .cun{
+	width:55px;
 }
-#header .nianhuo .inp .ssuo .lip{width:40px;
+#header .nianhuo .inp .ssuo .lip{
+	width:40px;
 }
-#header .nianhuo .inp .ssuo .mai{width:55px;
+#header .nianhuo .inp .ssuo .mai{
+	width:55px;
 }
-#header .nianhuo .inp .ssuo .hai{width:40px;
+#header .nianhuo .inp .ssuo .hai{
+	width:40px;
 }
 #header .nianhuo .ss{
 	float: left;

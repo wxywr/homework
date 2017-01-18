@@ -121,6 +121,7 @@ section ul li{
 }
 .sl input{
 	width: 30px;
+	padding-top: 1px;
 	text-align: center;
 }
 .je{
@@ -128,6 +129,13 @@ section ul li{
 }
 .del{
 	width: 110px;
+}
+.del a{
+	text-decoration: none;
+}
+.del a:hover{
+	text-decoration: underline;
+	color: red;
 }
 .sm{
 	height: 50px;
@@ -151,11 +159,16 @@ footer{
 	line-height: 50px;
 }
 footer .right{
-	width: 150px;
+	width: 120px;
 	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
 	color: #fff;
 	background-color: red;
 	float: right;
+	margin-left: 10px;
+	border:none;
 }
 footer p{
 	float: right;
