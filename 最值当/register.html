@@ -12,7 +12,6 @@
 			<div class="header-l">
 				<img src="images/ddnewhead_logo.gif" alt="">
 			</div>
-
 			<div class="header-r">
 				<ul class="header-list">
 					<li><a href="#"><img src="images/car.png" alt=""> 购物车</a> |</li>
@@ -52,68 +51,83 @@
 						<a href="">注册帮助</a>
 					</div>
 				</div>
-				<div>
-					<div class="form-main">
-						<ul class="main-l">
-							<li>邮箱／手机号码</li>
-							<li>登录密码</li>
-							<li>确认密码</li>
-							<li>验证码</li>
-						</ul>
-						<ul class="main-r">
-							<li><input type="text" name="email" class="three four mail" placeholder="请输入您的邮箱或手机号吗"></li>
-							<p></p>
-							<li><input type="password" name="password" class="three four mima"></li>
-							<p></p>
-							<li><input type="password" name="pwd" class="three four sure"></li>
-							<p></p>
-							<li><input type="text" class="four code" name="yzm" placeholder="请输入验证码"><canvas id="canvas" width="120" height="30" style="border: 1px solid #000"></canvas><a href="">换张图</a></li>
-							<p></p>
-							<li><input type="checkbox">我已阅读并同意 <a href="">《当当交易条款》</a>和 <a href="">《当当社区条款》</a></li>
-							<li><input type="submit" value="立即注册"></li>
-						</ul>
+				<div class="form-main">
+					<ul class="main-l">
+						<li>邮箱／手机号码</li>
+						<li>登录密码</li>
+						<li>确认密码</li>
+						<li>验证码</li>
+					</ul>
+					<ul class="main-r">
+						<li><input type="text" name="email" class="three four mail" placeholder="请输入您的邮箱或手机号吗"></li>
+						<p></p>
+						<li><input type="password" name="password" class="three four mima"></li>
+						<p></p>
+						<li><input type="password" name="pwd" class="three four sure"></li>
+						<p></p>
+						<li><input type="text" class="four code" name="yzm" placeholder="请输入验证码"><canvas id="canvas" width="120" height="30" style="border: 1px solid #000"></canvas><span id="click">换张图</span></li>
+						<p></p>
+						<li><input type="checkbox" checked="checked">我已阅读并同意 <a href="#">《当当交易条款》</a>和 <a href="#">《当当社区条款》</a></li>
+						<li><input type="submit" value="立即注册"></li>
+					</ul>
+				</div>
+			</form>
+			<form action="" id="form_1">
+				<div class="form-top">
+					<div class="top-l">
+						<p class="new">新用户注册</p>
+						<p class="qiye">企业用户注册</p>
 					</div>
-					<div class="company form-main">
-						<img src="images/login_qiye4.png" alt="" class="red">
-						<p class="kefu">客服专线：400 106 6666 <a href="#">查看购买规则</a></p>
-						<h3><img src="images/company_2.png" alt=""> 账户信息</h3>
-						<div class="zhanghu">
-							<ul class="zhanghu-l">
-								<li>用户名</li>
-								<li>设置密码</li>
-								<li>确认密码</li>
-							</ul>
-							<ul class="zhanghu-r">
-								<li><input type="text" name="username"></li><p class="warn"></p>
-								<li><input type="password" name="password"></li><p class="warn"></p>
-								<li><input type="password" name="que"></li><p class="warn"></p>
-							</ul>
-						</div>
-						<h3><img src="images/company_1.png" alt=""> 企业及联系人信息</h3>
-						<div class="qiye">
-							<ul class="qiye-l">
-								<li>公司名称</li>
-								<li>公司邮箱</li>
-								<li>联系人姓名</li>
-								<li>手机号</li>
-								<li>验证码</li>
-							</ul>
-							<ul class="qiye-r">
-								<li><input type="text" placeholder="请填写单位执照上的名称"></li>
-								<p class="warn"></p>
-								<li><input type="text" placeholder="建议填写企业邮箱"></li>
-								<p class="warn"></p>
-								<li><input type="text"></li>
-								<p class="warn"></p>
-								<li><input type="text"></li>
-								<p class="warn"></p>
-								<li><input type="text" class="yan" placeholder="请输入验证码"><img src="images/company_4.jpg" alt=""><span class="new"></span></li>
-								<p class="warn"></p>
-								<li><input type="checkbox">我已阅读并同意 <a href="#">《当当交易条款》</a>和 <a href="#">《当当社区条款》</a></li>
-								<li><input type="submit" value="立即注册" class="click"></li>
-							</ul>
-						</div>
+					<div class="top-r">
+						<span>欢迎光临当当网 </span>
+						<a href="" class="login">请登录</a>
 					</div>
+				</div>
+				<img src="images/login_qiye4.png" alt="" class="red">
+				<p class="kefu">客服专线：400 106 6666 <a href="#">查看购买规则</a></p>
+				<h3><img src="images/company_2.png" alt=""> 账户信息</h3>
+				<div class="zhanghu">
+					<ul class="zhanghu-l">
+						<li>用户名</li>
+						<li>设置密码</li>
+						<li>确认密码</li>
+					</ul>
+					<ul class="zhanghu-r">
+						<li><input type="text" name="username"></li><p class="warn"></p>
+						<li><input type="password" name="password"></li><p class="warn"></p>
+						<li><input type="password" name="que"></li><p class="warn"></p>
+					</ul>
+				</div>
+				<h3><img src="images/company_1.png" alt=""> 企业及联系人信息</h3>
+				<div class="qiye">
+					<ul class="qiye-l">
+						<li>公司名称</li>
+						<li>公司地址</li>
+						<li>公司邮箱</li>
+						<li>联系人姓名</li>
+						<li>手机号</li>
+						<li>验证码</li>
+					</ul>
+					<ul class="qiye-r">
+						<li><input type="text" name="ming" placeholder="请填写单位执照上的名称"></li>
+						<p class="warn"></p>
+						<li>
+							<!-- 三级联动 -->
+							<select name="sheng" id="province"></select>
+							<select name="shi" id="city"></select>
+							<select name="xian" id="town"></select>
+						</li><br/>
+						<li><input type="text" name="youx" placeholder="建议填写企业邮箱"></li>
+						<p class="warn"></p>
+						<li><input type="text" name="lian"></li>
+						<p class="warn"></p>
+						<li><input type="text" name="shouji"></li>
+						<p class="warn"></p>
+						<li><input type="text" name="yz" class="yan" placeholder="请输入验证码"><canvas id="canvas_1" width="120" height="30" style="border: 1px solid #000"></canvas><span class="new" id="clik"></span></li>
+						<p class="warn"></p>
+						<li><input type="checkbox" checked="checked">我已阅读并同意 <a href="#">《当当交易条款》</a>和 <a href="#">《当当社区条款》</a></li>
+						<li><input type="submit" value="立即注册"></li>
+					</ul>
 				</div>
 			</form>
 		</main>

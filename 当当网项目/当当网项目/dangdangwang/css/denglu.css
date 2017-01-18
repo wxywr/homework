@@ -1,0 +1,256 @@
+
+#bgcol{
+	height: 590px;
+	background-color: #FDC100;margin-top: 80px;
+}
+/*全局*/
+#denglu{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 670px;
+}
+/*上部？*/
+#denglu #logo{
+	height: 60px;
+	overflow: hidden;
+	padding-top: 20px;
+}
+#denglu #logo .log{
+	width: 147px;
+	height: 42px;
+	background-image: url(../images/logo.png);
+	float: left;
+}
+#denglu #logo .jianyi{
+	width:200px;
+	height:25px;
+	line-height: 20px;
+	background-image: url(../images/jianyi.jpg);
+	background-repeat: no-repeat;
+	float:right;
+	padding-left: 20px;
+	margin-top: 30px; 
+	font-size: 13px;
+}
+#denglu #logo .jianyi a{
+	color: #999;
+	text-decoration: none;
+}
+#denglu #logo .jianyi a:hover{
+ 	text-decoration: underline;
+}
+/*下部*/
+#denglu #biaodan{
+	height: 590px;
+	background-color: #FDC100;
+}
+/*下部左*/
+#denglu #biaodan .nianhuo{
+	width: 645px;
+	height: 510px;
+	background-image: url(../images/nianhuo.jpg);
+	margin:30px 0 0 20px;
+}
+/*下部右侧*/
+#denglu #biaodan .form{
+	width:360px;
+	height:460px;
+	margin:30px 0 0 80px;
+}
+#denglu #biaodan .left{        /* 左浮动*/
+	float: left;
+}
+#denglu #biaodan .right{        /* 右浮动*/
+	float: right;
+}
+/*警告提示*/
+#denglu #biaodan .jinggao{
+	height: 48px;
+	border-bottom: 1px solid pink;
+	background-color: #FEF7F5;
+}
+#denglu #biaodan .jinggao span{
+	font-size: 13px;
+	color: #999;
+	padding-left: 20px;
+	display: inline-block;
+	margin-top: 10px;
+	background-image: url(../images/jinggao.jpg);
+	background-repeat: no-repeat;
+	line-height: 20px;
+}
+#denglu #biaodan .jinggao span a{
+	color: #1A66B3;
+	text-decoration: none;
+}
+#denglu #biaodan .jinggao span a:hover{
+	text-decoration: underline;
+}
+/*表单验证*/
+#denglu #biaodan .for{
+	height: 410px;
+	background-color: #fff;
+}
+#denglu form{
+	margin-left: 30px;
+}
+#denglu .kuan{
+	height: 30px;
+	border: 1px solid #ddd;
+}
+#denglu .ml{
+	width:270px;
+	padding-left:30px;
+	line-height:50px;
+	background-position:0 -5px;
+	outline: none;
+	font-size: 14px;
+}
+#denglu .text{
+	background-image: url(../images/text.png); 
+	background-repeat: no-repeat;
+}
+#denglu .password{
+	background-image: url(../images/password.png); 
+	background-repeat: no-repeat;
+}
+/*提示信息*/
+#denglu .height{
+	display: inline-block;
+	height:60px;
+}
+#denglu .height .wei_shu_ru{/*未输入信息提示状态*/
+	color: red;
+	margin:2px 0 0 20px;
+	display: none;
+}
+#denglu .height .yao_shu_ru{/*要输入信息提示状态*/
+	color: #999;
+	margin:2px 0 0 20px;
+	display: none;
+}
+#denglu #none{
+	display: block;
+}
+#denglu #block{
+	display:none;
+}
+/*验证框*/
+#denglu .yanzma{
+	height: 70px;
+	width: 300px;
+	border: 1px solid #ddd;
+	background-color: #F6F9FB;
+}
+#denglu .yanzma p{
+	font-size: 13px;
+	margin-left: 12px;
+	margin-top:5px;
+	color: #555;
+}
+#denglu .yanzma p span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/tihuan.jpg);
+	float: right; 
+	margin-right:10px;
+	cursor: pointer;
+}
+#denglu .yanzma .daozi{
+	width: 200px;
+	height: 40px;
+	background-image: url(../images/daozi.jpg);
+	margin:-9px 0 0 40px;
+}
+/*复选框*/
+#denglu .size{
+	font-size: 13px;          /*13像素字体*/
+}
+#denglu #padd{
+	padding-right: 20px;
+	text-decoration: none;
+	color: #1A66B3;
+}
+#denglu #padd:hover{
+	text-decoration: underline;
+}
+/*登录按钮*/
+#denglu .submit{
+	width: 300px;
+	background-color: red;
+	border-radius: 5px;
+	font-size:21px;
+	color: #fff;
+	font-family: '微软雅黑';
+	height:50px;
+	text-align: center;
+}
+#denglu #zhuce{
+	padding-right: 20px;
+	text-decoration: none;
+	color: #999;
+}
+#denglu #zhuce:hover{
+	text-decoration: underline;
+}
+/*合作网站*/
+#denglu .wwwww{
+	overflow: hidden;
+}
+#denglu #hzwz a{
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	margin: 5px 0px 0 0; 
+}
+#denglu #hzwz .qq{
+	background-image: url(../images/qq.jpg);
+}
+#denglu #hzwz .weixin{
+	background-image: url(../images/weixin.jpg);
+}
+#denglu #hzwz .weibo{
+	background-image: url(../images/weibo.jpg);
+}
+#denglu #hzwz .zhifubao{
+	background-image: url(../images/zhifubao.jpg);
+}
+#denglu #hzwz #dengduo{
+	width:80px;
+	color: #999;
+	text-decoration: none;
+	padding-left: 10px;
+	background-image: url(../images/tt1.png);
+	background-repeat: no-repeat;
+	background-position:40px 2px;
+}
+#denglu #hzwz #dengduo:hover{
+	background-image: url(../images/tt2.png);
+	background-repeat: no-repeat;
+	background-position:40px 2px;
+}
+#denglu #hzwz #baidu{
+	width:190px;
+	height:25px;
+	position: relative;
+	left: 120px;
+	top:5px;
+	background-color: #fff;
+	display: none;
+}
+#denglu #hzwz #display:hover #baidu{
+	display: block;
+}
+#denglu #hzwz #baidu a{
+	width:40px;
+	color: #999;
+	text-decoration: none;
+}
+#denglu #hzwz #baidu a:hover{
+	text-decoration: underline;
+}
+#denglu #hzwz #baidu .aaa{
+	margin-left:5px;
+}

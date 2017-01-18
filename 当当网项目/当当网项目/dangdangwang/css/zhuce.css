@@ -1,0 +1,210 @@
+body{
+	background-color: #F6F9FB;
+}
+#all{
+	width: 1200px;
+	margin: auto;
+}
+#zhuce{
+	width: 960px;
+	margin: 0 auto;
+}
+#zhuce .left{        /* 左浮动*/
+	float: left;
+}
+#zhuce .right{        /* 右浮动*/
+	float: right;
+}
+#zhuce .size{        /*13像素字体*/
+	font-size: 13px;
+}
+/*头部*/
+#zhuce .header{
+	height: 76px;
+	border-bottom: 2px solid red;
+}
+#zhuce .header .logo{
+	width: 147px;
+	height: 42px;
+	background-image: url(../images/logo.png);
+	margin: 20px 0 0 10px;
+}
+#zhuce .header .daohang{
+	width:600px;
+	height:60px;
+	margin-right: 5px;
+}
+#zhuce .header .youb{
+	margin-right: 20px;
+}
+#zhuce .header a{
+	text-decoration: none;
+	color: #000;
+}
+#zhuce .header a:hover{
+	color: #ff6600;
+}
+#zhuce .header .underline:hover{
+	text-decoration:underline;
+}
+#zhuce .header .col{
+	color: #1A66B3;
+}
+#zhuce .header .col:hover{
+	color: #1A66B3;
+	text-decoration:underline;
+}
+/*头部效果*/
+#zhuce .car{
+	padding-left: 18px;
+	background-image:url(../images/car.png);
+	background-repeat: no-repeat;
+	background-position: 0px -2px;
+}
+#zhuce .jiao{
+	padding-right:10px;
+	background-image:url(../images/jiao1.png);
+	background-repeat: no-repeat;
+	background-position: 52px 0;
+}
+#zhuce .jiao:hover{
+	background-image:url(../images/jiao2.png);
+}
+#zhuce .lp{
+	background-position:40px 0;
+}
+/*用户注册*/
+#zhuce .yonghu{        /* 全局盒子*/
+	height: 550px;
+	background-color:#fff;
+	margin: 40px 0;
+	border-left:10px solid #EBEEEF;
+	border-bottom:10px solid #EBEEEF;
+	box-sizing: border-box;
+}
+#zhuce .yonghu #shang{        /*盒子上部*/
+	height: 75px;
+	border-bottom:  1px solid #eee;
+}
+#zhuce .yonghu .box{             /*用户》企业*/
+	width: 135px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border: 1px solid #eee;
+	margin:28px 20px 0 0;
+	text-decoration: none;
+	font-family: '微软雅黑';
+	color: #464646;
+	background-color: #F5F5F5;
+}
+#zhuce .yonghu .bbf{
+	background-color: #fff;
+	border-bottom:1px solid #fff;
+}
+#zhuce .yonghu .xinyh{
+	margin-left: 40px;
+}
+#zhuce .yonghu .xbox{         /*首页》帮助*/
+	margin:35px 15px 0 0;
+	text-decoration: none;
+	color: #777;
+}
+#zhuce .yonghu .xbox:hover{
+	color: #ff6600;
+}
+#zhuce .yonghu .ddsy{
+	padding-left:15px;
+	background-image: url(../images/shouye.png);
+	background-repeat: no-repeat;
+	background-position: 0 -2px;
+}
+#zhuce #xia{               /* 盒子下部*/
+	overflow: hidden;
+	font-size: 14px;
+	font-family: '微软雅黑';
+	color: #999;
+	margin-top:30px;
+}
+#zhuce #xia li{
+	list-style: none;
+	overflow: hidden;
+}
+#zhuce #xia .forms li{
+	margin-top: 10px;
+}
+#zhuce #xia .name{		/*表单名称*/
+	margin-left:200px;
+	position: relative;
+	left:30px;
+}
+							/*名称定位*/
+#zhuce #xia .name1{
+	margin-top: 10px;
+}
+#zhuce #xia .name2{
+	margin-top: 10px;
+}
+#zhuce #xia .name3{
+	margin-top: 10px;
+}
+#zhuce #xia .name4{
+	margin-top: 10px;
+}
+#zhuce #xia .width{
+	width: 350px;
+	height: 35px;
+	outline:none;
+}
+#zhuce #xia .yanzhengma{
+	width:200px;
+	height: 35px;
+	outline:none;
+}
+#zhuce #xia .yanzheng{
+	width:84px;
+	height: 35px;
+	background-image: url(../images/yanzheng.jpg);
+	margin-left:10px;
+}
+#zhuce #xia .bdr{
+	box-sizing: border-box;
+	height: 40px; 
+}
+#zhuce #xia .shu-ru-kuang{     /*输入框*/
+	margin:0 0 0 10px;
+	height: 20px;
+}
+#zhuce #xia .shu-ru-kuang .shu{     /*输入提示*/
+	display: none;
+	color: #666;
+}
+#zhuce #xia .shu-ru-kuang .jing{     /*警告提示*/
+	display: none;
+	color: red;
+}
+#zhuce #xia .shu-ru-kuang .fu-xuan-jing{     /*警告提示*/
+	display: none;
+	color: red;
+}
+#zhuce #xia .baixian{
+	border-bottom: 1px solid #fff;
+	margin-top: 40px;
+}
+#zhuce #xia .submit{         /*注册成功*/
+	width: 180px;
+	height:50px;
+	border-radius: 50px;
+	background-color: red;
+	color: #fff;
+	font-size: 17px;
+	font-family: '微软雅黑';
+	margin-left: 100px;
+}
+#zhuce .colors{
+	color: #1A66B3;
+	text-decoration: none;
+}
+#zhuce .colors:hover{
+	text-decoration: underline;
+}

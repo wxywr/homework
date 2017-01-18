@@ -1,0 +1,170 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.top{
+	width: 960px;
+	margin:20px auto;
+}
+#shouye{
+	width: 960px;
+	margin:10px auto;
+	font-size: 13px;
+	font-family: '微软雅黑';
+}
+#shouye .left{
+	margin-bottom: 20px;
+	float: left;
+}
+#shouye .right{
+	margin-bottom: 20px;
+	float: right;
+}
+#shouye a{
+	color: #999;
+	text-decoration: none;
+	margin-left: 5px;
+}
+#shouye a:hover{
+	color: #Ff2832;
+	/*text-decoration:underline;*/
+}
+#shouye .dl{
+	color: #Ff2832;
+}
+#shouye .gwc{
+	/*border: 1px solid red;*/
+	padding-left:20px;
+	background-image:url(../images/ggc.png);
+	background-repeat: no-repeat;
+}
+header{
+	width: 960px;
+	margin: 0 auto;
+	line-height: 36px;
+}
+header p{
+	margin-top:14px;
+	float: right;
+}
+header p span{
+	display:inline-block;
+	text-align: center;
+	width: 212px;
+	height: 36px;
+	background-color:#F6F6F6;
+	font-weight: bold;
+	color: #999;
+}
+.red{
+	background-color: red;
+	color: #fff;
+}
+section{
+	width: 960px;
+	margin: 0 auto;
+/*	overflow: hidden;*/
+}
+section ul{
+	float: left;
+}
+section ul li{
+	float: left;
+}
+.qx{
+	width: 80px;
+}
+.sp{
+	width: 410px;
+}
+.sp img{
+	width: 80px;
+	height: 80px;
+	padding-top: 20px;
+	float: left;
+}
+.sp div{
+	width: 150px;
+	height: 150px;
+	float: left;
+	display: none;
+	border: 1px solid red;
+}
+.sp div img{
+	padding:15px;
+	width: 120px;
+	height: 120px;
+}
+.dj{
+	width: 100px;
+}
+.sl{
+	width: 150px;
+	text-align: center;
+}
+.sl span{
+	width: 20px;
+	height: 18px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	line-height:18px;
+	margin-top: 51px;
+}
+.sl .jia{
+	float: right;
+	margin-right: 36px;
+}
+.sl .jian{
+	float: left;
+	margin-left:36px;
+}
+.sl input{
+	width: 30px;
+	text-align: center;
+}
+.je{
+	width: 110px;
+}
+.del{
+	width: 110px;
+}
+.sm{
+	height: 50px;
+	line-height: 50px;
+}
+.sm .qx p{
+	float: right;
+	margin-right: 20px;
+}
+.xm{
+	height: 120px;
+	background-color: #FAFAFA;
+	margin: 20px 0;
+	line-height: 120px;
+}
+footer{
+	width: 960px;
+	margin: 0 auto;
+	background-color:#FAFAFA;
+	overflow: hidden; 
+	line-height: 50px;
+}
+footer .right{
+	width: 150px;
+	height: 50px;
+	color: #fff;
+	background-color: red;
+	float: right;
+}
+footer p{
+	float: right;
+}
+#hongxian{
+	margin-top: 20px;
+	border: 1px solid red;
+}
+#weib{
+	width: 1200px;
+	margin: 0 auto;
+}

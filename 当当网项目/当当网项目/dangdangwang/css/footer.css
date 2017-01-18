@@ -1,0 +1,59 @@
+#xian{
+	border: 1px solid red;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+#footer{
+	width:960px;
+	height:300px;
+	margin: 0 auto;
+	font-size: 13px;
+	color: #999;
+}
+#footer .xia{
+	width:960px;
+	height:70px;
+	line-height: 70px;
+	color: #999;
+}
+#footer a{
+	padding:0 10px;
+	color: #999;
+	text-decoration:none;
+}
+#footer a:hover{
+	color:#FF2832;
+}
+#footer .dibu{
+	width:960px;
+	height:120px;
+	color: #999;
+	text-align: center;
+}
+#footer .weibu{
+	width: 960px;
+	height:80px;
+	text-align: center;
+}
+#footer .weibu a{
+	display: inline-block;
+	width: 108px;
+	height:47px;
+	margin: 0 20px;
+}
+#footer .tp{
+	margin-top: 5px;
+}
+.weibu-1{
+	background-image: url(../images/foot1.gif);
+}
+.weibu-2{
+	background-image: url(../images/foot2.png);
+}
+.weibu-3{
+	background-image: url(../images/footer.jpg);
+}
+.weibu-4{
+	background-image: url(../images//foot1.png);
+}
+

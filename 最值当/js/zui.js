@@ -323,9 +323,13 @@ $('.return-top .er').mouseover(function(){
 $('.return-top .er').mouseout(function(){
 	$('.return-top .ewm').css('display','none');
 })
-$('.return-top .re').mouseover(function(){
-	$('.return-top .return').animate({'left':'-80px'},500);
-})
-$('.return-top .re').mouseout(function(){
-	$('.return-top .return').animate({'left':'80px'},100);
-})
+$('.return-top .re').hover(
+	function(){
+		$('.return-top .return').animate({'left':'-80px'},500);
+		$('.return-top .corner').animate({'left':'-1px'},500);
+	},
+	function(){
+		$('.return-top .return').animate({'left':'80px'},100);
+	 	$('.return-top .corner').animate({'left':'32px'},100);
+	}
+);

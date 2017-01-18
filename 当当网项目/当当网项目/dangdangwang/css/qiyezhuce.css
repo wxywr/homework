@@ -1,0 +1,273 @@
+body{
+	background-color: #F6F9FB;
+}
+#all{
+	width: 1200px;
+	margin: auto;
+}
+#zhuce{
+	width: 960px;
+	margin: 0 auto;
+}
+#zhuce .left{        /* 左浮动*/
+	float: left;
+}
+#zhuce .right{        /* 右浮动*/
+	float: right;
+}
+#zhuce .size{        /*13像素字体*/
+	font-size: 13px;
+}
+/*头部*/
+#zhuce .header{
+	height: 76px;
+	/*background-color: pink;*/
+	border-bottom: 2px solid red;
+}
+#zhuce .header .logo{
+	width: 147px;
+	height: 42px;
+	background-image: url(../images/logo.png);
+	margin: 20px 0 0 10px;
+}
+#zhuce .header .daohang{
+	width:600px;
+	height:60px;
+	/*border: 1px solid red;*/
+	margin-right: 5px;
+}
+#zhuce .header .youb{
+	margin-right: 20px;
+}
+#zhuce .header a{
+	text-decoration: none;
+	color: #000;
+	/*border: 1px solid blue;*/
+}
+#zhuce .header a:hover{
+	color: #ff6600;
+}
+#zhuce .header .underline:hover{
+	text-decoration:underline;
+}
+#zhuce .header .col{
+	color: #1A66B3;
+}
+#zhuce .header .col:hover{
+	color: #1A66B3;
+	text-decoration:underline;
+}
+/*头部效果*/
+#zhuce .car{
+	padding-left: 18px;
+	background-image:url(../images/car.png);
+	background-repeat: no-repeat;
+	background-position: 0px -2px;
+}
+#zhuce .jiao{
+	padding-right:10px;
+	background-image:url(../images/jiao1.png);
+	background-repeat: no-repeat;
+	background-position: 52px 0;
+}
+#zhuce .jiao:hover{
+	background-image:url(../images/jiao2.png);
+}
+#zhuce .lp{
+	background-position:40px 0;
+}
+#zhuce .section{
+	height:1390px;
+	background-color:#fff;
+	margin: 40px 0;
+	border-left:10px solid #EBEEEF;
+	border-bottom:10px solid #EBEEEF;
+	box-sizing: border-box;
+}
+#zhuce .section #qyshang{
+	height: 75px;
+	border-bottom:  1px solid #eee;
+}
+#zhuce .section #qyshang .box{
+		width: 135px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border: 1px solid #eee;
+	margin:28px 20px 0 0;
+	text-decoration: none;
+	font-family: '微软雅黑';
+	color: #464646;
+	background-color: #F5F5F5;
+}
+#zhuce .section #qyshang .bbf{
+	background-color: #fff;
+	border-bottom:1px solid #fff;
+
+}
+#zhuce .section #qyshang .xinqy{
+	margin-left: 40px;
+}
+#zhuce .section #qyshang .xbox{
+	margin:35px 15px 0 0;
+	text-decoration: none;
+	color: #777;
+}
+#zhuce .section #qyshang .bs{
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	background-color: #9A9FA6;
+	position: relative;
+	top: -5px;
+}
+#zhuce .section #qyshang .bs:hover{
+	text-decoration: underline;
+	color: #fff;
+}
+#zhuce #qyshang .qyyh{		/*	专项服务*/
+	overflow: hidden;
+	position: relative;
+	top: 10px;
+	width: 945px;
+	height: 239px;
+	background-image: url(../images/qyyh.png);
+}
+/*账户信息*/
+#zhuce #form li{				/*li*/
+	list-style: none;
+}
+#zhuce #form .names{
+	margin:10px 0 0 250px;
+	position: relative;
+	left:30px;
+}
+#zhuce #form .names li{					/*name距离*/
+	text-align: right;
+	margin-bottom:33px;
+}
+#zhuce #form .names .marg{				
+	margin:40px 0 35px 0;
+}
+#zhuce #form .names .marg1{
+	margin:40px 0 40px 0;
+}
+#zhuce #form h3{					/*h3标题*/
+	margin: 0;
+	/*border: 1px solid blue;*/
+	margin-left: 200px;
+	padding-left: 50px;
+	background-repeat: no-repeat;
+	background-position:20px 10px;
+}
+#zhuce #form .he{				/*input宽高*/
+	height: 31px;
+	outline:none;
+	box-sizing: border-box;
+}
+#zhuce #form .wi{
+	width:300px;
+}
+#zhuce #form .innnn{
+	margin: 0;
+	overflow: hidden;
+}
+#zhuce #form .wis{
+	width:80px;
+	float: left;
+	margin-right: 18px;
+	display: inline-block;
+}
+#zhuce #form .ti-shi-kuang{   /*提示框p*/
+	margin: 0;
+	height:25px;
+	line-height: 25px;
+	width:350px;
+	overflow: hidden;
+}
+#zhuce #form .gu-ding-dian-hua{   /*提示框p*/
+	margin: 0;
+	height:25px;
+	line-height: 25px;
+	width:80px;
+}
+#zhuce #form .gddh{
+	width:100px;
+	margin: 0 8px 0 27px;
+}
+#zhuce #form .positions0{
+	position: relative;
+	/*left: -10px;*/
+}#zhuce #form .positions{
+	position: relative;
+	left:101px;
+}
+#zhuce #form .positions1{
+	position: relative;
+	left:201px;
+}
+#zhuce #form .kong{       /*  验证为空时显示*/
+	color: red;
+	display: none;
+}
+#zhuce #form .shu-ru{	/*		点击输入时显示*/
+	display: none;
+	color: #999;
+}
+
+#zhuce #form .tou1{			/*头1*/
+	margin-top: 10px;
+	overflow: hidden;
+	height:45px;
+	line-height: 45px;
+	/*border: 1px solid red;*/
+}
+#zhuce #form .tou1 .zhs{
+	width: 125px;
+	height: 40px;
+	background-image: url(../images/zhanghuxinxi.png);
+}
+#zhuce #form .zhang-hu-xin-xi{
+	height:205px;
+}
+/*企业信息*/
+#zhuce #form .tou2 .qys{       /*头2*/
+	width: 250px;
+	background-image: url(../images/qiyexinxi.png);
+	background-position:20px -2px;
+}
+#zhuce #form .qi-ye-xin-xi{
+	height: 625px;
+}
+#zhuce #form .yanzhengs{
+	display: inline-block;
+	width: 115px;
+	height: 40px;
+	background-image: url(../images/yanzhengs.jpg);
+	margin-top: -5px;
+
+}
+#zhuce #form .hidden{
+	padding-top:9px;
+}
+#zhuce #form .hiddens{
+	border-bottom: 1px solid blue;
+	padding-top:30px;
+}
+#zhuce #form .shuaxin{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	background-image: url(../images/shuaxin.jpg);
+	margin-left: 5px;
+}
+#zhuce #form .qi-ye-xin-xi .submits{      /* 注册按钮*/
+	width: 180px;
+	height:50px;
+	border-radius: 50px;
+	background-color: red;
+	color: #fff;
+	font-size: 17px;
+	font-family: '微软雅黑';
+	margin:30px 0 0 70px;
+}
