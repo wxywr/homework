@@ -341,11 +341,12 @@
 }
 #header .nianhuo .che .cher1{
 	width:110px;
-	height:40px;
+	height:41px;
 	background-image: url(../images/che3.png);
-}
+	background-size: 110px 41px;
+}	
 #header .nianhuo .che .cher1:hover{
-	background-image: url(../images/che1.png);
+	background-image: url(../images/ch.gif);
 }
 #header .nianhuo .che .cher2{
 	width:88px;
@@ -388,4 +389,72 @@
 }
 #xian{
 	border: 1px solid red;
+}
+#wode{
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+#wode .nide{
+	float: right;
+	height: 134px;
+	width: 34px;
+	right: 0;
+	background-image: url(../img/bg1.png);
+}
+#wode .tade{
+	clear: both;
+	float: right;
+	overflow: hidden;
+	position: relative;
+}
+#wode .che,.xing,.jiao,.jife{
+	width: 80px;
+	height: 34px;
+	position: absolute;
+	right: -115px;
+	background-color: #4F4F4F;
+	color: #fff;
+	line-height: 34px;
+	text-align: center;
+	font-size: 12px;
+}
+#wode .che{
+	top: 134px;
+}
+#wode .xing{
+	top: 168px;
+}
+#wode .jiao{
+	top: 202px;
+}
+#wode .jife{
+	top: 236px;
+}
+#wode .tade li{
+	width: 34px;
+	height: 34px;
+	background-image: url(../img/bg10.png);
+}
+
+#wode .tade .bb{
+	background-position:0px -34px;
+}
+#wode .tade .cc{
+	background-position:0px -68px;
+}
+#wode .tade .dd{
+	background-position:0px -102px;
+}
+#wode .tade .aa:hover{
+	background-position:40px 0px;
+}
+#wode .tade .bb:hover{
+	background-position:40px -35px;
+}
+#wode .tade .cc:hover{
+	background-position:40px -70px;
+}
+#wode .tade .dd:hover{
+	background-position:40px -105px;
 }

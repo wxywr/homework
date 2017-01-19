@@ -5,7 +5,7 @@ section{
 }
 .all{
 	height: 486px;
-	background: url(img/bg7.jpg) no-repeat;
+/*	background: url(img/bg7.jpg) no-repeat;*/
 	background-position: 50% 0;
 	background-color: #FAFAFA;
 }
@@ -400,5 +400,59 @@ nav {
 	width: 194px;
 	height: 274px;
 }
-	
-
+#div{
+	width: 1200px;
+	margin: 0 auto;
+	z-index: 500;
+}
+.tzz{
+	width: -30px;
+	position:fixed;
+	bottom: 10px;
+}	
+.tzz>div{
+	width: 30px;
+	height: 40px;
+	position: relative;
+	left: -30px;
+	background: url(../img/a.png) no-repeat;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+	background-color: #F1F1F1;
+}
+.tzz>div:hover{
+	background-color: #F97F67;
+	opacity: 0.5;
+}
+.tzz span{
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.tzz p{
+	position: absolute;
+	top: 1px;
+	left:40px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+}
+.tzz .a1{
+	background-position: -3px 0px;
+}
+.tzz .a2{
+	background-position: -3px -480px;
+}
+.tzz .a3{
+	background-position: -3px -160px;
+}
+.tzz .a4{
+	background-position: -3px -240px;
+}
+.tzz .a5{
+	background-position: -3px -520px;
+}
+.tzz .a6{
+	background-position: -3px -560px;
+}

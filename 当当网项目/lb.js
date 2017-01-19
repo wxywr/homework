@@ -45,6 +45,41 @@ function dingshi(){
 		lunbo();
 	});
 }
+right();
+function right(){
+	$('#wode .tade .aa').hover(
+		function(){
+			$('#wode .che').animate({'left':'-80px'},500);
+		},
+		function(){
+			$('#wode .che').animate({'left':'80px'},10);
+		}
+	);
+	$('#wode .tade .bb').hover(
+		function(){
+			$('#wode .xing').animate({'left':'-80px'},500);
+		},
+		function(){
+			$('#wode .xing').animate({'left':'80px'},10);
+		}
+	);
+	$('#wode .tade .cc').hover(
+		function(){
+			$('#wode .jiao').animate({'left':'-80px'},500);
+		},
+		function(){
+			$('#wode .jiao').animate({'left':'80px'},10);
+		}
+	);
+	$('#wode .tade .dd').hover(
+		function(){
+			$('#wode .jife').animate({'left':'-80px'},500);
+		},
+		function(){
+			$('#wode .jife').animate({'left':'80px'},10);
+		}
+	);
+}
 wang();
 function wang(){	
 // 图书轮播
@@ -569,5 +604,24 @@ $('#gong #tz4 .cen1_left').hover(function(){
 
 })
 }
-
-
+aaaa();
+function aaaa(){
+	$(window).scroll(function(){
+    	if($(window).scrollTop()<480){
+       		$("body .tzz").css('display','none'); 
+        };
+      	if($(window).scrollTop()>480){
+       		$(".tzz").css('display','block');  
+      	};
+      	if($(window).scrollTop()>7550){
+       		$(".tzz").css('display','none');  
+      	};
+   });
+	$('.tzz div').mouseover(function(){
+		n = $(this).index();
+		$('.tzz div').eq(n).animate({'width':'110px'},300).siblings().animate({'width':'30px'},10);
+	})
+	$('.tzz div').mouseout(function(){
+		$('.tzz div').eq(n).animate({'width':'30px'},10)
+	})
+}

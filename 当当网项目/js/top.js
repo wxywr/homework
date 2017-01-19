@@ -16,7 +16,7 @@ function fun(){
 		a[this.index].style.display='block';			
 	}
 }
-	setInterval(show,5000);
+	setInterval(show,2000);
 	var n=0;
 	function show(){
 		n++;
