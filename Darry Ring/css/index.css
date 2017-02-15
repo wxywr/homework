@@ -1,7 +1,66 @@
-body{
-	padding: 0;
-	margin: 0;
+.head,.navs{
+	width: 100%;
 }
-.container-fluid{
-	background-color: #ccc;
+.head .col-md-7{
+	text-align: center;
+}
+.head .col-md-5 .man{
+	margin: 80px 0 0 30px;
+}
+.head .col-md-7 li{
+	padding: 3px 8px;
+	font-size: 12px;
+	color: #888;
+	cursor: pointer;
+}
+.head .col-md-7 img{
+	margin-top: 40px;
+	margin-left: 190px;
+}
+.head .row{
+	margin: 30px auto 20px;
+	width: 90%;
+	background-color: #fff;
+}
+.head .col-md-7 .shen{
+	display: inline-block;
+	margin-left: 10px;
+}
+.head .col-md-7 .put{
+	width: 200px;
+	height: 26px;
+	border-radius: 0;
+	font-size: 12px;
+}
+.head .col-md-7 .cha{
+	width: 90px;
+	height: 26px;
+	border-radius: 0;
+	border: 1px solid #000;
+	font-size: 12px;
+}
+.head .col-md-7 .search{
+	margin: 5px 0 0 160px;
+}
+.head .col-md-7 .search .dropdown{
+	margin-top: 5px;
+}
+.navs{
+	height: 50px;
+	line-height: 60px;
+	background-color: #797979;
+}
+.navs ul{
+	width: 90%;
+	margin: 0 auto;
+}
+.navs li{
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 0 40px;
+	font-weight: bold;
+}
+.navs li:hover{
+	color: #D49E85;
 }

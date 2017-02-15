@@ -1,0 +1,627 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- 初始化移动浏览显示 -->
+	<!-- 为了确保适当的绘制和触屏缩放，需要在 <head> 之中添加 viewport 元数据标签。 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"><!-- 在IE运行最新的渲染模式 -->
+	<title>bootstrap布局</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!--//head-->
+	<div class="head">
+		<div class="container">
+	  		<nav class="navbar navbar-default" role="navigation">
+	    		<div class="navbar-header">
+		      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+		      		<h1 class="navbar-brand"><a  href="index.html">Yummy</a></h1>
+		    	</div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav">
+				        <li><a href="index.html" class="active">Home</a></li>
+				        <li class="dropdown">
+				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Birthday <span class="caret"></span></a>
+				          	<ul class="dropdown-menu multi-column columns-4">
+				          		<div class="row">
+				          			<div class="col-sm-3">
+				          				<h4>By Relation</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Friend</a></li>
+											<li><a class="list" href="#">Lover</a></li>
+											<li><a class="list" href="#">Sister</a></li>
+											<li><a class="list" href="#">Brother</a></li>
+											<li><a class="list" href="#">Kids</a></li>
+											<li><a class="list" href="#">Parents</a></li>
+										</ul>
+							        </div>
+							        <div class="col-sm-3">
+										<h4>By Flavour</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Chocolate</a></li>
+											<li><a class="list" href="#">Mixed Fruit</a></li>
+											<li><a class="list" href="#">Butterscotch</a></li>
+											<li><a class="list" href="#">Strawberry</a></li>
+											<li><a class="list" href="#">Vanilla</a></li>
+											<li><a class="list" href="#">Eggless Cakes</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<h4>By Theme</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Heart shaped</a></li>
+											<li><a class="list" href="#">Cartoon Cakes</a></li>
+											<li><a class="list" href="#">2-3 Tier Cakes</a></li>
+											<li><a class="list" href="#">Square shape</a></li>
+											<li><a class="list" href="#">Round shape</a></li>
+											<li><a class="list" href="#">Photo cakes</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<h4>Weight</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">1 kG</a></li>
+											<li><a class="list" href="#">1.5 kG</a></li>
+											<li><a class="list" href="#">2 kG</a></li>
+											<li><a class="list" href="#">3 kG</a></li>
+											<li><a class="list" href="#">4 kG</a></li>
+											<li><a class="list" href="#">Large</a></li>
+										</ul>
+									</div>
+						        </div>
+				          	</ul>
+				        </li>
+						<li class="dropdown grid">
+							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Wedding <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-4">
+								<div class="row">
+									<div class="col-sm-3">
+										<h4>By Relation</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Friend</a></li>
+											<li><a class="list" href="#">Lover</a></li>
+											<li><a class="list" href="#">Sister</a></li>
+											<li><a class="list" href="#">Brother</a></li>
+											<li><a class="list" href="#">Kids</a></li>
+											<li><a class="list" href="#">Parents</a></li>
+										</ul>
+									</div>																		
+									<div class="col-sm-3">
+										<h4>By Flavour</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Chocolate</a></li>
+											<li><a class="list" href="#">Mixed Fruit</a></li>
+											<li><a class="list" href="#">Butterscotch</a></li>
+											<li><a class="list" href="#">Strawberry</a></li>
+											<li><a class="list" href="#">Vanilla</a></li>
+											<li><a class="list" href="#">Eggless Cakes</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<h4>By Theme</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Heart shaped</a></li>
+											<li><a class="list" href="#">Cartoon Cakes</a></li>
+											<li><a class="list" href="#">2-3 Tier Cakes</a></li>
+											<li><a class="list" href="#">Square shape</a></li>
+											<li><a class="list" href="#">Round shape</a></li>
+											<li><a class="list" href="#">Photo cakes</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<h4>Weight</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">1 kG</a></li>
+											<li><a class="list" href="#">1.5 kG</a></li>
+											<li><a class="list" href="#">2 kG</a></li>
+											<li><a class="list" href="#">3 kG</a></li>
+											<li><a class="list" href="#">4 kG</a></li>
+											<li><a class="list" href="#">Large</a></li>
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li class="dropdown grid">
+							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Special Offers <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-4">
+								<div class="row">
+									<div class="col-sm-3">
+										<h4>By Relation</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Friend</a></li>
+											<li><a class="list" href="#">Lover</a></li>
+											<li><a class="list" href="#">Sister</a></li>
+											<li><a class="list" href="#">Brother</a></li>
+											<li><a class="list" href="#">Kids</a></li>
+											<li><a class="list" href="#">Parents</a></li>
+										</ul>
+									</div>																		
+									<div class="col-sm-3">
+										<h4>By Flavour</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Chocolate</a></li>
+											<li><a class="list" href="#">Mixed Fruit</a></li>
+											<li><a class="list" href="#">Butterscotch</a></li>
+											<li><a class="list" href="#">Strawberry</a></li>
+											<li><a class="list" href="#">Vanilla</a></li>
+											<li><a class="list" href="#">Eggless Cakes</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<h4>By Theme</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Heart shaped</a></li>
+											<li><a class="list" href="#">Cartoon Cakes</a></li>
+											<li><a class="list" href="#">2-3 Tier Cakes</a></li>
+											<li><a class="list" href="#">Square shape</a></li>
+											<li><a class="list" href="#">Round shape</a></li>
+											<li><a class="list" href="#">Photo cakes</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<h4>Weight</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">1 kG</a></li>
+											<li><a class="list" href="#">1.5 kG</a></li>
+											<li><a class="list" href="#">2 kG</a></li>
+											<li><a class="list" href="#">3 kG</a></li>
+											<li><a class="list" href="#">4 kG</a></li>
+											<li><a class="list" href="#">Large</a></li>
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li class="dropdown grid">
+							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Store<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-4">
+										<h4>By Relation</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Friend</a></li>
+											<li><a class="list" href="#">Lover</a></li>
+											<li><a class="list" href="#">Sister</a></li>
+											<li><a class="list" href="#">Brother</a></li>
+											<li><a class="list" href="#">Kids</a></li>
+											<li><a class="list" href="#">Parents</a></li>
+										</ul>
+									</div>																		
+									<div class="col-sm-4">
+										<h4>By Flavour</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Chocolate</a></li>
+											<li><a class="list" href="#">Mixed Fruit</a></li>
+											<li><a class="list" href="#">Butterscotch</a></li>
+											<li><a class="list" href="#">Strawberry</a></li>
+											<li><a class="list" href="#">Vanilla</a></li>
+											<li><a class="list" href="#">Eggless Cakes</a></li>
+										</ul>
+									</div>								
+									<div class="col-sm-4">
+										<h4>Specials</h4>
+										<ul class="multi-column-dropdown">
+											<li><a class="list" href="#">Ice cream cake</a></li>
+											<li><a class="list" href="#">Swiss roll</a></li>
+											<li><a class="list" href="#">Ruske kape</a></li>
+											<li><a class="list" href="#">Cupcakes</a></li>
+											<li><a class="list" href="#">Muffin</a></li>
+											<li><a class="list" href="#">Merveilleux</a></li>										
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+				    </ul>
+				    <!--/.navbar-collapse-->
+			    </div>
+			    <!--//navbar-header-->
+			</nav>
+			<div class="header-info">
+				<div class="header-right search-box">
+					<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+					<div class="search">
+						<form class="navbar-form">
+							<input type="text" class="form-control">
+							<button type="submit" class="btn btn-default" aria-label="Left Align">
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="header-right login">
+					<a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					<div id="loginBox">
+						<form id="loginForm">
+							<fieldset id="body">
+								<fieldset>
+									<label for="email">Email Address</label>
+									<input type="text" name="email" id="email">
+								</fieldset>
+								<fieldset>
+									<label for="password">Password</label>
+									<input type="password" name="password" id="password">
+								</fieldset>
+								<input type="submit" id="login" value="Sign in">
+								<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+							</fieldset>
+							<p>New User ? <a class="sign" href="#">Sign Up</a> <span><a href="#">Forgot your password?</a></span></p>
+						</form>
+					</div>
+				</div>
+				<div class="header-right cart">
+					<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+					<div class="cart-box">
+						<h4><a href="#">
+							<span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) </a>
+						</h4>
+						<p><a href="#" class="simpleCart_empty">Empty cart</a></p>
+						<!-- <div class="clearfix"> </div> -->
+					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</div>
+
+	<!--//banner-->
+	<div class="banner">
+		<div class="container">
+			<h2>Yummy <span>Cakes</span> for u</h2>
+			<p>Our best cakes make your day special</p>
+			<a href="#">SHOP NOW</a>
+			<div class="banner-text">			
+				<img src="images/2.png" alt=""/>	
+			</div>
+		</div>
+	</div>
+
+	<!-- 蛋糕图片 -->
+	<div class="cake-img">
+		<div class="container">
+			<div class="cake-grids">
+				<div class="col-md-8 cake-grid cake-one">
+					<a href="#"><img src="images/g1.jpg" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+				</div>
+  				<div class="col-md-4 cake-grid cake-two">
+  					<a href="#"><img src="images/g2.jpg" class="img-responsive" alt=""/>
+						<div class="cake-info cake-info-two">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+  					</a>
+  					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g3.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g4.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g5.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g6.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g7.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g8.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g9.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+  				<div class="col-md-3 cake-grid ">
+  					<a href="#"><img src="images/g10.png" class="img-responsive" alt=""/>
+						<div class="cake-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="#">SHOP NOW</a>
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</a>
+					<div class="stars">
+						<p>Lorem Ipsum is simply</p>
+						<div class="likes">
+							<div class="five">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>
+							<div class="prices">
+								<h5>$95.00</h5>
+							</div>						
+							<!-- <div class="clearfix"></div> -->
+						</div>
+					</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Newsletter -->
+	<div class="subscribe">
+		<div class="container">
+			<h3>Newsletter</h3>
+			<form action="" class="email">
+				 <input type="text" class="text" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}">
+				 <input type="submit" value="Subscribe">
+			 </form>
+		</div>
+	</div>
+
+	<!-- foot -->
+	<div class="foot">
+		<div class="container">
+			<div class="foot-grids">
+				<div class="col-md-2 foot-grid">
+					<h4>company</h4>
+					<ul>
+						<li><a href="products.html">products</a></li>
+						<li><a href="#">Work Here</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Happenings</a></li>
+						<li><a href="#">Dealer Locator</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 foot-grid">
+					<h4>service</h4>
+					<ul>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Warranty</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 foot-grid">
+					<h4>order & returns</h4>
+					<ul>
+						<li><a href="#">Order Status</a></li>
+						<li><a href="#">Shipping Policy</a></li>
+						<li><a href="#">Return Policy</a></li>
+						<li><a href="#">Digital Gift Card</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 foot-grid">
+					<h4>legal</h4>
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms and Conditions</a></li>
+						<li><a href="#">Social Responsibility</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 foot-grid icons">
+					<h4>Connect with Us</h4>
+					<ul>
+						<li><a href="#"><img src="images/i1.png" alt=""/>Follow us on Facebook</a></li>
+						<li><a href="#"><img src="images/i2.png" alt=""/>Follow us on Twitter</a></li>
+						<li><a href="#"><img src="images/i3.png" alt=""/>Follow us on Google-plus</a></li>
+						<li><a href="#"><img src="images/i4.png" alt=""/>Follow us on Pinterest</a></li>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot-bottom">
+		<p>Copyright © 2015.Company name All rights reserved.</p>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+	var a = document.querySelectorAll('.nav .dropdown-toggle');
+	console.log(a);
+	for(var i = 0;i<a.length;i++){
+		a[i].onclick=function(){
+			for (var j = 0;j<a.length;j++) {
+				a[j].style.backgroundColor="#5D4B33";
+			}
+			this.style.backgroundColor="#F07818";
+			this.style.color="#FFF";
+		}
+	}
+</script>
+</html>
