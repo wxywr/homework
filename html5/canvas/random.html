@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随机剪切模糊图片并动画显示</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.blur-div{
+		width: 470px;
+		height: 480px;
+		margin: 0 auto;
+		position: relative;
+		border: 1px solid red;
+	}
+	#blur-img{
+		display: block;
+		width: 470px;
+		height: 480px;
+		margin: 0 auto;
+
+		filter: blur(20px);
+		-webkit-filter:blur(20px);
+		-moz-filter:blur(20px);
+		-ms-filter:blur(20px);
+		-o-filter:blur(20px);
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	#canvas{
+		display: block;
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 100;
+	}
+	.button{
+		display: block;
+		position: absolute;
+		z-index: 200;
+		width: 100px;
+		height: 30px;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		line-height: 30px;
+		border-radius: 5px;
+	}
+	#reset-button{
+		left: 100px;
+		bottom: 20px;
+		background-color: blue;
+	}
+	#reset-button:hover{
+		background-color: #020277;
+	}
+	#show-button{
+		right: 100px;
+		bottom: 20px;
+		background-color: green;
+	}
+	#show-button:hover{
+		background-color: #042f04;
+	}
+
+
+
+	#box{
+		width:100px;
+		height:100px; 
+		position:absolute;
+		background:#06c; 
+		left:0;
+		filter:alpha(opacity=30); 
+		opacity:0.3;
+	}
+
+
+
+	#mydiv{
+	   width:150px;
+	   height:150px;
+	   background-color:red;
+	   position:absolute;
+	   left: 0;
+	   top: 600px;
+	}
+	#start{
+		position: absolute;
+		left: 500px;
+		top: 800px;
+		margin-bottom: 50px;
+	}
+	#stopmove{
+		position: absolute;
+		left: 800px;
+		top: 800px;
+	}
+</style>
+<body>
+	<div class="blur-div">
+		<img id="blur-img" src="http://images.cnblogs.com/cnblogs_com/html5test/359114/r_test.jpg" alt="">
+		<canvas id="canvas">
+		</canvas>
+		<a href="javascript:reset()" class="button" id="reset-button">RESET</a>
+		<a href="javascript:show()" class="button" id="show-button">SHOW</a>
+	</div>
+
+
+
+
+	<div id="box"></div><!-- js实现动画效果 -->
+
+
+	<!-- 原生javascript实现的一个简单动画效果 -->
+	<input type="button" id="start" value="开始运动" />
+	<input type="button" id="stopmove" value="停止运动" />
+	<div id="mydiv"></div>
+	
+</body>
+<script>
+	var canvas=document.getElementById('canvas');
+	var context=canvas.getContext('2d');
+
+	var canvasWidth=470;
+	var canvasHeight=480;
+	canvas.width=canvasWidth;
+	canvas.height=canvasHeight;
+
+	var image = new Image();
+	var radius=50;//半径
+	var clippingRegion={x:-1,y:-1,r:radius};//这里x，y的取值不重要
+	image.src="http://images.cnblogs.com/cnblogs_com/html5test/359114/r_test.jpg";
+
+	image.onload=function(e){
+		initCanvas();
+	}
+
+	function initCanvas(){
+		clippingRegion={x:Math.random()*(canvas.width-2*radius)+radius,
+						y:Math.random()*(canvas.height-2*radius)+radius,
+						r:radius};
+		draw(image,clippingRegion);
+	}
+
+	function setClippingRegion(clippingRegion){
+		context.beginPath();
+		context.arc(clippingRegion.x,clippingRegion.y,clippingRegion.r,0,Math.PI*2,false);
+		context.clip();
+	}
+
+	function draw(image,clippingRegion){
+		context.clearRect(0,0,canvasWidth,canvasHeight);
+		context.save();
+		setClippingRegion(clippingRegion);
+		context.drawImage(image,0,0);
+		context.restore();
+	}
+
+	function show(){
+		var theAnimation=setInterval(
+			function(){
+			// console.log('animation');
+			//clippingRegion.r=670;用勾股定理（470的平方+480的平方）
+				clippingRegion.r+=20;
+				if(clippingRegion.r>2*Math.max(canvas.width,canvas.height)){   //或>670
+					clearInterval(theAnimation);
+				}
+				draw(image,clippingRegion);
+			},30)
+	}
+
+	function reset(){
+		initCanvas();
+	}
+
+
+
+
+//--------------js实现动画效果--------------------
+	function getstyle(obj,name){
+ 		if(obj.currentStyle){
+  			return obj.currentStyle[name];
+ 		}else{
+  			return getComputedStyle(obj,false)[name];
+ 		}
+	}
+	window.onload = function(){
+	 	var box = document.getElementById("box");
+	 	box.onmouseover = function(){
+	  		startrun(box,"width",200,function(){
+	   		startrun(box,"height",200,function(){
+	    	startrun(box,"opacity","100")
+	   		});
+	  		});
+ 		}
+ 		box.onmouseout = function(){
+  			startrun(box,"height",100,function(){
+   			startrun(box,"width",100,function(){
+    		startrun(box,"opacity","30");
+   			});
+ 			});
+ 		}
+	}
+	function startrun(obj,attr,target,fn){
+	 	clearInterval(obj.timer);
+	 	obj.timer = setInterval(function(){
+	  		var cur = 0;
+		 	if(attr == "opacity"){
+		  		cur = Math.round(parseFloat(getstyle(obj,attr))*100);
+		  	}else{
+		   		cur = parseInt(getstyle(obj,attr));
+		  	}
+		  	var speed = (target-cur)/8;
+		  	speed = speed>0?Math.ceil(speed):Math.floor(speed);
+		  	if(cur == target){
+		   		clearInterval(obj.timer);
+		   	if(fn){
+		    	fn();
+		   	}
+		  	}else{
+		   		if(attr == "opacity"){
+		    	obj.style.filter = "alpha(opacity="+(cur+speed)+")";
+		    	obj.style.opacity = (cur+speed)/100;
+		   		}else{
+		   		obj.style[attr] = cur + speed + "px";
+		  		}
+		  	}
+	 	},30)
+	}
+
+
+
+
+
+
+
+	//--------------原生javascript实现的一个简单动画效果------------------
+	window.onload=function(){
+	    var mydiv=document.getElementById("mydiv");
+	    var start=document.getElementById("start");
+	    var stopmove=document.getElementById("stopmove");
+	    var x=0;
+	    var flag;
+		function move(){
+		   x=x+1;
+		   mydiv.style.left=x+"px";//设置div的left属性值
+		}
+		start.onclick=function(){
+		   clearInterval(flag);
+		   flag=setInterval(move,20);//开始运动
+		}
+		stopmove.onclick=function(){
+		  clearInterval(flag);//停止定时器函数，一方多次单击开始按钮造成叠加效果
+		}
+	}
+</script>
+</html>
