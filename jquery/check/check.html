@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框全选与反选</title>
+</head>
+<body>
+    <div class="check"> 
+        <input id="CheckAll" type="checkbox" />全选 
+        <input name="subBox" type="checkbox" />
+        <input name="subBox" type="checkbox" />
+        <input name="subBox" type="checkbox" />
+        <input name="subBox" type="checkbox" />
+    </div>
+    <input id="btn" type="button" value="按钮" />
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+            $("#CheckAll").on("change",function(){
+                if($("#CheckAll").prop("checked")){
+                    $('input[name=subBox]').prop('checked', true); 
+                }else{
+                    $('input[name=subBox]').prop('checked', false); 
+                }
+            });
+
+            $(".chec")
+        });
+</script>
+</html>

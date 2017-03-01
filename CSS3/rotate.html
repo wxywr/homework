@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标滑过图片旋转</title>
+	<style>
+img{
+    transition:transform 0.8s;
+    -moz-transition: -moz-transform 0.8s; /* Firefox 4 */
+    -webkit-transition: -webkit-transform 0.8s; /* Safari and Chrome */
+    -o-transition: -o-transform 0.8s; /* Opera */
+}
+img:hover{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);   /* IE 9 */
+    -moz-transform:rotate(180deg);  /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);    /* Opera */
+}
+	</style>
+</head>
+<body>
+	<img src="img/border.png" alt="">
+</body>
+</html>
