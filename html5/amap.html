@@ -2,17 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<style type="text/css">
-		
-	</style>
+	<title>map</title>
 </head>
 <body>
-	<img src="images/3.jpg" width="145" height="126" alt="camera" usemap="#cameramap">
-	<map name="cameramap">
-		<area shape="rect" coords="0,0,82,122" href="a.html">
-		<area shape="circle" coords="90,58,3" href="2.html">
-		<area shape="circle" coords="124,58,8" href="3.html">
+	<img src="images/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+	<map name="planetmap">
+		<area shape="rect" coords="0,0,82,126" href="amap1.html" alt="Sun">
+		<area shape="circle" coords="90,58,3" href="amap2.html" alt="Mercury">
+		<area shape="circle" coords="124,58,8" href="amap3.html" alt="Venus">
 	</map>
+	<!-- <area>标签定义图像映射中的区域，
+	shape="rect" 是指点击区域的形状矩形，
+	coords="0,0,82,126"点击区域的四点坐标x1,y1,x2,y2，矩形:左上角顶点坐标为(x1,y1),右下角顶点坐标为(x2,y2)
+	href="#" 链接地址 -->
 </body>
 </html>
