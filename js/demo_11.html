@@ -45,9 +45,24 @@
 	console.log(newLength);
 	console.log(arr4);
 
-	var arr5=new Array('3','6','7','4','1','5','2','8');
+	var arr5=new Array('3','6','7','4','1','5','2','8','11');
 	console.log(arr5);
 	var order=arr5.sort();
-	console.log(arr5);
+	console.log(order);
+
+
+	//数组排序
+	var arr6=[12,213,22,122,12,33,1];
+	document.write(arr6+'<br/>');
+	for(var i=0;i<arr6.length;i++){
+		for(var j=i+1;j<arr6.length;j++){
+			if(arr6[i]>arr6[j]){ //大于是升序,小于是降序,进入判断就执行一次顺序调换
+				var tem=arr6[i]; //存变量 
+				arr6[i]=arr6[j];
+				arr6[j]=tem;
+			}
+		}
+	}
+	document.write(arr6);
 </script>
 </html>
