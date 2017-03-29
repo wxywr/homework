@@ -74,7 +74,7 @@ label{
 	background-position: -46px 0px;
 	position: absolute;
 	left: 0px;
-	top: 195px;
+	top: 202px;
 }
 #check:checked+label{
 	background-image: url(../img/sprite1.png);
